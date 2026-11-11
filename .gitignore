@@ -17,3 +17,6 @@ next-env.d.ts
 /ancien-site/_planches/*
 !/ancien-site/_planches/index.json
 build.log
+
+.vercel
+.env*
