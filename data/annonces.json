@@ -1,0 +1,9 @@
+{
+  "_aide": "Bandeau en haut du site. Changer « id » pour le réafficher aux visiteurs qui l'ont fermé. « active » à false pour le masquer. « until » (AAAA-MM-JJ) : masqué automatiquement après cette date.",
+  "active": true,
+  "id": "purim-2027",
+  "text": "ההזמנות לפורים פתוחות: תחנות הפעלה, ביתנים ומסיבות כיתה",
+  "link": "/purim",
+  "linkLabel": "לכל הפרטים",
+  "until": "2027-03-25"
+}

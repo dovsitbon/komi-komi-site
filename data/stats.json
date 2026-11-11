@@ -1,0 +1,6 @@
+{
+  "_aide": "Chiffres affichés dans la bande de preuves. Mettre null pour masquer un chiffre. « sinceYear » vient des premiers messages du livre d'or (mars 2009) : À CONFIRMER avec le client. « events » : nombre d'événements produits, À DEMANDER (masqué tant que null).",
+  "sinceYear": 2009,
+  "events": null,
+  "ages": "4–12"
+}

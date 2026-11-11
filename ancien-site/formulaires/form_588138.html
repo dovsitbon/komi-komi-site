@@ -1,0 +1,577 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang='he'>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=EmulateIE7; IE=EmulateIE9; IE=EmulateIE10'>
+<base href='https://www.2komi.com'>
+<script language='javascript' type='text/javascript' src='https://sfilev2.f-static.com/includeNew/generalSites.js?v=1007161732'></script>
+<!--[if IE]>
+<link rel="stylesheet" href="https://sfilev2.f-static.com/includeNew/topMenuIECSSFix.css" media="all" type="text/css" />
+<![endif]-->
+<!--[if lte IE 6]>
+<script type='text/javascript' src='https://sfilev2.f-static.com/include/ie6pngFix/ie6pngfix-min.js'></script>
+<![endif]-->
+<script type='text/javascript'>
+function handleSuccess_gjdfgneonbre(o) {
+if(o.responseText !== undefined && document.getElementById('functionText_gjdfgneonbre_'+o.argument.functionNUM+'_'+o.argument.randomNUM+''))
+document.getElementById('functionText_gjdfgneonbre_'+o.argument.functionNUM+'_'+o.argument.randomNUM+'').innerHTML	= o.responseText ;
+}
+function handleFailure_gjdfgneonbre(o) {
+//Don't do nothing
+}
+function UpdateFunctionInPage_gjdfgneonbre(functionNUM,randomNUM,detail_id,lanTXT) {
+YAHOO.util.Event.onDOMReady(function() { UpdateFunctionInPage_gjdfgneonbreAction(functionNUM,randomNUM,detail_id,lanTXT) })
+}
+//Get a function and output is data by AJAX
+function UpdateFunctionInPage_gjdfgneonbreAction(functionNUM,randomNUM,detail_id,lanTXT) {
+//Set the functions for the result
+var callback_vsdbvikvwie3dg =
+{
+success: handleSuccess_gjdfgneonbre,
+failure: handleFailure_gjdfgneonbre,
+argument: { functionNUM:functionNUM,randomNUM:randomNUM }
+};
+//Call the function
+var request_gjdfgneonbre = YAHOO.util.Connect.asyncRequest('POST', '/site/detail/include/UpdateFunctionInPage.asp', callback_vsdbvikvwie3dg, 'depart_id=106214&functionNUM='+functionNUM+'&detail_id='+detail_id+'&dLan='+lanTXT+'');
+}
+function WrongDomainMovePage()
+{
+setTimeout("document.location.href='/'",3000);
+}
+</script>
+<link rel='stylesheet' href='https://sfilev2.f-static.com/includeNew/css.css' type='text/css'>
+<style type='text/css'>
+.backgroundTool {
+}
+.backgroundToolRight {
+}
+.backgroundToolLeft {
+}
+</style>
+<script type='text/javascript'> var tran270409a1 = 'אתה לא יכול להצביע פעמיים לסקר זה'; var tran280409a1 = 'עליך לבחור לפחות תשובה אחת'; var EnterUserName = 'נא להכניס שם משתמש'; var EnterPassword = 'נא להכניס סיסמה, תודה'; var AgreeTerms = ''; var PleaseFillSeatchField = 'אנא מלא/י את שדה החיפוש על מנת להמשיך'; var SearchWordShort = 'מילת החיפוש קצרה מידי'; var EnterEmail = 'הכנס/י דואר אלקטרוני'; var EnterRightEmail = 'אנא הכנס/י כתובת דואר אלקטרוני תקינה'; </script>
+<META NAME='description' CONTENT='קומי קומי הפקות | הפקות וארגון אירועים - הפקות בר/בת מצווה | מסיבות ימי הולדת במגוון סגנונות, אטרקציות לאירועים תקליטנים, בר מתוק לאירועים, עמדות משחק ומולטימדיה, דוכני מזון לאירועים, מתקני מתנפחים, סוס פוני לאירועים, קריקטורה לאירועים, כניסות לאירועים, תקליטן ליום הולדת, תקליטן מפעיל לבת מצווה, תקליטן בת מצווה, תקליטן לאירוע חייגו כעת : 0524378733 - 0523190259'><META NAME='keywords' CONTENT='הפקות בר מצווה,הפקות לבר מצווה,הפקות בת מצווה,הפקות לבת מצווה,תקליטן לבת מצווה,תקליטן בת מצווה,תקליטן מפעיל לבת מצווה,תקליטנים לבת מצווה, די ג&#39;י לבת מצווה, דוכני מזון לאירועים, בר מתוק לאירועים,ברים מתוק לאירועים בר מתוק בת מצווה,בר מתוק לבר מצווה, אטרקציות לבת מצווה,בת מצווה פולמון,הפקת בת מצווה פולמון,תקליטן ליום הולדת,תקליטנים ליום הולדת,הפקות הולדת,מסיבות ימי הולדת,הפקות וארגון אירועים,קריקטורה לאירועים,גרפיטי על כובעים כובעים,חולצות גרפיטי,יום הולדת הבנים והבנות,עמדות משחק'><script language="JavaScript">
+<!--
+//######################## Return javascript functions with translate ###################################
+function checkFileSize(filedTXT1,filedTXT2,sizeNUM)
+//The function check the size of the file
+{
+//Check the file size and is limit
+var obgColor = document.createElement("img");
+obgColor.onload =	function()
+{
+if (obgColor.fileSize>sizeNUM)
+{
+alert(SoptionLang["SizePicIs"]+" "+(oPic.fileSize/1024).toFixed(1)+SoptionLang["KiloByte"]+"\n"+SoptionLang["EnterPicNormalSize"]);
+document.getElementById(filedTXT1).value = "no";
+}
+else
+document.getElementById(filedTXT1).value = "";
+}
+obgColor.src = document.getElementById(filedTXT2).value;
+if (document.getElementById(filedTXT1).value=="no")
+{
+document.getElementById(filedTXT2).focus();
+return false;
+}
+return true;
+}
+function updateMessageNew(fieldTXT)
+{
+if (document.getElementById(fieldTXT))
+document.getElementById(fieldTXT).innerHTML = "<span class='red12'>Loading....... If you upload pictures or files this process can take a few minutes, please be patient.</span>";
+}
+function checkSearchFormNew(fieldTXT)
+{
+var seaWord = document.getElementById(fieldTXT).value;
+if (seaWord == "")
+{
+alert('אנא מלא/י את שדה החיפוש על מנת להמשיך');
+document.getElementById(fieldTXT).focus();
+return false;
+}
+if (seaWord.length < 2)
+{
+alert('מילת החיפוש קצרה מידי');
+document.getElementById(fieldTXT).focus();
+return false;
+}
+}
+function OnlyDigitNew(x)
+{
+var reg = new RegExp("[^0-9]", "g")
+if (x)
+{
+if (reg.test(x.value))
+{
+alert("Numbers Only!");
+x.value	= x.value.replace(/[^0-9]/g,"")
+x.focus();
+return false;
+}
+}
+}
+function OnlyDigitAndPointNew(x)
+{
+var reg = new RegExp("[^0-9.]", "g")
+if (x)
+{
+if (reg.test(x.value))
+{
+alert("Numbers & Point Only!");
+x.value	= x.value.replace(/[^0-9.]/g,"")
+x.focus();
+return false;
+}
+}
+}
+//-->
+</script>
+<!-- Loading Theme file(s) -->
+<script type="text/javascript" src="https://sfilev2.f-static.com/includeNew/GlobalChecks.js?v=1308131128"></script>
+<script type="text/javascript">	
+<!--
+function Mwork(id,tilteTXT,detail_id)
+{
+if (parent.document.getElementById("Mwork"))
+{
+parent.Mwork("3",id,tilteTXT,location.href,detail_id);
+}
+}
+function MovePage()
+{
+setTimeout("document.location.href='/'",3000);
+}
+function ShowCalendar(inputId){
+var inputId = document.getElementById(inputId);
+if (inputId){
+inputId.focus();
+}
+}
+//-->
+</script>
+<script>
+//Set the height of the parent
+function autofitIframePlugin() {
+if (window.frameElement) {
+//Get iframe ID
+var id = window.frameElement.id ;
+//Make the magic
+if (parent.document.getElementById(id) && this.document.body.offsetHeight>0) {
+parent.document.getElementById(id).style.height	= this.document.body.offsetHeight+"px";
+}
+}
+}
+</script>
+<title>הפקות אירועים | הפקות בר מצווה | הפקות בת מצווה |  בר מתוקים | הפעלות יום הולדת - צור קשר צדדי</title>
+<style type='text/css'>
+a
+{
+color: #0033cc;
+}
+.changeText14
+{
+color: #000000;
+}
+.changeText12
+{
+color: #000000;
+}
+.changeText10
+{
+color: #000000;
+}
+a.changeLink14
+{
+text-decoration: underline;
+color: #0033cc;
+}
+a.changeLink12
+{
+text-decoration: underline;
+color: #0033cc;
+}
+a.changeLink10
+{
+text-decoration: underline;
+color: #0033cc;
+}
+body,input,select,textarea
+{
+direction:rtl;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="https://sfilev2.f-static.com/site/detail/include/websiteDefaultDesign.css?v=1007161732"/>
+<style>
+/* Global store CSS */
+.sop-shop-cart-main-container table {
+color: #000000 !important;
+background-color: transparent !important;
+}
+.sop-shop-cart-header-cell {
+color:  !important;
+background-color:  !important;
+border: 1px solid  !important;
+}
+.sop-shop-cart-content-cell {
+border: 1px solid  !important;
+}
+.sop-shop-cart-first-cell {
+border-top:none !important;
+}
+.sop_btn {
+color: ;
+background-color: ;
+border-color: ;
+}
+.sop_btn:hover, .sop_btn:focus, .sop_btn:active, .sop_btn.active {
+background-color: ;
+}
+</style>
+<link rel='stylesheet' href='https://sfilev2.f-static.com/image/users/106214/css/csshe_62175.css' type='text/css'>
+</head>
+<body onload="
+autofitIframeNew('IFwinEdit_Form_588138');
+" 
+>
+<div id='WebsiteDesign-MainDiv' style='margin-top: 0px;'>
+<table id='WebsiteDesign-MainTable' align='center' style='width:1200px' border='0' cellspacing='0' cellpadding='0'>
+<tr id='WebsiteDesign-MainTableTR'>
+<td id='WebsiteDesign-MainTableBorder' valign='top' style='border-width:0px;border-color:#ffffff;border-style:solid;'>
+
+<style type='text/css'>
+.menuD5431 {
+position:relative;border: 1px solid #FFFFFF;cursor:pointer;height:25px;
+}
+.menuD5432 {
+position:relative;border: 1px solid #FFFFFF;height:25px;
+}
+</STYLE>
+<table width='100%' border='0' cellspacing='0' cellpadding='0'><!-- #97979 most top header 97979# --><!-- #858658 upper top header 858658# --><!-- #354624 begin top header 354624# --><tr><td><div id='headerDetailHeaderMEM' style='position:relative;width:100%;'><div style="text-align: center;">
+	<table align="center" bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" style="width: 1200px">
+		<tbody>
+			<tr>
+				<td>
+					<a href="/site/index.asp?depart_id=106214"><img alt="" border="0" height="100" src="/image/users/106214/ftp/my_files/button-2020/%D7%91%D7%90%D7%A0%D7%A8%20%D7%A2%D7%9C%D7%99%D7%95%D7%9F%20%D7%A7%D7%95%D7%9E%D7%99%20%D7%A7%D7%95%D7%9E%D7%99.jpg?id=32000772" width="1200"></a></td>
+			</tr>
+			<tr>
+				<td style="text-align: center; vertical-align: top; background-color: rgb(0, 0, 0);">
+					<table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+						<tbody>
+							<tr>
+								<td style="text-align: center; vertical-align: top;">
+									<a href="/הפקת-בת-מצווה-לילדים.html"><img alt="" border="0" height="173" src="/image/users/106214/ftp/my_files/button-2020/%D7%9B%D7%A4%D7%AA%D7%95%D7%A8%20%D7%91%D7%AA%20%D7%9E%D7%A6%D7%95%D7%95%D7%94.jpg?id=32000746" width="137"></a></td>
+								<td style="text-align: center; vertical-align: top;">
+									<a href="/הפקות-בר-מצווה-הפקת-בר-מצווה.html"><img alt="" border="0" height="173" src="https://sfilev2.f-static.com/image/users/106214/ftp/my_files/button-2020/%D7%9B%D7%A4%D7%AA%D7%95%D7%A8%20%D7%91%D7%A8%20%D7%9E%D7%A6%D7%95%D7%95%D7%94.jpg?id=32000745" width="137"></a></td>
+								<td style="text-align: center; vertical-align: top;">
+									<a href="/יומולדת-בנים.html"><img alt="" border="0" height="173" src="https://sfilev2.f-static.com/image/users/106214/ftp/my_files/button-2020/%D7%99%D7%95%D7%9E%D7%95%D7%9C%D7%93%D7%AA%20%D7%91%D7%A0%D7%99%D7%9D.jpg?id=32000744" width="137"></a></td>
+								<td style="text-align: center; vertical-align: top;">
+									<a href="/יומולדת-בנות.html"><img alt="" border="0" height="173" src="https://sfilev2.f-static.com/image/users/106214/ftp/my_files/button-2020/%D7%99%D7%95%D7%9E%D7%95%D7%9C%D7%93%D7%AA%20%D7%91%D7%A0%D7%95%D7%AA.jpg?id=32000743" width="137"></a></td>
+								<td style="text-align: center; vertical-align: top;">
+									<a href="/הפקות-פול-מון-הפקות-full-moom.html"><img alt="" border="0" height="173" src="https://sfilev2.f-static.com/image/users/106214/ftp/my_files/button-2020/%D7%94%D7%A4%D7%A7%D7%95%D7%AA%20%D7%A4%D7%95%D7%9C%20%D7%9E%D7%95%D7%9F.jpg?id=32000742" width="137"></a></td>
+								<td style="text-align: center; vertical-align: top;">
+									<a href="/דוכני-יריד-לאירועים.html"><img alt="" border="0" height="173" src="https://sfilev2.f-static.com/image/users/106214/ftp/my_files/button-2020/%D7%93%D7%95%D7%9B%D7%A0%D7%99%20%D7%99%D7%A8%D7%99%D7%93.jpg?id=32000740" width="137"></a></td>
+								<td style="text-align: center; vertical-align: top;">
+									<a href="/תחנות-הפעלה-לפורים-ביתנים.html"><img alt="" border="0" height="173" src="/image/users/106214/ftp/my_files/button-2020/%D7%93%D7%95%D7%9B%D7%A0%D7%99%20%D7%A4%D7%95%D7%A8%D7%99%D7%9D.jpg?id=32000747" width="137"></a></td>
+								<td style="vertical-align: top;">
+									<img alt="" border="0" height="173" src="https://sfilev2.f-static.com/image/users/106214/ftp/my_files/button-2020/%D7%90%D7%99%D7%A8%D7%95%D7%A2%D7%99%D7%9D%20%D7%A2%D7%A1%D7%A7%D7%99%D7%99%D7%9D.jpg?id=32000739" width="137"></td>
+							</tr>
+							<tr>
+								<td style="text-align: center; vertical-align: top;">
+									&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td>
+								<td style="text-align: center; vertical-align: top;">
+									&nbsp; &nbsp;</td>
+								<td style="text-align: center; vertical-align: top;">
+									&nbsp; &nbsp;</td>
+								<td style="text-align: center; vertical-align: top;">
+									&nbsp;</td>
+								<td style="text-align: center; vertical-align: top;">
+									&nbsp;</td>
+								<td style="text-align: center; vertical-align: top;">
+									&nbsp;</td>
+								<td style="text-align: center; vertical-align: top;">
+									&nbsp;</td>
+								<td style="text-align: center; vertical-align: top;">
+									&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</div></td></tr><!-- #354624 end top header 354624# --><!-- #765475 lower top header 765475# --><!-- #087087 most down header 087087# --></table>
+<!-- ______________________BEGIN____________________ --> 
+<table width="100%" cellspacing="0" cellpadding="0" border="0" 
+class="bgcolorTable"
+>
+<tr>
+<!-- side menu -->
+<style type='text/css'>.SideMenuSetting_Right{width:160px;background-color:#ffffff;}.SideMenuSetting_Left{width:20px;background-color:#132260;background-image:url(/image/users/106214/bgcolor/55323742.gif);background-position:top left;background-repeat:repeat;}</style><td id='sideMenu_Right' class='SideMenuSetting_Right' valign='top' style='direction: rtl;'><div style="text-align: center;">
+	<br />
+	<span style="font-size:16px;">חייגו עכשיו</span><br />
+	<hr />
+	<span style="font-size:16px;"><strong><span style="font-size:26px;">0523190259</span><br />
+	<span style="font-size:26px;">0524378733</span></strong></span><br />
+	&nbsp;</div>
+<div style="text-align: center;">
+	<div>
+		&nbsp;<a href="https://www.facebook.com/komikomiproductions/"><img alt="" border="0" src="https://sfilev2.f-static.com/image/users/106214/ftp/my_files/%D7%A4%D7%99%D7%99%D7%A1%D7%91%D7%95%D7%A7%20%D7%A7%D7%95%D7%9E%D7%99%20%D7%A7%D7%95%D7%9E%D7%99%20%D7%94%D7%A4%D7%A7%D7%95%D7%AA.jpg" style="width:37px;height:40px;border:0px solid black;" /></a>&nbsp; <a href="https://www.instagram.com/komi_komi01/"><img alt="" border="0" src="https://sfilev2.f-static.com/image/users/106214/ftp/my_files/%D7%A7%D7%95%D7%9E%D7%99%20%D7%A7%D7%95%D7%9E%D7%99%20%D7%94%D7%A4%D7%A7%D7%95%D7%AA.png?id=33070450" style="width: 41px; height: 40px; border: 0px solid black;" /></a>&nbsp;<a href="https://wa.me/c/972523190259"><img alt="" border="0" src="https://sfilev2.f-static.com/image/users/106214/ftp/my_files/%D7%A7%D7%95%D7%9E%D7%99%20%D7%A7%D7%95%D7%9E%D7%99%20%D7%94%D7%A4%D7%A7%D7%95%D7%AA.jpg?id=33070451" style="width: 40px; height: 40px; border: 0px solid black;" /></a></div>
+	<br />
+	<table align="center" bgcolor="#cccccc" border="1" cellpadding="1" cellspacing="1" style="width: 100%">
+		<tbody>
+			<tr>
+				<td>
+					<span style="font-size:16px;"><strong>טופס יצירת קשר</strong></span></td>
+			</tr>
+		</tbody>
+	</table>
+	<iframe align="middle" allowtransparency="true" frameborder="0" height="300px" id="IFwinEdit_Gadget_588138_2694" marginheight="0" marginwidth="0" name="IFwinEdit_Gadget_588138_2694" noresize="noresize" scrolling="no" src="/site/form/showForm.asp?depart_id=106214&amp;form_id=588138&amp;gadgetStyleBOO=1&amp;gadgetStyleXmlBOO=1&amp;iframeNameTXT=IFwinEdit_Gadget_588138_2694&amp;gadgetLoadTXT=%23%23ALBUM-NOT-LOAD%23%23&amp;gadgetShowHeaderBOO=false&amp;gadgetHeaderTextTXT=%D7%A6%D7%95%D7%A8%20%D7%A7%D7%A9%D7%A8%20%D7%A6%D7%93%D7%93%D7%99&amp;gadgetHeaderFontSizeTXT=14&amp;gadgetHeaderFontBoldTXT=bold&amp;gadgetHeaderHeightTXT=25&amp;gadgetHeaderBackColorTXT=%230091ff&amp;gadgetHeaderTextColorTXT=%23ffffff&amp;gadgetContentBackColorTXT=transparent&amp;gadgetContentTextColorTXT=%23000000&amp;borderSizeNUMg=0&amp;borderColorTXTg=%230091ff&amp;gadgetCorner_tr=false&amp;gadgetCorner_tl=false&amp;gadgetCorner_br=false&amp;gadgetCorner_bl=false&amp;gadgetCornerWeightNUM=8&amp;gadgetAutoSizeBOO=" width="100%"></iframe></div>
+<div width='100%' id='MenuBarVerticalContainer' class='MenuBarVerticalContainerRight'><ul id='MenuBar1' class='MenuBarVertical'><li id='MBVItem1244420'><div class='MainMenuBarBackgrounImage'><a href='/106214/צרו-קשר'>צרו קשר</a></div></li><li id='MBVItem6482999'><div class='MainMenuBarBackgrounImage'><a href='https://www.2komi.com'>דף הבית קומי קומי הפקות</a></div></li><li id='MBVItem6557135'><div class='MainMenuBarBackgrounImage'><a href='/לקוחות-ממליצים.html'>לקוחות ממליצים</a></div></li><li id='MBVItem1336042'><div class='MainMenuBarBackgrounImage'><a href='/site/detail/guestbook/guestbook.asp?depart_id=106214'>ספר המלצות הוסף המלצה</a></div></li><li id='MBVItem1244418'><div class='MainMenuBarBackgrounImage'><a href='/106214/המלצות'>המלצות בוידאו</a></div></li><li id='MBVItem6073874'><div class='MainMenuBarBackgrounImage'><a class='MenuBarItemSubmenu' href='/הפקת-בת-מצווה-לילדים.html'>הפקות בת מצווה | הפקת בת מצווה | הפקת אירוע בת מצווה | הפקות לבת מצווה</a></div></li><li id='MBVItem6643127'><div class='MainMenuBarBackgrounImage'><a class='MenuBarItemSubmenu' href='/הפקות-בר-מצווה-הפקת-בר-מצווה.html'>אטרקציה לבר מצווה | אטרקציות לבר מצווה | הפקת בר מצווה | אטקציה בר מצווה | הפקות אירועים</a></div><ul><li id='SMBVItem6643527'><a href='/תקליטן-לבר-מצווה-תקליטן-בר-מצווה-די-ג-יי-לבר-מצווה-DJ-לבר-מצווה.html'>תקליטן לבר מצווה | תקליטן בר מצווה | די ג'יי לבר מצווה | DJ לבר מצווה</a></li></ul></li><li id='MBVItem6644852'><div class='MainMenuBarBackgrounImage'><a class='MenuBarItemSubmenu' href='/הפקות-פול-מון-הפקות-full-moom.html'>הפקות פולמון - הפקות full moom | אטרקציה פולמון | בר מצווה פולמון | בת מצווה פולמון</a></div><ul><li id='SMBVItem6484010'><a href='/הפקת-בת-מצווה-פול-מון.html'>הפקת בת מצווה פול מון</a></li></ul></li><li id='MBVItem6073875'><div class='MainMenuBarBackgrounImage'><a class='MenuBarItemSubmenu' href='/בר-מתוקים-לאירועים.html'>בר מתוקים לאירועים</a></div><ul><li id='SMBVItem6502252'><a href='/בר-מתוקים-לבר-מצווה-עיצוב-בר-מתוקים-לבר-מצווה-בר-מתוק-בר-מצווה.html'>בר מתוק לבר מצווה, ברים מתוקים לבר מצווה, בר מתוק בר מצווה, בר מתוק לבר מצווה 0523190259</a></li><li id='SMBVItem6502278'><a href='/בר-מתוק-לבריתות-בר-מתוק-לבריתות-עיצוב-בר-מתוק-לבריתות-בר-מתוקים-לבריתה.html'>בר מתוקים לבריתה | בר מתוק לזבד הבת | בר מתוקים לבריתה 0523190259</a></li><li id='SMBVItem6502254'><a href='/בר-מתוק-לברית-בר-מתוק-לבריתה.html'>בר מתוק לברית | בר מתוק לבריתה | בר מתוקים לברית</a></li><li id='SMBVItem6502260'><a href='/בר-מתוק-לבריתות.html'>בר מתוקים לבריתה בצפון, בר מתוקים לברית צפון, ברים מתוקים בצפון, בר מתוקים לזבד הבת - 0523190259</a></li><li id='SMBVItem6502281'><a href='/בר-מתוק-ליום-הולדת-בר-מתוקים-ליום-הולדת-ברים-מתוקים-ליום-הולדת.html'>בר מתוק ליום הולדת | בר מתוקים ליום הולדת | ברים מתוקים ליום הולדת</a></li><li id='SMBVItem6502285'><a href='/בר-מתוק-לאירוע-חברה-בר-מתוקים-לאירוע-חברה-ברים-מתוקים-לאירועים.html'>בר מתוק לאירוע חברה | בר מתוקים לאירוע חברה | ברים מתוקים לאירועים</a></li></ul></li><li id='MBVItem6052983'><div class='MainMenuBarBackgrounImage'><a class='MenuBarItemSubmenu' href='/ימי-הולדת-לפי-נושאים.html'>הפעלות ליום הולדת | הפעלה ליום הולדת  | הפעלות ליום הולדת בנים | הפעלה ליום הולדת בנות</a></div><ul><li id='SMBVItem6642917'><a class='MenuBarItemSubmenu' href='/יומולדת-בנים.html' target='_blank'>יומולדת בנים | יום הולדת בנים | הפעלת ליום הולדת בנים | הפעלה לבנים</a><ul><li id='SMBVItem6059152'><a href='/הפקת-יום-הולדת-פוקימון-הפקות-יומולדת-פוקימון-מסיבת-יום-הולדת-פוקימון.html'>מסיבת יום הולדת פוקימון | יום הולדת פוקימון | הפעלה פוקימון</a></li><li id='SMBVItem6635841'><a href='/הפעלת-יום-הולדת-בראול-סטארס-יום-הולדת-בראות-סטארס-הפקת-יום-הולדת-בראול-סטארס-הפקת-יום-הולדת-בראול-סטארס.html'>יום הולדת בראול סטארס, יומולדת בראול סטארס, הפעלה בראול טארס, בר מתוקים בראול טארס</a></li><li id='SMBVItem6557100'><a href='/יום-הולדת-פורטנייט-יומולדת-פורטנייט-הפקת-פורטנייט-לילדים.html'>יום הולדת פורטנייט, יומולדת פורטנייט, הפקת פורטנייט לילדים</a></li><li id='SMBVItem6767407'><a href='/יום-הולדת-מיינרקאפט-הפעלת-יום-הולדת-מיינקראפט-יום-הולדת-של-מיינקראפט-שולחן-יום-הולדת-מיינקראפט.html'>יום הולדת מיינקראפט | הפעלת יום הולדת מיינקראפט | יום הולדת של מיינקראפט | שולחן יום הולדת מיינקראפט |</a></li><li id='SMBVItem6557102'><a href='/יום-הולדת-כוח-פיג-יי-ימי-הולדת-כוח-פיג-יי-יום-הולדת-כח-פיג-יי.html'>יום הולדת כוח פיג'יי, ימי הולדת כוח פיג'יי, יום הולדת כח פיג'יי</a></li><li id='SMBVItem6071730'><a href='/מסיבת-ירח-מלא-פול-מון-ליום-הולדת-מסיבה-זוהרת-ליום-הולדת-מסיבה-זוהרת-באולטרה-סגולה-לילדים.html'>יום הולדת פולמןן, מסיבת אולטרה סגולה, מסיבת יומולדת פולמון, הפעלה פולמון</a></li><li id='SMBVItem6557101'><a href='/יום-הולדת-דינוזאורים-ימי-הולדת-דינוזאורים-הפקת-דינוזאורים.html'>יום הולדת דינוזאורים, ימי הולדת דינוזאורים, הפקת דינוזאורים,</a></li><li id='SMBVItem6751828'><a href='/יום-הולדת-ספיידרמן-יומולדת-גיבורי-על-יום-הלדת-גיבורי-על-יומולדת-ספיידרמן.html'>יום הולדת ספיידרמן | שולחן יום הולדת ספיידרמן | יום הולדת ספיידרמן מפעיל | יום הולדת ספיידרמן הפעלה | בר מתוקים ספיידרמן | אביזרים ספיידרמן, עוגת ספיידרמן</a></li><li id='SMBVItem6073596'><a href='/יום-הולדת-כדורגל-מסיבת-כדורגל-לבנים.html'>יום הולדת כדורגל | הפעלה כדורגל |  יום הולדת  כדורגל לקטנטנים</a></li><li id='SMBVItem6767334'><a href='/יום-הולדת-סוניק-הפעלה-סוניק-הפעלה-לבנים-סוניק.html'>יום הולדת סוניק | הפעלה סוניק |  הפעלה לבנים סוניק | הפעלה יומולדת בני 5.6 | מפעילה סוניק</a></li><li id='SMBVItem6767371'><a href='/הפעלת-יום-הולדת-גריטי-הפעלה-גרפיטי-יום-הולדת-גרפיטי.html'>הפעלת יום הולדת גרפיטי |  הפעלה גרפיטי  | יום הולדת גרפיטי | הפעלה לבנות | הפעלה לבנים</a></li></ul></li><li id='SMBVItem6642921'><a class='MenuBarItemSubmenu' href='/יומולדת-בנות.html'>יומולדת בנות | הפעלה לבנות | יום הולדת בנות | מסיבת בנות</a><ul><li id='SMBVItem6767487'><a href='/הפעלת-יום-הולדת-לבובו-יום-הולדת-לבובו-מסיבת-יום-הולדת-לבובו.html'>הפעלת יום הולדת לבובו | יום הולדת לבובו |  מסיבת יום הולדת לבובו</a></li><li id='SMBVItem6052984'><a href='/יומולדת-ספא-לבנות-יום-הולדת-ספא-יום-הולדת-פינוק-לילדות.html'>יום הולדת ספא סטיץ | הפעלה ספא סטיץ | יום הולדת בנות ספא סט׳ץ |  ספא סטיץ</a></li><li id='SMBVItem6767369'><a href='/הפעלת-יום-הולדת-ברבי-הפעלה-ברבי-יומודלת-ברבי-מסיבת-ברבי-לבנות.html'>הפעלת יום הולדת ברבי | הפעלה ברבי |  יומודלת ברבי | מסיבת ברבי לבנות</a></li><li id='SMBVItem6767370'><a href='/ספא-ברבי-הפעלת-יום-הולדת-ספא-ברבי-ספא-ברבי-מסיבת-ספא-ברבי.html'>ספא ברבי | הפעלת יום הולדת ספא ברבי | ספא ברבי | מסיבת ספא ברבי</a></li><li id='SMBVItem6569021'><a href='/הפקת-יום-הולדת-חד-קרן-יום-הולדת-חד-קרן-מסיבת-יום-הולדת-חד-קרן.html'>הפקת יום הולדת חד קרן, יום הולדת חד קרן, מסיבת יום הולדת חד קרן</a></li><li id='SMBVItem6105796'><a href='/יום-הולדת-ספא-לילדות-יום-הולדת-ספא-ילדות-יומולדת-ספא.html'>יום הולדת ספא לול | ספא לול | הפעלת ספא לול | הפעלה לול ספא לגיל 4</a></li><li id='SMBVItem6375361'><a href='/יום-הולדת-הבנים-והבנות-הפקת-יום-הולדת-בנים-והבנות.html'>יום הולדת הבנים והבנות | מסיבת יום הולדת הבנים והבנות</a></li><li id='SMBVItem6625031'><a href='/יום-הולדת-LOL-יום-הולדת-הולה-ימי-הולדת-LOL-הפקת-יום-הולדת-LOL.html'>הפעלת יום הולדת לול | מסיבת יום הולדת לול | הפעלת יומולדת לול לגיל 4.5.6.</a></li><li id='SMBVItem6643083'><a href='/יום-הולדת-ספא-LOL-מסיבת-ספא-לול.html'>יום הולדת ספא LOL |  מסיבת ספא לול</a></li><li id='SMBVItem6719700'><a href='/יום-הולדת-טיק-טוק-מסיבת-יום-הולדת-טיק-טוק-הפעלת-יום-הולדת-טיק-טוק-בנים-בנות.html'>יום הולדת טיק טוק, מסיבת יום הולדת טיק טוק | יומודלת טיק טוק, הפעלה TIK TOK ליום הולדת, יומולדת TIK TOK</a></li></ul></li><li id='SMBVItem6104207'><a href='/יום-הולדת-כדורגל-בקריות-יום-הולדת-כדורגל-קריות-ימי-הולדת-כדורגל-בקריות.html'>יום הולדת כדורגל בקריות | יום הולדת כדורגל קריות | ימי הולדת כדורגל בקריות</a></li><li id='SMBVItem6770698'><a href='/הפעלות-ליום-הולדת-בחיפה-מפעילה-באזור-חיפה-הפעלות-מומלצות-באזור-חיפה.html'>הפעלות ליום הולדת בחיפה, מפעילה באזור חיפה, הפעלות מומלצות באזור חיפה</a></li><li id='SMBVItem6104205'><a href='/יום-הולדת-כדורגל-בחיפה-יום-הולדת-חיפה-מפעיל-יום-הולדת-בחיפה.html'>יום הולדת כדורגל בחיפה | יום הולדת כדורגל חיפה | ימי הולדת כדורגל בחיפה</a></li><li id='SMBVItem6116948'><a href='/פוני-קטן-שלי-ליום-הולדת-פוני-קטני-הפקת-יום-הולדת-פוני-הקטן-שלי.html'>פוני קטן שלי ליום הולדת, פוני קטני</a></li><li id='SMBVItem6512365'><a href='/יום-הולדת-הכל-הולך-הפקת-יום-הולדת-הכל-הולך.html'>יום הולדת הכל הולך | הפקת יום הולדת הכל הולך | מסיבת יומולדת הכל הולך</a></li><li id='SMBVItem6770696'><a href='/מפעילה-ליום-הולדת-בקריות-הפעלות-לימי-הולדת-בצפון-מפעילה-ליום-הולדת-בצפון.html'>מפעילה ליום הולדת בקריות | הפעלות לימי הולדת בצפון | מפעילה ליום הולדת בצפון</a></li><li id='SMBVItem6770699'><a href='/הפעלה-ליום-הולדת-צפון-מפעילה-באזור-צפון-מפעילים-בצפון-הפעלות-לימי-הולדת-צפון.html'>הפעלה ליום הולדת צפון |  מפעילה באזור צפון | מפעילים בצפון | הפעלות לימי הולדת צפון</a></li><li id='SMBVItem6770697'><a href='/הפעלות-ליום-הולדת-בהרצליה-הפעילה-ליום-הולדת-באזור-הרצליה-מפעילים-לימי-הולדת-בהרצליה-מפעיל-מומלץ-ברעננה.html'>הפעלות ליום הולדת בהרצליה | הפעילה ליום הולדת באזור הרצליה | מפעילים לימי הולדת בהרצליה  | מפעיל מומלץ ברעננה</a></li><li id='SMBVItem1244325'><a class='MenuBarItemSubmenu' href='/ליצנים-ליום-הולדת-ליצנים-ימי-הולדת-יומולדת-הפקת-יום-הולדת-לירז-הליצנית-קומי-קומי-ליצנים.html'>ליצנים ליום הולדת</a><ul><li id='SMBVItem2364547'><a class='MenuBarItemSubmenu' href='/106214/ליצנים-ליום-הולדת-1'>ליצנים לפי אזורים</a><ul><li id='SMBVItem2421898'><a class='MenuBarItemSubmenu' href='/106214/ליצנים-בצפון'>ליצנים בצפון | ליצנים באזור הצפון | ליצן בצפון | ליצנים צפון</a><ul><li id='SMBVItem2364607'><a class='MenuBarItemSubmenu' href='/106214/ליצנים-בקריות'>ליצנים בקריות | ליצנית בקריות |  ליצן בקריות ליום הולדת  | ליצנים מאזור קריות</a><ul><li id='SMBVItem2425742'><a href='/106214/ליצנית-בקריות-ליצנית-קריות'>ליצנית בקריות | ליצנית בקריות ליום הולדת</a></li><li id='SMBVItem2425758'><a href='/106214/ליצןלימיהולדתבקריות-ליצן-קריות'>ליצן בקריות | ליצנים קריות | ליצן בקריות ליום הולדת | ליצן בקריות</a></li><li id='SMBVItem2452087'><a href='/106214/ליצנים-קריית-אתא-ליצן-קריית-אתא'>ליצנים קריית אתא | ליצן קריית אתא</a></li><li id='SMBVItem2452082'><a href='/106214/ליצנים-קריית-ים-ליצן-קריית-ים'>ליצנים קריית ים | ליצן קריית ים</a></li><li id='SMBVItem2452085'><a href='/106214/ליצנים-קרית-מוצקין-ליצן-קרית-מוצקין'>ליצנים קרית מוצקין | ליצן קרית מוצקין</a></li><li id='SMBVItem2452084'><a href='/106214/ליצנים-קרית-חיים-ליצן-קרית-חיים'>ליצנים קרית חיים | ליצן קרית חיים</a></li><li id='SMBVItem2453362'><a href='/106214/ליצנים-בקרית-ביאליק-ליצן-קרית-ביאליק'>ליצנים בקרית ביאליק | ליצן קרית ביאליק</a></li></ul></li><li id='SMBVItem2462396'><a href='/106214/ליצנים-בצפון-ליצן-צפון'>ליצנית בצפון | ליצנית צפון</a></li><li id='SMBVItem2477224'><a href='/106214/ליצן-בצפון-ליצן-צפון'>ליצן בצפון | ליצן בצפון | ליצן ליום הולדת בצפון | ליצן לימי הולדת בצפון | ליצן אזור צפון | ליצנים צפון</a></li><li id='SMBVItem2421774'><a href='/106214/חיפה-ליצניםבחיפה-קומיקומי'>ליצנים חיפה | ליצנים בחיפה | ליצן חיפה | ליצנית באזור חיפה  | ליצנים מאזור חיפה</a></li><li id='SMBVItem2433144'><a href='/106214/ליצנים-בטבריה-ליצן-טבריה'>ליצנים בטבריה | ליצן בטבריה | ליצנים ליום הולדת בטבריה | ליצנית בטבריה</a></li><li id='SMBVItem2433150'><a href='/106214/ליצנים-בעפולה-ליצן-עפולה'>ליצנים בעפולה | ליצנית בעפולה | ליצן בעפולה | ליצנית ליום הולדת בעפולה עילית</a></li><li id='SMBVItem2433155'><a href='/106214/ליצנים-בבית-שאן-ליצן-בית-שאן'>ליצנים בבית שאן | ליצן בית שאן ליום הולדת | ליצנית בית שאן | ליצנים באזור בית שאן</a></li><li id='SMBVItem2433175'><a href='/106214/ליצנים-במגדל-העמק-ליצן-במגדל-העמק'>ליצנים במגדל העמק | ליצן במגדל העמק</a></li><li id='SMBVItem2433158'><a href='/106214/ליצנים-בעמקים-ליצן-עמקים'>ליצן בעמקים | ליצנית בעמקים | ליצנים בעמקים | ליצנים ליום הולדת בעמק יזראל</a></li><li id='SMBVItem2433159'><a href='/106214/ליצנים-ביקנעם-ליצן-יקנעם'>ליצנים ביקנעם עלית | ליצנים יקנעם | ליצנית יעקנם עלית | ליצן יקנעם עלית</a></li><li id='SMBVItem2444232'><a href='/106214/ליצנים-בקרית-טבעון-ליצן-קרית-טבעון'>ליצנים בקרית טבעון | ליצן קרית טבעון</a></li><li id='SMBVItem2444239'><a href='/106214/ליצנים-ברמת-ישי-ליצן-רמת-ישי'>ליצנים רמת ישי | ליצנית רמת ישי | ליצן רמת ישי | ליצנים ליום הולדת באזור רמת ישי</a></li><li id='SMBVItem2433160'><a href='/106214/ליצנים-בזכרון-יעקב-ליצן-זכרון-יעקב'>ליצנים בזכרון יעקב | ליצנית בזכרון יעקב | ליצנים זכרון | ליצן בזכרון ליום הולדת</a></li><li id='SMBVItem2433162'><a href='/106214/ליצנים-בקיסריה-ליצן-קיסריה'>ליצנים בקיסריה | ליצן קיסריה</a></li><li id='SMBVItem2433171'><a href='/106214/ליצנים-בבנימינה-ליצנית-בבנימינה'>ליצנים בבנימינה | ליצנית בבנימינה</a></li><li id='SMBVItem2433183'><a href='/106214/ליצנים-בפרדס-חנה-ליצן-פרדס-חנה'>ליצנים פרדס באוזר פרדס חנה | ליצנים בפרדס חנה | ליצנית פרדס חנה כרכור | ליצן פרדס חנה</a></li><li id='SMBVItem2433173'><a href='/106214/ליצנים-בגעת-עדה-ליצן-גבעת-עדה'>ליצנים בגבעת עדה | ליצן גבעת עדה</a></li><li id='SMBVItem2433202'><a href='/106214/ליצנים-באור-עקיבא-ליצן-אור-עקיבא'>ליצנים באור עקיבא | ליצן אור עקיבא</a></li><li id='SMBVItem2433167'><a href='/106214/ליצנים-בגבעת-אולגה-ליצן-באולגה'>ליצנים בגבעת אולגה | ליצן באולגה</a></li><li id='SMBVItem2433165'><a href='/106214/ליצנים-בחדרה-ליצן-חדרה'>ליצנים בחדרה | ליצנים חדרה | ליצן בחדרה ליום הולדת | ליצנית בחדרה | ליצנים באזור חדרה</a></li><li id='SMBVItem2441174'><a href='/106214/ליצנים-בנתניה-ליצן-בנתניה'>ליצנים בנתניה | ליצנים באזור נתניה | ליצן בנתניה | ליצנית בנתניה ליום הולדת</a></li><li id='SMBVItem2452057'><a href='/106214/ליצנים-נצרת-עלית-ליצן-נצרת-עלית'>ליצנים נצרת עילית | ליצן נצרת עילית</a></li><li id='SMBVItem2452069'><a href='/106214/ליצנים-בנשר-ליצן-נשר'>ליצנים בנשר | ליצנים נשר | ליצנים ליום הולדת בנשר | ליצן בנשר | ליצנית בנשר</a></li><li id='SMBVItem2452071'><a href='/106214/ליצנים-בצפת-ליצן-צפת'>ליצנים בצפת | ליצן צפת</a></li><li id='SMBVItem2452091'><a href='/106214/ליצנים-בטירת-הכרמל-ליצן-טירת-הכרמל'>ליצנים בטירת הכרמל | ליצן טירת הכרמל</a></li><li id='SMBVItem2452133'><a href='/106214/ליצנים-כפר-הורדים-ליצן-כפר-הוורדים'>ליצנים כפר הורדים | ליצן כפר הוורדים</a></li><li id='SMBVItem2452140'><a href='/106214/ליצנים-ראש-פינה-ליצן-ראש-פינה'>ליצנים ראש פינה | ליצן ראש פינה</a></li><li id='SMBVItem2452150'><a href='/106214/ליצנים-בעתלית-ליצן-עתלית'>ליצנים בעתלית | ליצן עתלית</a></li><li id='SMBVItem2452168'><a href='/106214/ליצנים-מטולה-ליצנן-מטולה'>ליצנים מטולה | ליצן מטולה</a></li></ul></li><li id='SMBVItem2423945'><a class='MenuBarItemSubmenu' href='/106214/ליצנים-במרכז-ליצן-מרכז'>ליצנים במרכז | ליצן במרכז | ליצנית באזור מרכז | מומלצים</a><ul><li id='SMBVItem2425874'><a href='/106214/ליצנית-במרכז-ליצנית-מרכז'>ליצנית במרכז | ליצנית ליום הולדת במרכז | ליצנית מאזור מרכז | ליצנית</a></li><li id='SMBVItem2425876'><a href='/106214/ליצן-במרכז-ליצן-מרכז'>ליצן במרכז | ליצן במרכז ליום הולדת | ליצן במרכז לימי הולדת | ליצן מאזור במרכז</a></li><li id='SMBVItem2441194'><a href='/106214/ליצנים-בהרצליה-ליצן-בהרצליה'>ליצנים בהרצליה | ליצן בהרצליה</a></li><li id='SMBVItem2444278'><a href='/106214/ליצנים-בראשון-ליצן-בראשן'>ליצנים בראשון | ליצן בראשון</a></li><li id='SMBVItem2444292'><a href='/106214/ליצנים-בתל-אביב-ליצן-בתל-אביב'>ליצנים בתל אביב | ליצן בתל אביב</a></li><li id='SMBVItem2444293'><a href='/106214/ליצנית-בחולון-ליצן-בחולון'>ליצנים בחולון | ליצן בחולון</a></li><li id='SMBVItem2452032'><a href='/106214/ליצנים-בנתיבות-ליצן-נתיבות'>ליצנים בנתיבות | ליצן נתיבות</a></li><li id='SMBVItem2452034'><a href='/106214/ליצנים-באופקים'>ליצנים באופקים | ליצן אופקים</a></li><li id='SMBVItem2452036'><a href='/106214/ליצנים-באשדוד-ליצן-אשדוד'>ליצנים באשדוד | ליצן אשדוד</a></li><li id='SMBVItem2452043'><a href='/106214/ליצנים-באשקלון-ליצן-אשקלון'>ליצנים באשקלון | ליצן אשקלון</a></li><li id='SMBVItem2452045'><a href='/106214/ליצנים-באור-יהודה-ליצן-אור-יהודה'>ליצנים באור יהודה | ליצן אור יהודה</a></li><li id='SMBVItem2452046'><a href='/106214/ליצנים-בני-ברק-ליצן-בני-ברק'>ליצנים בני ברק | ליצן בני ברק</a></li><li id='SMBVItem2452047'><a href='/106214/ליצנים-בת-ים-ליצן-בת-ים'>ליצנים בת ים | ליצן בת ים</a></li><li id='SMBVItem2452050'><a href='/106214/ליצנים-בכפר-סבא-ליצן-כפר-סבא'>ליצנים בכפר סבא | ליצן כפר סבא</a></li><li id='SMBVItem2452054'><a href='/106214/ליצנים-בגבעתיים-ליצן-גבעתיים'>ליצנים בגבעתיים | ליצן גבעתיים</a></li><li id='SMBVItem2452059'><a href='/106214/ליצנים-בהוד-השרון-ליצן-בהוד-השרון'>ליצנים בהוד השרון | ליצן בהוד השרון</a></li><li id='SMBVItem2452068'><a href='/106214/ליצנים-במודעין-ליצן-מודעין'>ליצנים במודעין | ליצן מודעין</a></li><li id='SMBVItem2452070'><a href='/106214/ליצנים-פתח-תקווה-ליצן-פתח-תקווה'>ליצנים פתח תקווה | ליצן פתח תקווה</a></li><li id='SMBVItem2452077'><a href='/106214/ליצנים-בקריית-גת'>ליצנים בקריית גת | ליצן קריית גת</a></li><li id='SMBVItem2452078'><a href='/106214/ליצנים-בקריית-אונו-ליצן-קריית-אונו'>ליצנים בקריית אונו | ליצן קריית אונו</a></li><li id='SMBVItem2452101'><a href='/106214/ליצנים-בקרית-מאלכי-ליצן-קרית-מאלכי'>ליצנים בקרית מאלכי | ליצן קרית מאלכי</a></li><li id='SMBVItem2452110'><a href='/106214/ליצנים-ברחובות-ליצן-רחובות'>ליצנים ברחובות | ליצן רחובות</a></li><li id='SMBVItem2452111'><a href='/106214/ליצנים-בראש-העין-ליצן-ראש-העין'>ליצנים בראש העין | ליצן ראש העין</a></li><li id='SMBVItem2452114'><a href='/106214/ליצנים-ברעננה-ליצן-רעננה'>ליצנים ברעננה | ליצן רעננה</a></li><li id='SMBVItem2452116'><a href='/106214/ליצנים-ברמת-השרון-ליצן-רמת-השרון'>ליצנים ברמת השרון | ליצן רמת השרון</a></li><li id='SMBVItem2452119'><a href='/106214/ליצנים-ברמת-גן-ליצן-רמת-גן'>ליצנים ברמת גן | ליצן רמת גן</a></li><li id='SMBVItem2452154'><a href='/106214/ליצנים-מיפו'>ליצנים מיפו | ליצן יפו</a></li><li id='SMBVItem2452174'><a href='/106214/ליצנים-בגדרה-ליצן-גדרה'>ליצנים בגדרה | ליצן גדרה</a></li></ul></li><li id='SMBVItem2433221'><a class='MenuBarItemSubmenu' href='/106214/ליצנים-בגליל-העליון'>ליצנים בגליל העליון</a><ul><li id='SMBVItem2421992'><a href='/106214/נהריה-ליצניםבנהריה-קומיקומי'>ליצנים בנהריה | ליצן נהריה</a></li><li id='SMBVItem2422981'><a href='/106214/ליצנים-בשלומי-ליצן-בשלומי'>ליצנים בשלומי | ליצן בשלומי</a></li><li id='SMBVItem2422954'><a href='/106214/ליצנים-במעלות-ליצן-מעלות'>ליצנים במעלות | ליצן מעלות</a></li><li id='SMBVItem2423034'><a href='/106214/ליצנים-ברמת-הגולן'>ליצנים ברמת הגולן | ליצן בגולן</a></li><li id='SMBVItem2433127'><a href='/106214/ליצנים-בקריית-שמונה-ליצן-קרית-שמונה'>ליצנים בקריית שמונה | ליצן קרית שמונה</a></li><li id='SMBVItem2433217'><a href='/106214/ליצנים-בכרמיאל-ליצן-כרמיאל'>ליצנים בכרמיאל | ליצן כרמיאל</a></li><li id='SMBVItem2441180'><a href='/106214/ליצנים-בגליל-ליצן-בגליל'>ליצנים בגליל | ליצן בגליל</a></li></ul></li><li id='SMBVItem2465071'><a class='MenuBarItemSubmenu' href='/106214/ליצנים-בדרום-ליצן-דרום'>ליצנים בדרום | ליצן דרום</a><ul><li id='SMBVItem2516123'><a href='/106214/ליצנים-בלוד-ליצן-בלוד'>ליצנים בלוד | ליצן בלוד</a></li></ul></li></ul></li><li id='SMBVItem2435047'><a class='MenuBarItemSubmenu' href='/106214/ליצנים-לפי-גילאים'>ליצנים לפי גילאים</a><ul><li id='SMBVItem2435050'><a href='/106214/ליצנים-לגיל-הרך-ליצנים-גיל-הרך'>ליצנים לגיל 3 | ליצן גיל 3</a></li><li id='SMBVItem2435079'><a href='/106214/ליצנים-לגיל-4-ליצנים-גיל-4'>ליצנים לגיל 4 | ליצן גיל 4</a></li><li id='SMBVItem2435084'><a href='/106214/ליצנים-לגיל-5-ליצנים-גיל-5'>ליצנים לגיל 5 | ליצן גיל 5</a></li><li id='SMBVItem2435085'><a href='/106214/ליצנים-לגיל-6-ליצנים-גיל-6'>ליצנים לגיל 6 | ליצן גיל 6</a></li><li id='SMBVItem2435088'><a href='/106214/ליצנים-לגיל-7-ליצנים-גיל-7'>ליצנים לגיל 7 | ליצן גיל 7</a></li><li id='SMBVItem2440151'><a href='/106214/ליצנים-לגיל-8-ליצן-גיל-8'>ליצנים לגיל 8 | ליצן גיל  8</a></li><li id='SMBVItem2440154'><a href='/106214/ליצנים-לגיל-9-ליצן-גיל-9'>ליצנים לגיל 9 | ליצן גיל 9</a></li><li id='SMBVItem2440165'><a href='/106214/ליצנים-לגיל-10-ליצן-גיל-10'>ליצנים לגיל 10 | ליצן גיל 10</a></li></ul></li><li id='SMBVItem2436110'><a class='MenuBarItemSubmenu' href='/106214/ליצנים-לאירועים'>ליצנים לאירועים</a><ul><li id='SMBVItem2436181'><a href='/106214/ליצן-לאירועים-ליצן-אירועים'>ליצן לאירועים | ליצן אירועים</a></li><li id='SMBVItem2436327'><a href='/106214/ליצנים-מצחיקים-ליצן-מצחיק'>ליצנים מצחיקים | ליצן מצחיק</a></li><li id='SMBVItem2436184'><a href='/106214/ליצנית-לאירועים-ליצנית-אירועים'>ליצנית לאירועים | ליצנית אירועים</a></li><li id='SMBVItem2436185'><a href='/106214/ליצנים-לאירועים-ליצנים-אירועים'>ליצנים לאירועים | ליצנים אירועים</a></li></ul></li><li id='SMBVItem2452357'><a class='MenuBarItemSubmenu' href='/106214/ליצנים-לפורים-ליצן-פורים'>ליצנים לפורים | ליצן פורים</a><ul><li id='SMBVItem2452440'><a href='/106214/ליצנים-לפורים-בצפון'>ליצנים לפורים בצפון</a></li><li id='SMBVItem2466018'><a href='/106214/אטרקציות-פורים-אטרקציה-לפורים'>אטרקציות פורים | אטרקציה לפורים</a></li></ul></li><li id='SMBVItem2436319'><a class='MenuBarItemSubmenu' href='/106214/ליצנים-למבוגרים-ליצן-למבוגרים'>ליצנים למבוגרים | ליצן למבוגרים</a></li><li id='SMBVItem2436326'><a href='/106214/ליצנים-מפורסמים-ליצן-מפורסם'>ליצנים מפורסמים | ליצן מפורסם</a></li><li id='SMBVItem2528759'><a href='/site/detail/detail/detailDetail.asp?detail_id=2528759'>ליצנים ליום הולדת | ליצנים לימי הולדת | 0523190259</a></li><li id='SMBVItem6052993'><a href='/ליצנים-מספר-1-ליצנית-מספר-1.html'>ליצנים מספר 1 | ליצנית מספר 1</a></li><li id='SMBVItem1255370'><a href='/106214/טיפים-ליום-הולדת'>איך לבחור ליצן | טיפים</a></li><li id='SMBVItem1255377'><a href='/106214/קליפליצנים-קליפליצנית'>קליפ ליצנים ליצנית וידאו</a></li><li id='SMBVItem6088806'><a href='/ליצנית-לבריתה-ליצנית-לבריתות-ליצנית-לברית-מילה.html'>ליצנית לבריתה | ליצנית לבריתות | ליצנית לברית מילה</a></li></ul></li></ul></li><li id='MBVItem6073880'><div class='MainMenuBarBackgrounImage'><a class='MenuBarItemSubmenu' href='/מגנטים-לאירועים.html'>מגנטים לאירועים</a></div></li><li id='MBVItem6073897'><div class='MainMenuBarBackgrounImage'><a class='MenuBarItemSubmenu' href='/דוכני-מזון-לאירועים.html'>דוכני מזון לאירועים</a></div></li><li id='MBVItem6073889'><div class='MainMenuBarBackgrounImage'><a class='MenuBarItemSubmenu' href='/שולחנות-משחק-לאירועים.html'>שולחנות משחק | שולחנות משחק להשכרה | שולחנות משחק לבר מצווה | שולחנות משחק לבת מצווה</a></div></li><li id='MBVItem6087765'><div class='MainMenuBarBackgrounImage'><a class='MenuBarItemSubmenu' href='/תחנות-הפעלה-לפורים-ביתנים.html'>תחנות הפעלה לפורים ביתנים</a></div><ul><li id='SMBVItem2515865'><a href='/106214/הפקות-לפורים'>הפקות פורים | הפקות לפורים | הפקות פורים למבוגרים</a></li><li id='SMBVItem6087776'><a href='/ביתנים-לשוק-פורים.html'>ביתנים לשוק פורים</a></li><li id='SMBVItem6102079'><a href='/הפנינג-לחג-פורים-הפנינג-לפורים-הפנינג-פורים-לילדים.html'>הפנינג לחג פורים | הפנינג לפורים | הפנינג פורים לילדים</a></li><li id='SMBVItem6102081'><a href='/בובות-ענק-לפורים-בובות-ענק-פורים-בובת-ענק-לפורים.html'>בובות ענק לפורים | בובות ענק פורים | בובת ענק לפורים</a></li><li id='SMBVItem6102083'><a href='/תקליטן-לחג-פורים-תקליטנים-לחג-פורים-תקליטן-לפורים.html'>תקליטן לחג פורים | תקליטנים לחג פורים | תקליטן לפורים</a></li><li id='SMBVItem6102085'><a href='/תקליטן-למסיבת-פורים-תקליטנים-למסיבת-פורים-תקליטן-לפורים.html'>תקליטן למסיבת פורים | תקליטנים למסיבת פורים  תקליטן לפורים</a></li><li id='SMBVItem6102086'><a href='/מסיבת-פורים-לכיתה-מסיבות-פורים-לכיתות-מסיבת-פורים-לילדים.html'>מסיבת פורים לכיתה | מסיבות פורים לכיתות | מסיבת פורים לילדים</a></li></ul></li><li id='MBVItem6642947'><div class='MainMenuBarBackgrounImage'><a class='MenuBarItemSubmenu' href='/אירועים-עסקיים.html'>אירועים עסקיים</a></div></li><li id='MBVItem6074307'><div class='MainMenuBarBackgrounImage'><a href='/תקליטן-ליום-הולדת-DJ-לילדים.html'>תקליטן ליום הולדת | תקליטן לילדים | תקליטן לימי הולדת</a></div></li><li id='MBVItem6278785'><div class='MainMenuBarBackgrounImage'><a href='/תקליטן-לבת-מצווה-לילדים-תקליטנים-לבת-מצווה-לילדים-DJ-בת-מצווה-לילדים-די-ג-י-בת-מצווה-לנוער.html'>תקליטן מפעיל לבת מצווה | תקליטן לבת מצווה | תקליטן מפעיל בת מצווה |</a></div></li><li id='MBVItem6073923'><div class='MainMenuBarBackgrounImage'><a href='/כובעים-גרפיטי-לאירועים.html'>גרפיטי על כובעים | גרפיטי שמות כובעים</a></div></li><li id='MBVItem6073922'><div class='MainMenuBarBackgrounImage'><a href='/חולצות-קריקטורה-לאירועים.html'>חולצות קריקטורה לאירועים</a></div></li><li id='MBVItem6073873'><div class='MainMenuBarBackgrounImage'><a href='/הפקת-בר-מצווה-לילדים.html'>הפקת בר מצווה לילדים</a></div></li><li id='MBVItem6278787'><div class='MainMenuBarBackgrounImage'><a href='/הפעלות-לבת-מצווה-DJ-בת-מצווה-והפעלות-הפעלה-בת-מצווה-ילדים.html'>הפעלות לבת מצווה, DJ בת מצווה והפעלות, הפעלה בת מצווה ילדים</a></div></li><li id='MBVItem6767138'><div class='MainMenuBarBackgrounImage'><a href='/קירות-צילום-לאירועים.html'>קירות צילום לאירועים | קיר צילום | קיר צילום לבר מצווה | קיר צילום בת מצווה | קיר צילום פייטים | קיר מעוצב ברית | קיר בלונים</a></div></li><li id='MBVItem6502291'><div class='MainMenuBarBackgrounImage'><a href='/קיאק-פרות-העונה-קיאק-פרות-לאירוע-קיאק-פרות-לאירועים-קיאק-לאירועים.html'>קיאק פרות העונה | קיאק פרות לאירוע | קיאק פרות לאירועים | קיאק לאירועים</a></div></li></ul>&nbsp;<br/></div><script type='text/javascript'>var MenuBar1 = new Spry.Widget.MenuBar('MenuBar1','');</script><div id='win_1960662' class='winToolBoxRight'><div id='win_header_1960662' class='backgroundToolRight'><a target='_blank' id='win_header_text_1960662' class='changeLink14 winToolHeaderTextRight' href='https://www.facebook.com/komikomiproductions/'>הצטרפו לדף העסקי, לייק אהבתי</a></div><div id='win_flash_1960662' class='winToolContentRight' style='padding-right:0;padding-left:0;'><iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww%2Efacebook%2Ecom%2Fkomikomiproductions%2F&amp;width=155&amp;height=300&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:155px; height:300px;" allowTransparency="true"></iframe></div></div><br></td>
+<!-- side menu -->
+<!-- main page -->
+<td 
+class="CenterTable" 
+style="width: 1040px;"
+ valign="top">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr> 
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="2" id="tableColor">
+<tr> 
+<td class="tableColor"> 
+<font class="changeText14" style="color:#ffffff;text-decoration: none;"><b>צור קשר צדדי</b></font>
+</td>
+</tr>
+</table>  
+</td>
+</tr>
+<tr>
+<td height="10">&nbsp;
+</td>
+</tr>
+<!-- Page Content -->
+<!-- Page Content -->
+<tr>
+<td valign="top">
+<table border="0" width="100%" cellpadding="3" cellspacing="0">
+<tr>
+<!-- the form -->
+<td valign="top">
+<form id="form2" name="form2" method="post" action="/site/form/sendForm.asp" OnSubmit="return CheckSubmit();" enctype="multipart/form-data">
+<!-- Form Field List -->
+<table id='sop_form_588138' class='sop_all_form' align="center" border="0" width="100%" cellpadding="3" cellspacing="0" 
+style="
+background-color:#ffffff;
+border-width:0px;border-color:#000000;border-style:solid;"
+>
+<tr>
+<td style="color:#000000;" class="changeText14">
+<label for="f_2534026_text_0" style="font-weight:bold;">שם מלא:</label>
+<br/>
+<input type="text" maxlength="150" id="f_2534026_text_0" name="f_2534026" value="" style="width: 160px;color:black;">
+</td>
+</tr>	
+<tr>
+<td style="color:#000000;" class="changeText14">
+<label for="f_2534027_text_0" style="font-weight:bold;">טלפון:</label>
+<br/>
+<input type="text" maxlength="150" id="f_2534027_text_0" name="f_2534027" value="" style="width: 160px;color:black;">
+</td>
+</tr>	
+<tr>
+<td style="color:#000000;" class="changeText14">
+<label for="f_2534028_email_0" style="font-weight:bold;">דואר אלקטרוני:</label>
+<br/>
+<input type="text" maxlength="255" id="f_2534028_email_0" name="f_2534028" value="" style="direction:ltr;width: 160px;color:black;"">
+</td>
+</tr>	
+<tr>
+<td style="color:#000000;" class="changeText14">
+<label for="f_2534029_textarea_0" style="font-weight:bold;">תוכן ההודעה:</label>
+<br/>
+<textarea type="text" id="f_2534029_textarea_0" name="f_2534029" maxlength="10000" cols="32" rows="10" style="height: 100px;width: 160px;color:black;"></textarea>
+</td>
+</tr>	
+<tr> 
+<td  colspan="2" align="center" class="buttonsendTD">
+<br>
+<input class="buttonsend" type="submit" id="submit" name="submit" value="שלח" >
+</td>
+</tr>
+</table>
+<input type="hidden" name="form_id" value="588138">
+<input type="hidden" name="depart_id" value="106214">
+<input type="hidden" name="gadgetStyleBOO" value="">
+<!-- Form Field List -->
+</form>
+</td>
+<!-- the form -->
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<!-- main page -->
+<!-- side menu -->
+<style type='text/css'>.SideMenuSetting_Right{width:160px;background-color:#ffffff;}.SideMenuSetting_Left{width:20px;background-color:#132260;background-image:url(/image/users/106214/bgcolor/55323742.gif);background-position:top left;background-repeat:repeat;}</style><td id='sideMenu_Left' class='SideMenuSetting_Left' valign='top' style='direction: rtl;display:none;'></td>
+<!-- side menu -->
+</tr>
+</table>
+<input type="hidden" id="Mwork_itemBOO" name="Mwork_itemBOO" value="1">
+<!-- _______________________END_____________________ -->
+<script type='text/javascript'>
+var formCheck = new GL5CE5NRE.FormCheck('form2');
+formCheck.check.tran.globalAlert ='אנא מלאו את כל שדות החובה.'
+formCheck.check.tran.emailAlert ='יש למלא כתובת דואר אלקטרוני תקינה.'
+function CheckSubmit(){
+	if(formCheck.startCheck()){
+		document.getElementById('submit').disabled = true;
+		return true;
+	}
+	return false;
+}
+</script>
+<div id='footerDetailHeaderMEM'><!-- הוסף קוד זה לפני סוף ה-body (לפני </body>) -->
+<div id="whatsapp-floating-btn">
+	<a class="whatsapp-btn" href="https://wa.me/972523190259" target="_blank" title="צור קשר ב-WhatsApp"> <!-- איקון WhatsApp SVG מובנה --><svg fill="white" height="32" viewbox="0 0 32 32" width="32"> <path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z"></path> </svg>  <span class="whatsapp-number">052-319-0259</span> </a></div>
+<style type="text/css">
+/* עיצוב בסיסי לכפתור - RTL */
+  #whatsapp-floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; /* שינוי מ-right ל-left עבור RTL */
+    z-index: 9999;
+    direction: rtl;
+  }
+  
+  .whatsapp-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+    animation: whatsapp-pulse 2s infinite;
+    text-decoration: none;
+  }
+  
+  /* אנימציית הפעימה */
+  @keyframes whatsapp-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+    70% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+  }
+  
+  /* עיצוב הטקסט הצף - מותאם ל-RTL */
+  .whatsapp-tooltip,
+  .whatsapp-number {
+    position: absolute;
+    right: 100%; /* שינוי מ-left ל-right */
+    margin-right: 15px; /* מרווח מהכפתור */
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    width: max-content;
+    max-width: 200px;
+    text-align: right;
+  }
+  
+  .whatsapp-tooltip {
+    top: 50%;
+    transform: translateY(-50%);
+    color: #25D366;
+  }
+  
+  .whatsapp-number {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* אפקט ה-hover */
+  .whatsapp-btn:hover {
+    transform: scale(1.1);
+    animation: none;
+  }
+  
+  .whatsapp-btn:hover .whatsapp-tooltip,
+  .whatsapp-btn:hover .whatsapp-number {
+    opacity: 1;
+  }
+  
+  /* התאמות לנייד - כפתור גדול יותר */
+  @media (max-width: 768px) {
+    #whatsapp-floating-btn {
+      left: 15px;
+      bottom: 15px;
+    }
+    
+    .whatsapp-btn {
+      width: 64px; /* גדול יותר בנייד */
+      height: 64px;
+    }
+    
+    .whatsapp-btn svg {
+      width: 36px;
+      height: 36px;
+    }
+    
+    .whatsapp-tooltip,
+    .whatsapp-number {
+      font-size: 15px;
+      padding: 10px 15px;
+      margin-right: 20px;
+    }
+  }
+  
+  /* הגבלת רוחב הטקסט במסכים קטנים מאוד */
+  @media (max-width: 480px) {
+    .whatsapp-tooltip,
+    .whatsapp-number {
+      max-width: 150px;
+      font-size: 14px;
+    }
+    
+    #whatsapp-floating-btn {
+      left: 10px;
+      bottom: 10px;
+    }
+  }</style>
+<script>
+// ביטול אנימציה בעת ריחוף
+document.querySelector('.whatsapp-btn').addEventListener('mouseenter', function() {
+  this.style.animation = 'none';
+});
+document.querySelector('.whatsapp-btn').addEventListener('mouseleave', function() {
+  this.style.animation = 'whatsapp-pulse 2s infinite';
+});
+</script></div>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.livecity.co.il" style="white-space: nowrap; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#616262; text-decoration:none; font-weight:bold; text-align:right; padding:2px 25px 2px 3px;clear:both;margin:5px auto 0 auto; line-height:17px; display:table; width:auto; border:solid 1px #939598; background:#ffffff url(/image/users/17914/ftp/my_files/bottomLogo/ball_bottom.jpg?id=10601454) no-repeat 98% 60%;" target="_blank" title="בניית אתרים">לייבסיטי - בניית אתרים</a>
+</td>
+</tr>
+</table>
+</div>
+<!-- Responsive Website -->
+<input type='hidden' id='mobileDevices' value='{"mobileBOO" : "0","toolbarNUM" : "1","toolbarBackgroundColorTXT" : "#3c3c3c","textColorTXT" : "#ffffff","iconColorTXT" : "white","dropDownMenuBackgroundTXT" : "#3c3c3c","dropDownMenuColorTXT" : "#fff"}'>
+<!-- Responsive Website -->
+</body>
+</html>
+<script type='text/javascript'> var websiteStat_ids5r6y = '36735'; var page_ids5r6y = ''; var k76fg4klA9ss5r6y=(location.protocol.indexOf('https')==0?'https://':'http://')+'stat.enter-system.com/includeNew/WebsiteStat.js?v=1'; document.write(unescape("%3Cscript src='" + k76fg4klA9ss5r6y + "' type='text/javascript'%3E%3C/script%3E")); </script>
+<!-- MISS cache DB -->

@@ -1,0 +1,89 @@
+{
+ "_aide": "Grille des réalisations de l'accueil. « image » = identifiant de data/media.json. « city » et « kids » : À REMPLIR avec le client (laissés vides : rien n'est inventé). « type » = libellé affiché, « href » = page liée.",
+ "items": [
+  {
+   "image": "3b95b766cf",
+   "type": "בר מצווה",
+   "href": "/bar-mitzvah",
+   "city": "",
+   "kids": null
+  },
+  {
+   "image": "ed223d77ab",
+   "type": "פול מון",
+   "href": "/full-moon",
+   "city": "",
+   "kids": null
+  },
+  {
+   "image": "419c99febe",
+   "type": "בר מתוקים",
+   "href": "/candy-bar",
+   "city": "",
+   "kids": null
+  },
+  {
+   "image": "4df395ac84",
+   "type": "יום הולדת בראול סטארס",
+   "href": "/birthdays/brawl-stars",
+   "city": "",
+   "kids": null
+  },
+  {
+   "image": "a1907b7f45",
+   "type": "קיר צילום",
+   "href": "/catalog/photo-walls",
+   "city": "",
+   "kids": null
+  },
+  {
+   "image": "bf37c86cdd",
+   "type": "הפנינג",
+   "href": "/catalog/inflatables",
+   "city": "",
+   "kids": null
+  },
+  {
+   "image": "fd1451f3ad",
+   "type": "עיצוב בלונים",
+   "href": "/catalog/shape-balloons",
+   "city": "",
+   "kids": null
+  },
+  {
+   "image": "bca2ffb841",
+   "type": "פול מון",
+   "href": "/full-moon",
+   "city": "",
+   "kids": null
+  },
+  {
+   "image": "015f1bcff6",
+   "type": "אירוע חברה",
+   "href": "/corporate",
+   "city": "",
+   "kids": null
+  },
+  {
+   "image": "e90b3a11d9",
+   "type": "יום הולדת ברבי",
+   "href": "/birthdays/barbie",
+   "city": "",
+   "kids": null
+  },
+  {
+   "image": "a6f8e41641",
+   "type": "בת מצווה",
+   "href": "/bat-mitzvah",
+   "city": "",
+   "kids": null
+  },
+  {
+   "image": "591271fe73",
+   "type": "בר מתוקים לברית",
+   "href": "/candy-bar/brit",
+   "city": "",
+   "kids": null
+  }
+ ]
+}

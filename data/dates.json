@@ -1,0 +1,4 @@
+{
+  "_aide": "Dates déjà prises (AAAA-MM-JJ). Le formulaire prévient le visiteur quand il choisit l'une d'elles. Facultatif : laisser vide pour ne rien afficher.",
+  "taken": []
+}

@@ -1,0 +1,746 @@
+{
+ "regions": [
+  {
+   "slug": "north",
+   "name": "הצפון",
+   "h1": "ליצנים בצפון"
+  },
+  {
+   "slug": "krayot",
+   "name": "הקריות",
+   "h1": "ליצנים בקריות"
+  },
+  {
+   "slug": "center",
+   "name": "המרכז",
+   "h1": "ליצנים במרכז"
+  },
+  {
+   "slug": "upper-galilee",
+   "name": "הגליל",
+   "h1": "ליצנים בגליל"
+  },
+  {
+   "slug": "south",
+   "name": "הדרום",
+   "h1": "ליצנים בדרום"
+  }
+ ],
+ "cities": [
+  {
+   "slug": "haifa",
+   "name": "חיפה",
+   "in": "בחיפה",
+   "region": "north",
+   "near": [
+    "zichron-yaakov",
+    "hadera",
+    "afula"
+   ]
+  },
+  {
+   "slug": "kiryat-ata",
+   "name": "קריית אתא",
+   "in": "בקריית אתא",
+   "region": "krayot",
+   "near": [
+    "kiryat-yam",
+    "kiryat-bialik",
+    "kiryat-haim"
+   ]
+  },
+  {
+   "slug": "kiryat-yam",
+   "name": "קריית ים",
+   "in": "בקריית ים",
+   "region": "krayot",
+   "near": [
+    "kiryat-bialik",
+    "kiryat-haim",
+    "kiryat-motzkin"
+   ]
+  },
+  {
+   "slug": "kiryat-motzkin",
+   "name": "קריית מוצקין",
+   "in": "בקריית מוצקין",
+   "region": "krayot",
+   "near": [
+    "kiryat-haim",
+    "kiryat-yam",
+    "kiryat-ata"
+   ]
+  },
+  {
+   "slug": "kiryat-haim",
+   "name": "קריית חיים",
+   "in": "בקריית חיים",
+   "region": "krayot",
+   "near": [
+    "kiryat-bialik",
+    "kiryat-motzkin",
+    "kiryat-yam"
+   ]
+  },
+  {
+   "slug": "kiryat-bialik",
+   "name": "קריית ביאליק",
+   "in": "בקריית ביאליק",
+   "region": "krayot",
+   "near": [
+    "kiryat-motzkin",
+    "kiryat-yam",
+    "kiryat-ata"
+   ]
+  },
+  {
+   "slug": "nesher",
+   "name": "נשר",
+   "in": "בנשר",
+   "region": "north",
+   "near": [
+    "haifa",
+    "migdal-haemek",
+    "givat-ada"
+   ]
+  },
+  {
+   "slug": "tirat-carmel",
+   "name": "טירת כרמל",
+   "in": "בטירת כרמל",
+   "region": "north",
+   "near": [
+    "zichron-yaakov",
+    "hadera",
+    "afula"
+   ]
+  },
+  {
+   "slug": "atlit",
+   "name": "עתלית",
+   "in": "בעתלית",
+   "region": "north",
+   "near": [
+    "emek",
+    "caesarea",
+    "kiryat-tivon"
+   ]
+  },
+  {
+   "slug": "kiryat-tivon",
+   "name": "קריית טבעון",
+   "in": "בקריית טבעון",
+   "region": "north",
+   "near": [
+    "afula",
+    "binyamina",
+    "haifa"
+   ]
+  },
+  {
+   "slug": "ramat-yishai",
+   "name": "רמת ישי",
+   "in": "ברמת ישי",
+   "region": "north",
+   "near": [
+    "zichron-yaakov",
+    "hadera",
+    "afula"
+   ]
+  },
+  {
+   "slug": "yokneam",
+   "name": "יקנעם",
+   "in": "ביקנעם",
+   "region": "north",
+   "near": [
+    "binyamina",
+    "haifa",
+    "migdal-haemek"
+   ]
+  },
+  {
+   "slug": "afula",
+   "name": "עפולה",
+   "in": "בעפולה",
+   "region": "north",
+   "near": [
+    "givat-olga",
+    "ramat-yishai",
+    "zichron-yaakov"
+   ]
+  },
+  {
+   "slug": "migdal-haemek",
+   "name": "מגדל העמק",
+   "in": "במגדל העמק",
+   "region": "north",
+   "near": [
+    "binyamina",
+    "haifa",
+    "afula"
+   ]
+  },
+  {
+   "slug": "nof-hagalil",
+   "name": "נוף הגליל",
+   "in": "בנוף הגליל",
+   "region": "north",
+   "near": [
+    "binyamina",
+    "haifa",
+    "afula"
+   ]
+  },
+  {
+   "slug": "emek",
+   "name": "העמקים",
+   "in": "בעמקים",
+   "region": "north",
+   "near": [
+    "ramat-yishai",
+    "zichron-yaakov",
+    "hadera"
+   ]
+  },
+  {
+   "slug": "beit-shean",
+   "name": "בית שאן",
+   "in": "בבית שאן",
+   "region": "north",
+   "near": [
+    "nesher",
+    "migdal-haemek",
+    "pardes-hanna"
+   ]
+  },
+  {
+   "slug": "tiberias",
+   "name": "טבריה",
+   "in": "בטבריה",
+   "region": "north",
+   "near": [
+    "migdal-haemek",
+    "pardes-hanna",
+    "tirat-carmel"
+   ]
+  },
+  {
+   "slug": "zichron-yaakov",
+   "name": "זכרון יעקב",
+   "in": "בזכרון יעקב",
+   "region": "north",
+   "near": [
+    "migdal-haemek",
+    "pardes-hanna",
+    "tirat-carmel"
+   ]
+  },
+  {
+   "slug": "binyamina",
+   "name": "בנימינה",
+   "in": "בבנימינה",
+   "region": "north",
+   "near": [
+    "beit-shean",
+    "givat-olga",
+    "ramat-yishai"
+   ]
+  },
+  {
+   "slug": "givat-ada",
+   "name": "גבעת עדה",
+   "in": "בגבעת עדה",
+   "region": "north",
+   "near": [
+    "zichron-yaakov",
+    "haifa",
+    "afula"
+   ]
+  },
+  {
+   "slug": "pardes-hanna",
+   "name": "פרדס חנה",
+   "in": "בפרדס חנה",
+   "region": "north",
+   "near": [
+    "hadera",
+    "yokneam",
+    "zichron-yaakov"
+   ]
+  },
+  {
+   "slug": "caesarea",
+   "name": "קיסריה",
+   "in": "בקיסריה",
+   "region": "north",
+   "near": [
+    "kiryat-tivon",
+    "beit-shean",
+    "givat-olga"
+   ]
+  },
+  {
+   "slug": "or-akiva",
+   "name": "אור עקיבא",
+   "in": "באור עקיבא",
+   "region": "north",
+   "near": [
+    "afula",
+    "binyamina",
+    "nesher"
+   ]
+  },
+  {
+   "slug": "givat-olga",
+   "name": "גבעת אולגה",
+   "in": "בגבעת אולגה",
+   "region": "north",
+   "near": [
+    "migdal-haemek",
+    "givat-ada",
+    "tirat-carmel"
+   ]
+  },
+  {
+   "slug": "hadera",
+   "name": "חדרה",
+   "in": "בחדרה",
+   "region": "north",
+   "near": [
+    "migdal-haemek",
+    "givat-ada",
+    "tirat-carmel"
+   ]
+  },
+  {
+   "slug": "nahariya",
+   "name": "נהריה",
+   "in": "בנהריה",
+   "region": "upper-galilee",
+   "near": [
+    "kfar-vradim",
+    "golan",
+    "rosh-pina"
+   ]
+  },
+  {
+   "slug": "shlomi",
+   "name": "שלומי",
+   "in": "בשלומי",
+   "region": "upper-galilee",
+   "near": [
+    "kiryat-shmona",
+    "galilee",
+    "maalot"
+   ]
+  },
+  {
+   "slug": "maalot",
+   "name": "מעלות",
+   "in": "במעלות",
+   "region": "upper-galilee",
+   "near": [
+    "karmiel",
+    "nahariya",
+    "kiryat-shmona"
+   ]
+  },
+  {
+   "slug": "kfar-vradim",
+   "name": "כפר ורדים",
+   "in": "בכפר ורדים",
+   "region": "upper-galilee",
+   "near": [
+    "shlomi",
+    "metula",
+    "safed"
+   ]
+  },
+  {
+   "slug": "karmiel",
+   "name": "כרמיאל",
+   "in": "בכרמיאל",
+   "region": "upper-galilee",
+   "near": [
+    "rosh-pina",
+    "kfar-vradim",
+    "nahariya"
+   ]
+  },
+  {
+   "slug": "galilee",
+   "name": "הגליל",
+   "in": "בגליל",
+   "region": "upper-galilee",
+   "near": [
+    "karmiel",
+    "shlomi",
+    "metula"
+   ]
+  },
+  {
+   "slug": "safed",
+   "name": "צפת",
+   "in": "בצפת",
+   "region": "upper-galilee",
+   "near": [
+    "maalot",
+    "golan",
+    "rosh-pina"
+   ]
+  },
+  {
+   "slug": "rosh-pina",
+   "name": "ראש פינה",
+   "in": "בראש פינה",
+   "region": "upper-galilee",
+   "near": [
+    "nahariya",
+    "kiryat-shmona",
+    "karmiel"
+   ]
+  },
+  {
+   "slug": "kiryat-shmona",
+   "name": "קריית שמונה",
+   "in": "בקריית שמונה",
+   "region": "upper-galilee",
+   "near": [
+    "maalot",
+    "golan",
+    "safed"
+   ]
+  },
+  {
+   "slug": "metula",
+   "name": "מטולה",
+   "in": "במטולה",
+   "region": "upper-galilee",
+   "near": [
+    "kfar-vradim",
+    "nahariya",
+    "rosh-pina"
+   ]
+  },
+  {
+   "slug": "golan",
+   "name": "רמת הגולן",
+   "in": "ברמת הגולן",
+   "region": "upper-galilee",
+   "near": [
+    "safed",
+    "kfar-vradim",
+    "nahariya"
+   ]
+  },
+  {
+   "slug": "netanya",
+   "name": "נתניה",
+   "in": "בנתניה",
+   "region": "center",
+   "near": [
+    "petah-tikva",
+    "modiin",
+    "rosh-haayin"
+   ]
+  },
+  {
+   "slug": "herzliya",
+   "name": "הרצליה",
+   "in": "בהרצליה",
+   "region": "center",
+   "near": [
+    "lod",
+    "ramat-hasharon",
+    "petah-tikva"
+   ]
+  },
+  {
+   "slug": "raanana",
+   "name": "רעננה",
+   "in": "ברעננה",
+   "region": "center",
+   "near": [
+    "rosh-haayin",
+    "kiryat-ono",
+    "rehovot"
+   ]
+  },
+  {
+   "slug": "kfar-saba",
+   "name": "כפר סבא",
+   "in": "בכפר סבא",
+   "region": "center",
+   "near": [
+    "petah-tikva",
+    "modiin",
+    "rosh-haayin"
+   ]
+  },
+  {
+   "slug": "hod-hasharon",
+   "name": "הוד השרון",
+   "in": "בהוד השרון",
+   "region": "center",
+   "near": [
+    "herzliya",
+    "ramat-gan",
+    "bat-yam"
+   ]
+  },
+  {
+   "slug": "ramat-hasharon",
+   "name": "רמת השרון",
+   "in": "ברמת השרון",
+   "region": "center",
+   "near": [
+    "lod",
+    "hod-hasharon",
+    "petah-tikva"
+   ]
+  },
+  {
+   "slug": "rosh-haayin",
+   "name": "ראש העין",
+   "in": "בראש העין",
+   "region": "center",
+   "near": [
+    "bnei-brak",
+    "lod",
+    "hod-hasharon"
+   ]
+  },
+  {
+   "slug": "tel-aviv",
+   "name": "תל אביב",
+   "in": "בתל אביב",
+   "region": "center",
+   "near": [
+    "petah-tikva",
+    "modiin",
+    "ramat-hasharon"
+   ]
+  },
+  {
+   "slug": "jaffa",
+   "name": "יפו",
+   "in": "ביפו",
+   "region": "center",
+   "near": [
+    "petah-tikva",
+    "modiin",
+    "ramat-hasharon"
+   ]
+  },
+  {
+   "slug": "ramat-gan",
+   "name": "רמת גן",
+   "in": "ברמת גן",
+   "region": "center",
+   "near": [
+    "herzliya",
+    "jaffa",
+    "bat-yam"
+   ]
+  },
+  {
+   "slug": "givatayim",
+   "name": "גבעתיים",
+   "in": "בגבעתיים",
+   "region": "center",
+   "near": [
+    "rishon-lezion",
+    "kfar-saba",
+    "bnei-brak"
+   ]
+  },
+  {
+   "slug": "bnei-brak",
+   "name": "בני ברק",
+   "in": "בבני ברק",
+   "region": "center",
+   "near": [
+    "hod-hasharon",
+    "petah-tikva",
+    "modiin"
+   ]
+  },
+  {
+   "slug": "petah-tikva",
+   "name": "פתח תקווה",
+   "in": "בפתח תקווה",
+   "region": "center",
+   "near": [
+    "kfar-saba",
+    "givatayim",
+    "lod"
+   ]
+  },
+  {
+   "slug": "kiryat-ono",
+   "name": "קריית אונו",
+   "in": "בקריית אונו",
+   "region": "center",
+   "near": [
+    "holon",
+    "herzliya",
+    "jaffa"
+   ]
+  },
+  {
+   "slug": "or-yehuda",
+   "name": "אור יהודה",
+   "in": "באור יהודה",
+   "region": "center",
+   "near": [
+    "kiryat-ono",
+    "netanya",
+    "tel-aviv"
+   ]
+  },
+  {
+   "slug": "holon",
+   "name": "חולון",
+   "in": "בחולון",
+   "region": "center",
+   "near": [
+    "herzliya",
+    "jaffa",
+    "bat-yam"
+   ]
+  },
+  {
+   "slug": "bat-yam",
+   "name": "בת ים",
+   "in": "בבת ים",
+   "region": "center",
+   "near": [
+    "givatayim",
+    "lod",
+    "hod-hasharon"
+   ]
+  },
+  {
+   "slug": "rishon-lezion",
+   "name": "ראשון לציון",
+   "in": "בראשון לציון",
+   "region": "center",
+   "near": [
+    "raanana",
+    "ramat-gan",
+    "bat-yam"
+   ]
+  },
+  {
+   "slug": "lod",
+   "name": "לוד",
+   "in": "בלוד",
+   "region": "center",
+   "near": [
+    "rosh-haayin",
+    "kiryat-ono",
+    "netanya"
+   ]
+  },
+  {
+   "slug": "modiin",
+   "name": "מודיעין",
+   "in": "במודיעין",
+   "region": "center",
+   "near": [
+    "holon",
+    "raanana",
+    "ramat-gan"
+   ]
+  },
+  {
+   "slug": "rehovot",
+   "name": "רחובות",
+   "in": "ברחובות",
+   "region": "center",
+   "near": [
+    "lod",
+    "ramat-hasharon",
+    "petah-tikva"
+   ]
+  },
+  {
+   "slug": "gedera",
+   "name": "גדרה",
+   "in": "בגדרה",
+   "region": "south",
+   "near": [
+    "kiryat-gat",
+    "netivot",
+    "ofakim"
+   ]
+  },
+  {
+   "slug": "ashdod",
+   "name": "אשדוד",
+   "in": "באשדוד",
+   "region": "south",
+   "near": [
+    "kiryat-malachi",
+    "kiryat-gat",
+    "netivot"
+   ]
+  },
+  {
+   "slug": "ashkelon",
+   "name": "אשקלון",
+   "in": "באשקלון",
+   "region": "south",
+   "near": [
+    "netivot",
+    "ofakim",
+    "gedera"
+   ]
+  },
+  {
+   "slug": "kiryat-malachi",
+   "name": "קריית מלאכי",
+   "in": "בקריית מלאכי",
+   "region": "south",
+   "near": [
+    "ofakim",
+    "gedera",
+    "ashdod"
+   ]
+  },
+  {
+   "slug": "kiryat-gat",
+   "name": "קריית גת",
+   "in": "בקריית גת",
+   "region": "south",
+   "near": [
+    "ashkelon",
+    "kiryat-malachi",
+    "netivot"
+   ]
+  },
+  {
+   "slug": "netivot",
+   "name": "נתיבות",
+   "in": "בנתיבות",
+   "region": "south",
+   "near": [
+    "ashkelon",
+    "kiryat-malachi",
+    "kiryat-gat"
+   ]
+  },
+  {
+   "slug": "ofakim",
+   "name": "אופקים",
+   "in": "באופקים",
+   "region": "south",
+   "near": [
+    "gedera",
+    "ashdod",
+    "ashkelon"
+   ]
+  }
+ ]
+}

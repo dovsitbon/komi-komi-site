@@ -1,0 +1,20 @@
+{
+  "url": "https://komi-komi.vercel.app",
+  "oldDomain": "https://www.2komi.com",
+  "nameHe": "קומי קומי הפקות",
+  "nameLatin": "Komi Komi Productions",
+  "tagline": "הפקות אירועים לילדים ולנוער",
+  "phones": [
+    { "label": "052-319-0259", "intl": "+972523190259" },
+    { "label": "052-437-8733", "intl": "+972524378733" }
+  ],
+  "whatsapp": "972523190259",
+  "whatsappCatalog": "https://wa.me/c/972523190259",
+  "email": "",
+  "facebook": "https://www.facebook.com/komikomiproductions/",
+  "instagram": "https://www.instagram.com/komi_komi01/",
+  "instagramHandle": "komi_komi01",
+  "producer": "לירז בר",
+  "regions": ["חיפה והקריות", "הצפון והעמקים", "הגליל", "השרון", "גוש דן והמרכז", "השפלה והדרום (בתיאום מראש)"],
+  "showPrices": true
+}

@@ -1,0 +1,4 @@
+ancien-site
+scripts
+*.md
+!README.md

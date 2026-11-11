@@ -1,0 +1,246 @@
+{
+ "cats": {
+  "show": "הפעלות ומופעים",
+  "music": "מוזיקה",
+  "food": "מתוקים ומזון",
+  "games": "משחקים ותחנות",
+  "gifts": "מזכרות לאורחים",
+  "decor": "עיצוב וצילום"
+ },
+ "items": [
+  {
+   "id": "dj",
+   "cat": "music",
+   "name": "תקליטן לילדים ולנוער",
+   "short": "DJ מפעיל עם הגברה, תאורה ומכונת עשן, לימי הולדת, בר ובת מצווה.",
+   "page": "/birthdays/dj",
+   "pick": "dj:12",
+   "catLabel": "מוזיקה",
+   "image": "a346f8ad9a"
+  },
+  {
+   "id": "clowns",
+   "cat": "show",
+   "name": "ליצנים ומפעילים",
+   "short": "לירז וקובי וצוות המפעילים: משחקים, ריקודים, איפור ופרסים לכל הילדים.",
+   "page": "/clowns",
+   "pick": "anniversaires:14",
+   "catLabel": "הפעלות ומופעים",
+   "image": "42427fee2d"
+  },
+  {
+   "id": "hosts",
+   "cat": "show",
+   "name": "מנחים ומפעילים לאירועים",
+   "short": "מפעיל או מנחה שמוביל את הערב: משחקי חברה, תחרויות ומשחקי במה.",
+   "page": "/catalog/hosts",
+   "catLabel": "הפעלות ומופעים",
+   "image": "42427fee2d"
+  },
+  {
+   "id": "birthday-themes",
+   "cat": "show",
+   "name": "יום הולדת לפי נושא",
+   "short": "מעל 20 קונספטים לבנים ולבנות, מפוקימון וכדורגל ועד ספא, ברבי וטיק טוק.",
+   "page": "/birthdays",
+   "pick": "anniversaires:11",
+   "catLabel": "הפעלות ומופעים",
+   "image": "1a413d6311"
+  },
+  {
+   "id": "full-moon",
+   "cat": "show",
+   "name": "מסיבת פול מון",
+   "short": "תפאורה זוהרת באולטרה סגול, אוהל איפור, DJ ואביזרים זוהרים לרחבה.",
+   "page": "/full-moon",
+   "pick": "full-moon:4",
+   "catLabel": "הפעלות ומופעים",
+   "image": "8c9a92e8d3"
+  },
+  {
+   "id": "entrances",
+   "cat": "show",
+   "name": "כניסות ואפקטים",
+   "short": "מתופפים ושופרות, עשן כבד, קונפטי וזיקוקים קרים לכניסה ולסלואו.",
+   "page": "/bar-mitzvah",
+   "pick": "accueil:23",
+   "catLabel": "הפעלות ומופעים",
+   "image": "bf3e6a3b7d"
+  },
+  {
+   "id": "candy-bar",
+   "cat": "food",
+   "name": "בר מתוקים מעוצב",
+   "short": "כשר מהדרין פרווה, בעיצוב לפי הקונספט, עם שמות ושקיות אישיות.",
+   "page": "/candy-bar",
+   "pick": "bar-matokim:16",
+   "catLabel": "מתוקים ומזון",
+   "image": "419c99febe"
+  },
+  {
+   "id": "food-stands",
+   "cat": "food",
+   "name": "דוכני מזון",
+   "short": "דוכנים חמים, חלביים ופרווה, ודוכני ילדים: פופקורן, תירס, שערות סבתא, ברד וגלידה.",
+   "page": "/catalog/food-stands",
+   "pick": "accueil:63",
+   "catLabel": "מתוקים ומזון",
+   "image": "6048a4412e"
+  },
+  {
+   "id": "fruit-kayak",
+   "cat": "food",
+   "name": "קיאק פירות",
+   "short": "קיאק עמוס פירות העונה וטרופיים, מעוצב כמרכז שולחן.",
+   "page": "/catalog/fruit-kayak",
+   "catLabel": "מתוקים ומזון",
+   "image": "a28832cb03"
+  },
+  {
+   "id": "game-tables",
+   "cat": "games",
+   "name": "שולחנות משחק",
+   "short": "כדורגל שולחן, הוקי אוויר, סנוקר, פינג פונג, סימולטורים ו-VR.",
+   "page": "/catalog/game-tables",
+   "pick": "accueil:46",
+   "catLabel": "משחקים ותחנות",
+   "image": "b97e437e23"
+  },
+  {
+   "id": "fair-stands",
+   "cat": "games",
+   "name": "דוכני יריד ותחנות משחק",
+   "short": "ביתנים ותחנות עץ: באולינג, גולף, כדורסל, קליעה למטרה ופוצץ בלון.",
+   "page": "/catalog/fair-stands",
+   "pick": "pourim:16",
+   "catLabel": "משחקים ותחנות",
+   "image": "e608f11edb"
+  },
+  {
+   "id": "purim-stations",
+   "cat": "games",
+   "name": "תחנות הפעלה לפורים",
+   "short": "הפנינג, שוק פורים ומסיבות כיתה לבתי ספר, גנים וישובים.",
+   "page": "/purim",
+   "pick": "pourim:34",
+   "catLabel": "משחקים ותחנות",
+   "image": "5ecf42d0ec"
+  },
+  {
+   "id": "inflatables",
+   "cat": "games",
+   "name": "מתנפחים",
+   "short": "מתקנים מתנפחים לחצר, לגן ולהפנינג.",
+   "page": "/catalog/inflatables",
+   "pick": "pourim:20",
+   "catLabel": "משחקים ותחנות",
+   "image": "bf37c86cdd"
+  },
+  {
+   "id": "multimedia",
+   "cat": "games",
+   "name": "עמדות מולטימדיה ו-VR",
+   "short": "משקפות מציאות מדומה, סימולטורי נהיגה ועמדות משחקי וידאו.",
+   "page": "/catalog/multimedia",
+   "pick": "pourim:2",
+   "catLabel": "משחקים ותחנות",
+   "image": "c601da91cc"
+  },
+  {
+   "id": "magnets",
+   "cat": "gifts",
+   "name": "צלם ומגנטים",
+   "short": "צלם ומגנטים מודפסים במקום, שעתיים, לאירועים מ-100 אורחים.",
+   "page": "/catalog/magnets",
+   "priceFrom": 1100,
+   "pick": "accueil:9",
+   "catLabel": "מזכרות לאורחים",
+   "image": "fb205a68fc"
+  },
+  {
+   "id": "graffiti-hats",
+   "cat": "gifts",
+   "name": "גרפיטי על כובעים",
+   "short": "אמן גרפיטי מצייר לכל אורח כובע עם השם שלו, גם בצבעים זוהרים.",
+   "page": "/catalog/graffiti-hats",
+   "pick": "full-moon:26",
+   "catLabel": "מזכרות לאורחים",
+   "image": "d3e1a55be1"
+  },
+  {
+   "id": "caricature-shirts",
+   "cat": "gifts",
+   "name": "קריקטורה על חולצות",
+   "short": "צייר קריקטורות על חולצות או על נייר, מתנה אישית לכל אורח.",
+   "page": "/catalog/caricature-shirts",
+   "pick": "full-moon:27",
+   "catLabel": "מזכרות לאורחים",
+   "image": "f200723d97"
+  },
+  {
+   "id": "photo-walls",
+   "cat": "decor",
+   "name": "קירות צילום",
+   "short": "קיר מגן דוד, נצנצים, לב, קשתות ואותיות מוארות לבר ובת מצווה.",
+   "page": "/catalog/photo-walls",
+   "pick": "accueil:37",
+   "catLabel": "עיצוב וצילום",
+   "image": "a1907b7f45"
+  },
+  {
+   "id": "shape-balloons",
+   "cat": "decor",
+   "name": "בלוני צורות ועיצוב בלונים",
+   "short": "בלוני צורות לילדים ועיצוב בלונים לכניסה ולשולחן.",
+   "page": "/catalog/shape-balloons",
+   "pick": "accueil:33",
+   "catLabel": "עיצוב וצילום",
+   "image": "678ead02ae"
+  },
+  {
+   "id": "giant-puppets",
+   "cat": "show",
+   "name": "בובות ענק",
+   "short": "בובות ענק בדמויות חיות לקבלת פנים ולתמונות.",
+   "page": "/catalog/giant-puppets",
+   "catLabel": "הפעלות ומופעים",
+   "image": null
+  },
+  {
+   "id": "face-painting",
+   "cat": "show",
+   "name": "סדנת איפור",
+   "short": "איפור צבעוני וזוהר, קעקועים וחינה לילדים.",
+   "page": "/catalog/face-painting",
+   "catLabel": "הפעלות ומופעים",
+   "image": null
+  },
+  {
+   "id": "magician",
+   "cat": "show",
+   "name": "מופע קסמים",
+   "short": "קוסם למסיבת יום הולדת ולאירועים.",
+   "page": "/catalog/magician",
+   "catLabel": "הפעלות ומופעים",
+   "image": null
+  },
+  {
+   "id": "karaoke",
+   "cat": "music",
+   "name": "קריוקי לילדים",
+   "short": "ערב קריוקי עם מסך, מיקרופונים והגברה.",
+   "page": "/catalog/karaoke",
+   "catLabel": "מוזיקה",
+   "image": null
+  },
+  {
+   "id": "active-bar",
+   "cat": "food",
+   "name": "בר אקטיבי לילדים",
+   "short": "בר נייד שבו הילדים מכינים לעצמם משקאות צבעוניים.",
+   "page": "/catalog/active-bar",
+   "catLabel": "מתוקים ומזון",
+   "image": null
+  }
+ ]
+}

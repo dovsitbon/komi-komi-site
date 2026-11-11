@@ -1,0 +1,32 @@
+{
+ "hero": "de17659f44",
+ "tiles": {
+  "bar-mitzvah": "3b95b766cf",
+  "bat-mitzvah": "3b129b0d51",
+  "birthdays/boys": "1a413d6311",
+  "birthdays/girls": "7fcb658f00",
+  "full-moon": "8c9a92e8d3",
+  "purim": "e608f11edb",
+  "corporate": "84ca163447",
+  "brit": "1d2e2c9d39"
+ },
+ "blocks": [
+  "68d63ad4b6",
+  "ed223d77ab",
+  "ef2093a386"
+ ],
+ "gallery": [
+  "3b95b766cf",
+  "ed223d77ab",
+  "419c99febe",
+  "4df395ac84",
+  "a1907b7f45",
+  "bf37c86cdd",
+  "fd1451f3ad",
+  "bca2ffb841",
+  "015f1bcff6",
+  "e90b3a11d9",
+  "a6f8e41641",
+  "591271fe73"
+ ]
+}

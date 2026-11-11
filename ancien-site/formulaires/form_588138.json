@@ -1,0 +1,31 @@
+{
+  "form_id": "588138",
+  "action": "/site/form/sendForm.asp",
+  "champs": [
+    {
+      "type": "text",
+      "name": "f_2534026",
+      "label": "שם מלא:"
+    },
+    {
+      "type": "text",
+      "name": "f_2534027",
+      "label": "טלפון:"
+    },
+    {
+      "type": "text",
+      "name": "f_2534028",
+      "label": "דואר אלקטרוני:"
+    },
+    {
+      "type": "textarea",
+      "name": "f_2534029",
+      "label": "תוכן ההודעה:"
+    },
+    {
+      "type": "submit",
+      "name": "submit",
+      "label": ""
+    }
+  ]
+}
