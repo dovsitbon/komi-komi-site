@@ -12,6 +12,8 @@ next-env.d.ts
 /scripts/ancien-site/node_modules
 # aspiration brute de l'ancien site (lourde, régénérable avec scripts/ancien-site) : HTML et images d'origine
 /ancien-site/html/
-/ancien-site/images/
-/ancien-site/_planches/
+/ancien-site/images/*
+!/ancien-site/images/_manifest.json
+/ancien-site/_planches/*
+!/ancien-site/_planches/index.json
 build.log
