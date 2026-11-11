@@ -11,14 +11,14 @@ const OUT = path.join(ROOT, "public/media");
 fs.mkdirSync(OUT, { recursive: true });
 const src = JSON.parse(fs.readFileSync(path.join(ROOT, "data/media-src.json"), "utf8"));
 const force = process.argv.includes("--force");
-const MAX = 1600;
+const MAX = 2048;
 
 const media = {};
 let done = 0;
 for (const [id, m] of Object.entries(src)) {
   const out = path.join(OUT, id + ".webp");
   if (force || !fs.existsSync(out)) {
-    await sharp(path.join(SRC, m.file), { failOn: "none" }).rotate().resize({ width: MAX, height: MAX, fit: "inside", withoutEnlargement: true }).webp({ quality: 78, effort: 5 }).toFile(out);
+    await sharp(path.join(SRC, m.file), { failOn: "none" }).rotate().resize({ width: MAX, height: MAX, fit: "inside", withoutEnlargement: true }).webp({ quality: 92, effort: 5 }).toFile(out);
     done++;
   }
   const meta = await sharp(out).metadata();

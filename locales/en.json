@@ -27,7 +27,10 @@
     "announceClose": "Close announcement",
     "breadcrumb": "You are here"
   },
-  "intro": { "skip": "Skip", "sub": "Event productions" },
+  "intro": {
+    "skip": "Skip",
+    "sub": "Event productions"
+  },
   "hero": {
     "eyebrow": "Events for kids and teens · Birthdays · Bar & bat mitzvah",
     "title": "The party your kids are dreaming of",
@@ -65,9 +68,20 @@
     "themesTitle": "Which world do they love right now?",
     "themesAll": "All themes",
     "blocks": [
-      { "eyebrow": "Full production", "title": "A party that arrives ready", "text": "You choose a date and a theme. We bring decor, sound, entertainers, sweets and prizes, set everything up and take it down afterwards.", "cta": "Get a quote", "href": "/quote" },
-      { "eyebrow": "The team", "title": "Entertainers and DJs who know kids", "text": "Liraz, Kobi and the team know how to bring even the shy child onto the dance floor. Activities are adapted to each age, from 3 to bar and bat mitzvah.", "cta": "Meet the team", "href": "/clowns" },
-      { "eyebrow": "Sweets and stands", "title": "A candy bar people photograph before eating", "text": "A kosher sweet table styled to your concept, plus hot, dairy and parve food stands that feed every guest.", "cta": "Browse the catalog", "href": "/catalog" }
+      {
+        "eyebrow": "Full production",
+        "title": "A party that arrives ready",
+        "text": "You choose a date and a theme. We bring decor, sound, entertainers, sweets and prizes, set everything up and take it down afterwards.",
+        "cta": "Get a quote",
+        "href": "/quote"
+      },
+      {
+        "eyebrow": "Sweets and stands",
+        "title": "A candy bar people photograph before eating",
+        "text": "A kosher sweet table styled to your concept, plus hot, dairy and parve food stands that feed every guest.",
+        "cta": "Browse the catalog",
+        "href": "/catalog"
+      }
     ],
     "worksEyebrow": "From our events",
     "worksTitle": "What it really looks like",
@@ -82,7 +96,93 @@
     "faqEyebrow": "Frequently asked questions",
     "faqTitle": "Before you lock a date",
     "ctaTitle": "Tell us what you are celebrating",
-    "ctaText": "Fill in a few details and we will come back with a clear quote."
+    "ctaText": "Fill in a few details and we will come back with a clear quote.",
+    "tilesText": {
+      "bar-mitzvah": "Entrance, DJ, photo wall and candy bar",
+      "bat-mitzvah": "Concept, dance, slow dance and styling",
+      "birthdays/boys": "Gaming, football, superheroes",
+      "birthdays/girls": "Spa, Barbie, unicorn, TikTok",
+      "full-moon": "A glow party under UV light",
+      "purim": "Booths, stations and class parties",
+      "corporate": "Team days and family events",
+      "brit": "Candy bar and a clown for the kids"
+    },
+    "about": {
+      "eyebrow": "About Komi Komi Productions",
+      "title": "Nice to meet you",
+      "p": [
+        "We are Komi Komi Productions. We specialise in unforgettable experiences, birthday parties and concept events for kids and teens.",
+        "Our vision is simple: take the worlds, characters and trends kids love most and turn them into a rich, energetic, action-packed celebration.",
+        "From football tournaments and gaming parties such as Fortnite, Minecraft and Brawl Stars to trend events such as TikTok, K-pop, spa and Barbie, we handle the production from A to Z."
+      ],
+      "whyTitle": "Why celebrate with us?",
+      "why": [
+        {
+          "t": "Tailor-made concept productions",
+          "d": "We design and produce every event around the dream of the bar or bat mitzvah child."
+        },
+        {
+          "t": "A full package in one place",
+          "d": "DJ shows, professional hosts, themed decor, photo stations, food stands and sweets."
+        },
+        {
+          "t": "Experience and energy",
+          "d": "A trained team that makes sure every child takes part."
+        }
+      ],
+      "closing": "With us every celebration is a production from another world. Get in touch and let's build the perfect event."
+    },
+    "mitzvah": {
+      "eyebrow": "Bar mitzvah · Bat mitzvah · Event attractions",
+      "title": "Celebrating and not sure where to start?",
+      "p": [
+        "Here you will find everything about event production: attractions, candy bars, bar and bat mitzvah entrances, slow dances and duets, photo walls, light-up letters, magnet stations and more.",
+        "We come to style and organise the hall or garden with the newest attractions, so your guests have an unforgettable experience.",
+        "Event producer Liraz Bar accompanies you through every stage, from start to finish."
+      ],
+      "tags": [],
+      "bar": "Bar mitzvah productions",
+      "bat": "Bat mitzvah productions"
+    },
+    "birthdays": {
+      "text": "Birthday activities for ages 4 to 12, with the best entertainers, elaborate decor and a unique programme for every theme.",
+      "boysTitle": "Birthday productions for boys",
+      "boys": "Action parties for ages 4 to 12: gaming and virtual reality, ninja extreme, superheroes and a football tournament.",
+      "boysCta": "Birthday activities for boys",
+      "girlsTitle": "Birthday productions for girls",
+      "girls": "Magical concepts for ages 4 to 12: boutique spa, pop-star karaoke with a red carpet, DIY workshops and a fairy and unicorn party.",
+      "girlsCta": "Birthday activities for girls"
+    },
+    "dj": {
+      "eyebrow": "Music · DJ for bar and bat mitzvah",
+      "title": "A DJ who fits your event like a glove",
+      "p": [
+        "A bat mitzvah DJ with 16 years in events.",
+        "DJ Kobi Bar lifts the crowd and reads the room.",
+        "Ask for videos and reviews from previous events before choosing your DJ."
+      ],
+      "bar": "Bar mitzvah DJ",
+      "bat": "Bat mitzvah DJ",
+      "kids": "Birthday DJ"
+    },
+    "steps": {
+      "eyebrow": "How it works",
+      "title": "Three steps to the party",
+      "items": [
+        {
+          "t": "Send the details",
+          "d": "Type of event, date, city and what interests you, by form or WhatsApp."
+        },
+        {
+          "t": "Get a quote",
+          "d": "A clear quote adapted to the age, number of guests and venue."
+        },
+        {
+          "t": "We arrive with everything",
+          "d": "We set up decor and sound, run the party and take it all down."
+        }
+      ]
+    }
   },
   "page": {
     "included": "What is included",
@@ -110,7 +210,8 @@
     "catalogTitle": "Attractions catalog",
     "catalogText": "Everything you can book for an event, in one place. Add what interests you to your quote and send it to us at the end.",
     "ctaTitle": "Want to check if your date is free?",
-    "ctaText": "Send us the details and get a clear quote."
+    "ctaText": "Send us the details and get a clear quote.",
+    "original": "More about"
   },
   "reviews": {
     "title": "Our clients recommend",
@@ -134,7 +235,11 @@
     "title": "Get a quote",
     "eyebrow": "A few details, a clear quote",
     "text": "The more we know, the more accurate the quote. Only your name, phone and type of event are required.",
-    "steps": { "event": "The event", "prestations": "What interests you", "contact": "How to reach you" },
+    "steps": {
+      "event": "The event",
+      "prestations": "What interests you",
+      "contact": "How to reach you"
+    },
     "type": "Type of event",
     "types": {
       "bar-mitzvah": "Bar mitzvah",
@@ -152,7 +257,11 @@
     "city": "City or town",
     "cityPlaceholder": "e.g. Kiryat Bialik",
     "venue": "Where is the party",
-    "venues": { "home": "At home", "hall": "In a hall", "garden": "In a garden or outdoors" },
+    "venues": {
+      "home": "At home",
+      "hall": "In a hall",
+      "garden": "In a garden or outdoors"
+    },
     "ages": "Children's age",
     "agesPlaceholder": "e.g. 7, or 6–8",
     "guests": "Number of guests",
@@ -169,7 +278,11 @@
     "optional": "optional",
     "submit": "Send on WhatsApp",
     "hint": "This opens WhatsApp with a summary of your request. You only need to press send.",
-    "errors": { "type": "Choose the type of event", "name": "Enter your name", "phone": "Enter a valid phone number" },
+    "errors": {
+      "type": "Choose the type of event",
+      "name": "Enter your name",
+      "phone": "Enter a valid phone number"
+    },
     "success": {
       "title": "Your summary is ready in WhatsApp",
       "text": "If WhatsApp did not open, press the button again. You can also call us.",
@@ -213,6 +326,13 @@
     "legal": "Terms and privacy",
     "rights": "All rights reserved"
   },
-  "legal": { "title": "Terms and privacy", "back": "Back to home" },
-  "notFound": { "title": "This page was not found", "text": "The address may have changed on the new site. You can start here:", "home": "Back to home" }
+  "legal": {
+    "title": "Terms and privacy",
+    "back": "Back to home"
+  },
+  "notFound": {
+    "title": "This page was not found",
+    "text": "The address may have changed on the new site. You can start here:",
+    "home": "Back to home"
+  }
 }

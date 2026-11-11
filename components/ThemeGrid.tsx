@@ -47,7 +47,7 @@ export function ThemeGrid({ items, fixedGender }: { items: ThemeItem[]; fixedGen
               <Link href={`/birthdays/${t.slug}`} className="card group flex h-full flex-col overflow-hidden transition-colors hover:border-violet">
                 {t.img ? (
                   <div className="aspect-[4/3] overflow-hidden bg-violet-soft">
-                    <Image src={t.img.src} alt={t.img.alt || `יום הולדת ${t.name}`} width={t.img.w} height={t.img.h} sizes="(min-width: 1024px) 380px, (min-width: 640px) 46vw, 92vw" quality={70} className="h-full w-full object-cover" />
+                    <Image src={t.img.src} alt={t.img.alt || `יום הולדת ${t.name}`} width={t.img.w} height={t.img.h} sizes="(min-width: 1024px) 380px, (min-width: 640px) 46vw, 92vw" quality={85} className="h-full w-full object-cover" />
                   </div>
                 ) : (
                   <div className="flex aspect-[4/3] items-center justify-center bg-violet-soft px-6 text-center font-[family-name:var(--font-display)] text-[1.5rem] font-bold text-violet" aria-hidden="true">

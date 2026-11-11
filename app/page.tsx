@@ -8,7 +8,7 @@ import { HeroStart } from "@/components/HeroStart";
 import { JsonLd } from "@/components/JsonLd";
 import { Photo } from "@/components/Photo";
 import { Reveal } from "@/components/Reveal";
-import { Confetti, StringLine, WhatsAppIcon } from "@/components/icons";
+import { CheckIcon, Confetti, StringLine, WhatsAppIcon } from "@/components/icons";
 import { faqJsonLd } from "@/lib/jsonld";
 import { avis, cities, featuredAvis, prestations, regions, themes, waLink } from "@/lib/site";
 import he from "@/locales/he.json";
@@ -47,7 +47,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="relative">
-            <Photo id={home.hero} alt={he.meta.ogAlt} ratio="5 / 4" priority sizes="(min-width: 1024px) 620px, 92vw" />
+            <Photo id={home.hero} alt={he.meta.ogAlt} ratio="5 / 4" priority sizes="(min-width: 1024px) 640px, 92vw" />
             {stats.sinceYear && (
               <div className="absolute -bottom-5 start-4 flex h-28 w-28 -rotate-6 flex-col items-center justify-center rounded-full bg-sun text-center leading-tight md:-start-6 md:h-32 md:w-32" aria-hidden="true">
                 <span className="text-[0.8125rem] font-medium">{he.hero.sticker}</span>
@@ -59,21 +59,56 @@ export default function HomePage() {
       </section>
 
       {/* Tuiles par type d'événement */}
-      <section aria-labelledby="tiles-title" className="wrap pt-8 pb-16 md:pb-24">
+      <section aria-labelledby="tiles-title" className="wrap pt-8 pb-16 md:pb-20">
         <h2 id="tiles-title" className="h-display text-[1.75rem] md:text-[2.125rem]">
           {h.tilesTitle}
         </h2>
         <StringLine />
-        <ul className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-5">
+        <ul className="mt-8 grid grid-cols-2 gap-x-3 gap-y-6 md:grid-cols-4 md:gap-x-5 md:gap-y-8">
           {TILES.map((t, i) => (
             <Reveal as="li" key={t} delay={(i % 4) * 0.05}>
               <Link href={`/${t}`} className="group block">
                 <Photo id={tiles[t]} alt={h.tiles[t]} ratio="1 / 1" sizes="(min-width: 768px) 290px, 46vw" />
-                <span className="mt-3 flex items-center justify-between gap-2 font-[family-name:var(--font-display)] text-[1.0625rem] leading-snug font-bold transition-colors group-hover:text-violet md:text-[1.1875rem]">{h.tiles[t]}</span>
+                <span className="mt-3 block font-[family-name:var(--font-display)] text-[1.0625rem] leading-snug font-bold transition-colors group-hover:text-violet md:text-[1.1875rem]">{h.tiles[t]}</span>
+                <span className="mt-1 block text-[0.875rem] leading-snug text-muted">{h.tilesText[t]}</span>
               </Link>
             </Reveal>
           ))}
         </ul>
+      </section>
+
+      {/* Présentation, reprise de l'accueil d'origine : qui nous sommes, pourquoi fêter avec nous */}
+      <section aria-labelledby="about-title" className="bg-violet-soft">
+        <div className="wrap grid gap-10 py-16 md:py-20 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+          <div>
+            <SectionTitle id="about-title" eyebrow={h.about.eyebrow} title={h.about.title} />
+            <div className="prose-he mt-6 max-w-xl text-[1.0625rem] leading-[1.8]">
+              {h.about.p.map((t) => (
+                <p key={t}>{t}</p>
+              ))}
+            </div>
+            <Link href="/quote" className="btn btn-primary mt-8">
+              {he.common.quote}
+            </Link>
+          </div>
+          <div>
+            <h3 className="font-[family-name:var(--font-display)] text-[1.375rem] font-bold">{h.about.whyTitle}</h3>
+            <ul className="mt-5 space-y-3">
+              {h.about.why.map((w) => (
+                <li key={w.t} className="card flex gap-4 p-5">
+                  <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-violet text-white">
+                    <CheckIcon width={15} height={15} />
+                  </span>
+                  <span>
+                    <span className="block font-[family-name:var(--font-display)] text-[1.0625rem] font-bold">{w.t}</span>
+                    <span className="mt-1 block text-[0.9375rem] leading-relaxed text-muted">{w.d}</span>
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-5 font-medium">{h.about.closing}</p>
+          </div>
+        </div>
       </section>
 
       {/* Bande de preuves : uniquement des chiffres vérifiables (data/stats.json, livre d'or, villes) */}
@@ -86,6 +121,98 @@ export default function HomePage() {
             </div>
           ))}
         </dl>
+      </section>
+
+      {/* Bar et bat-mitsva : texte de l'accueil d'origine + les options citées */}
+      <section aria-labelledby="mitzvah-title" className="wrap grid items-center gap-10 py-16 md:py-24 lg:grid-cols-2 lg:gap-16">
+        <Reveal>
+          <Photo id={home.mitzvah} alt={h.mitzvah.eyebrow} ratio="4 / 3" sizes="(min-width: 1024px) 580px, 92vw" />
+        </Reveal>
+        <div>
+          <SectionTitle id="mitzvah-title" eyebrow={h.mitzvah.eyebrow} title={h.mitzvah.title} />
+          <div className="prose-he mt-6 max-w-xl text-muted">
+            {h.mitzvah.p.map((t) => (
+              <p key={t}>{t}</p>
+            ))}
+          </div>
+          <ul className="mt-6 flex flex-wrap gap-2">
+            {h.mitzvah.tags.map((t) => (
+              <li key={t} className="tag">
+                {t}
+              </li>
+            ))}
+          </ul>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link href="/bar-mitzvah" className="btn btn-ghost">
+              {h.mitzvah.bar}
+            </Link>
+            <Link href="/bat-mitzvah" className="btn btn-ghost">
+              {h.mitzvah.bat}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* DJ : texte de l'accueil d'origine */}
+      <section aria-labelledby="dj-title" className="wrap grid items-center gap-10 pb-16 md:pb-24 lg:grid-cols-2 lg:gap-16">
+        <div>
+          <SectionTitle id="dj-title" eyebrow={h.dj.eyebrow} title={h.dj.title} />
+          <div className="prose-he mt-6 max-w-xl text-muted">
+            {h.dj.p.map((t) => (
+              <p key={t}>{t}</p>
+            ))}
+          </div>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link href="/bat-mitzvah/dj" className="btn btn-ghost">
+              {h.dj.bat}
+            </Link>
+            <Link href="/bar-mitzvah/dj" className="btn btn-ghost">
+              {h.dj.bar}
+            </Link>
+            <Link href="/birthdays/dj" className="btn btn-ghost">
+              {h.dj.kids}
+            </Link>
+          </div>
+        </div>
+        <Reveal>
+          <Photo id={home.dj} alt={h.dj.title} ratio="4 / 3" sizes="(min-width: 1024px) 580px, 92vw" />
+        </Reveal>
+      </section>
+
+      {/* Anniversaires : garçons, filles, puis tous les thèmes */}
+      <section aria-labelledby="themes-title" className="bg-violet-soft">
+        <div className="wrap py-16 md:py-20">
+          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <SectionTitle id="themes-title" eyebrow={h.themesEyebrow} title={h.themesTitle} text={h.birthdays.text} />
+            <MoreLink href="/birthdays">{h.themesAll}</MoreLink>
+          </div>
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            {(
+              [
+                ["/birthdays/boys", h.birthdays.boysTitle, h.birthdays.boys, h.birthdays.boysCta, tiles["birthdays/boys"]],
+                ["/birthdays/girls", h.birthdays.girlsTitle, h.birthdays.girls, h.birthdays.girlsCta, tiles["birthdays/girls"]],
+              ] as const
+            ).map(([href, title, text, cta, img]) => (
+              <article key={href} className="card flex flex-col overflow-hidden">
+                <Photo id={img} alt={title} ratio="16 / 9" sizes="(min-width: 768px) 580px, 92vw" className="rounded-none" />
+                <div className="flex flex-1 flex-col p-6">
+                  <h3 className="text-[1.25rem] font-bold">{title}</h3>
+                  <p className="mt-2 flex-1 text-[0.9375rem] leading-relaxed text-muted">{text}</p>
+                  <MoreLink href={href}>{cta}</MoreLink>
+                </div>
+              </article>
+            ))}
+          </div>
+          <ul className="mt-8 flex flex-wrap gap-2">
+            {themes.map((t) => (
+              <li key={t.slug}>
+                <Link href={`/birthdays/${t.slug}`} className="chip">
+                  {t.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
 
       {/* Catalogue : cartes avec ajout au devis */}
@@ -103,31 +230,12 @@ export default function HomePage() {
         </ul>
       </section>
 
-      {/* Thèmes d'anniversaire */}
-      <section aria-labelledby="themes-title" className="bg-violet-soft">
-        <div className="wrap py-16 md:py-20">
-          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-            <SectionTitle id="themes-title" eyebrow={h.themesEyebrow} title={h.themesTitle} />
-            <MoreLink href="/birthdays">{h.themesAll}</MoreLink>
-          </div>
-          <ul className="mt-8 flex flex-wrap gap-2">
-            {themes.map((t) => (
-              <li key={t.slug}>
-                <Link href={`/birthdays/${t.slug}`} className="chip">
-                  {t.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* Trois blocs alternés : une photo, un texte court, un seul bouton */}
-      <div className="wrap space-y-16 py-16 md:space-y-24 md:py-24">
+      {/* Blocs alternés : une photo, un texte court, un seul bouton */}
+      <div className="wrap space-y-16 pb-16 md:space-y-24 md:pb-24">
         {h.blocks.map((b, i) => (
           <section key={b.title} className="grid items-center gap-8 md:grid-cols-2 md:gap-16">
             <Reveal className={i % 2 ? "md:order-2" : ""}>
-              <Photo id={home.blocks[i]} alt={b.title} ratio="4 / 3" sizes="(min-width: 768px) 560px, 92vw" />
+              <Photo id={home.blocks[i]} alt={b.title} ratio="4 / 3" sizes="(min-width: 768px) 580px, 92vw" />
             </Reveal>
             <div>
               <p className="eyebrow mb-2">{b.eyebrow}</p>
@@ -157,12 +265,26 @@ export default function HomePage() {
               למסיבות פול מון
             </Link>
           </div>
-          <Photo id={tiles["full-moon"]} alt="תפאורה זוהרת של מסיבת פול מון" ratio="4 / 3" sizes="(min-width: 768px) 560px, 92vw" />
+          <Photo id={tiles["full-moon"]} alt="תפאורה זוהרת של מסיבת פול מון" ratio="4 / 3" sizes="(min-width: 768px) 580px, 92vw" />
         </div>
       </section>
 
+      {/* Comment ça marche */}
+      <section aria-labelledby="steps-title" className="wrap py-16 md:py-24">
+        <SectionTitle id="steps-title" eyebrow={h.steps.eyebrow} title={h.steps.title} />
+        <ol className="mt-10 grid gap-5 md:grid-cols-3">
+          {h.steps.items.map((s, i) => (
+            <li key={s.t} className="card p-6">
+              <span className="font-[family-name:var(--font-display)] text-[2rem] leading-none font-extrabold text-pink-ink tabular-nums">{i + 1}</span>
+              <h3 className="mt-3 text-[1.1875rem] font-bold">{s.t}</h3>
+              <p className="mt-2 text-[0.9375rem] leading-relaxed text-muted">{s.d}</p>
+            </li>
+          ))}
+        </ol>
+      </section>
+
       {/* Réalisations */}
-      <section aria-labelledby="works-title" className="wrap py-16 md:py-24">
+      <section aria-labelledby="works-title" className="wrap pb-16 md:pb-24">
         <SectionTitle id="works-title" eyebrow={h.worksEyebrow} title={h.worksTitle} text={h.worksText} />
         <ul className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-5">
           {realisations.items.map((r, i) => (

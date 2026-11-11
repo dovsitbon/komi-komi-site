@@ -21,6 +21,7 @@ export type Page = {
   highlights: string[];
   program: string[] | null;
   tags: string[];
+  oldText: { type: "p" | "h" | "li"; text: string }[];
   reviews: number[];
   images: string[];
   videos: string[];

@@ -2,8 +2,8 @@
  "_aide": "Grille des réalisations de l'accueil. « image » = identifiant de data/media.json. « city » et « kids » : À REMPLIR avec le client (laissés vides : rien n'est inventé). « type » = libellé affiché, « href » = page liée.",
  "items": [
   {
-   "image": "3b95b766cf",
-   "type": "בר מצווה",
+   "image": "cbfcaa4997",
+   "type": "בר ובת מצווה",
    "href": "/bar-mitzvah",
    "city": "",
    "kids": null
@@ -30,7 +30,7 @@
    "kids": null
   },
   {
-   "image": "a1907b7f45",
+   "image": "a6f8e41641",
    "type": "קיר צילום",
    "href": "/catalog/photo-walls",
    "city": "",
@@ -58,7 +58,7 @@
    "kids": null
   },
   {
-   "image": "015f1bcff6",
+   "image": "3b7b47346c",
    "type": "אירוע חברה",
    "href": "/corporate",
    "city": "",
@@ -72,9 +72,9 @@
    "kids": null
   },
   {
-   "image": "a6f8e41641",
-   "type": "בת מצווה",
-   "href": "/bat-mitzvah",
+   "image": "fb205a68fc",
+   "type": "צלם ומגנטים",
+   "href": "/catalog/magnets",
    "city": "",
    "kids": null
   },

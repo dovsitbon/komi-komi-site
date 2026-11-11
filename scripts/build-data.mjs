@@ -74,6 +74,11 @@ function imagesFor(oldKeys, picks = [], max = 10) {
       if (m && okForGallery(m)) add({ key: origKey(im.url), ...m }, im.alt || "");
     }
   }
+  // La photo d'en-tête (la première) doit être assez grande : si elle est petite, on prend la plus large des 4 premières
+  if (out.length > 1 && media[out[0]].w < 1100) {
+    const best = out.slice(0, 4).reduce((a, b) => (media[b].w > media[a].w ? b : a));
+    if (media[best].w >= 1280) { out.splice(out.indexOf(best), 1); out.unshift(best); }
+  }
   return out;
 }
 
@@ -161,7 +166,8 @@ function add(p) {
     highlights: p.highlights || [],
     program: p.program || null,
     tags: [...new Set(cleanOld(old).filter((b) => b.type === "tags").flatMap((b) => b.items).map((t) => t.replace(/\s*[|,].*$/, "").replace(/\s+/g, " ").trim()).filter((t) => t.length > 3 && t.length < 38 && !/לחץ|לחצו|^\d/.test(t)))].slice(0, 24),
-    guide: p.guide || null,
+    // Texte de l'ancienne page, repris tel quel (lignes de mots-clés, menus et téléphones retirés)
+    oldText: cleanOld(old).filter((b) => b.type !== "tags").map((b) => ({ type: b.type, text: b.text.replace(/^[|\s]+/, "") })).filter((b) => b.text.length > 2),
     reviews: [],
     images: imagesFor(old, p.pick || [], p.maxImages || 10),
     videos: videosFor(old).slice(0, 2),
@@ -292,13 +298,19 @@ const prestations = PRESTATIONS.map((p) => ({ ...p, catLabel: CATS[p.cat], image
 
 // Images des pages spéciales (accueil) : décors et ambiances, pas de visages d'enfants en avant
 const HOME_PICKS = {
-  hero: "accueil:19",
-  tiles: { "bar-mitzvah": "accueil:5", "bat-mitzvah": "accueil:40", "birthdays/boys": "anniversaires:11", "birthdays/girls": "anniversaires:34", "full-moon": "full-moon:4", purim: "pourim:16", corporate: "accueil:50", brit: "bar-matokim:12" },
-  blocks: ["accueil:30", "full-moon:9", "bar-matokim:2"],
-  gallery: ["accueil:5", "full-moon:9", "bar-matokim:16", "anniversaires:18", "accueil:37", "pourim:20", "accueil:43", "full-moon:11", "accueil:39", "anniversaires:25", "accueil:32", "bar-matokim:1"],
+  hero: "accueil:5",
+  tiles: { "bar-mitzvah": "accueil:37", "bat-mitzvah": "accueil:19", "birthdays/boys": "anniversaires:11", "birthdays/girls": "anniversaires:34", "full-moon": "full-moon:4", purim: "pourim:16", corporate: "accueil:50", brit: "bar-matokim:12" },
+  blocks: ["accueil:39", "accueil:29"],
+  dj: "full-moon:9",
+  mitzvah: "accueil:19",
+  about: "accueil:43",
+  gallery: ["accueil:16", "full-moon:9", "bar-matokim:16", "anniversaires:18", "accueil:32", "pourim:20", "accueil:43", "full-moon:11", "accueil:48", "anniversaires:25", "accueil:9", "bar-matokim:1"],
 };
 const home = {
-  hero: useImage(pickRef(HOME_PICKS.hero), "קשת מוארת עם המספר 12 בכניסה לבת מצווה"),
+  hero: useImage(pickRef(HOME_PICKS.hero), "שולחן מעוצב וקשתות מוארות בהפקת בר מצווה"),
+  mitzvah: useImage(pickRef(HOME_PICKS.mitzvah), "קשת מוארת עם המספר 12 בכניסה לבת מצווה"),
+  about: useImage(pickRef(HOME_PICKS.about)),
+  dj: useImage(pickRef(HOME_PICKS.dj)),
   tiles: Object.fromEntries(Object.entries(HOME_PICKS.tiles).map(([k, r]) => [k, useImage(pickRef(r))])),
   blocks: HOME_PICKS.blocks.map((r) => useImage(pickRef(r))),
   gallery: HOME_PICKS.gallery.map((r) => useImage(pickRef(r))),

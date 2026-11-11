@@ -10,7 +10,7 @@ export function Photo({ id, alt, ratio, sizes, priority, className = "" }: { id:
   if (!m) return null;
   return (
     <div className={`photo ${className}`} style={ratio ? { aspectRatio: ratio } : { aspectRatio: `${m.w} / ${m.h}` }}>
-      <Image src={m.src} alt={m.alt || alt} width={m.w} height={m.h} sizes={sizes} priority={priority} quality={priority ? 80 : 70} />
+      <Image src={m.src} alt={m.alt || alt} width={m.w} height={m.h} sizes={sizes} priority={priority} quality={priority ? 90 : 85} />
     </div>
   );
 }

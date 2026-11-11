@@ -261,6 +261,29 @@ export default async function ContentPage({ params }: Props) {
         </section>
       )}
 
+      {/* Texte de l'ancienne page, repris tel quel */}
+      {page.oldText.length > 0 && (
+        <section aria-labelledby="original-title" className="wrap py-14 md:py-20">
+          <SectionTitle id="original-title" title={`${p.original} ${page.nav}`} />
+          <div className="mt-8 max-w-3xl space-y-4 text-[1.0625rem] leading-[1.85]">
+            {page.oldText.map((b, i) =>
+              b.type === "h" ? (
+                <h3 key={i} className="pt-4 font-[family-name:var(--font-display)] text-[1.25rem] font-bold">
+                  {b.text}
+                </h3>
+              ) : b.type === "li" ? (
+                <p key={i} className="flex gap-3">
+                  <span className="mt-[0.7em] h-1.5 w-1.5 shrink-0 rounded-full bg-pink" aria-hidden="true" />
+                  <span>{b.text}</span>
+                </p>
+              ) : (
+                <p key={i}>{b.text}</p>
+              ),
+            )}
+          </div>
+        </section>
+      )}
+
       {/* Déroulé type d'un anniversaire */}
       {page.program && (
         <section aria-labelledby="program-title" className="wrap py-14 md:py-20">
