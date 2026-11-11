@@ -63,7 +63,7 @@ export function Header({ nav, phone, whatsapp }: Props) {
         {he.common.skip}
       </a>
       <div className="wrap flex h-16 items-center justify-between gap-4 md:h-20">
-        <Link href="/" aria-label={`${he.common.home} – קומי קומי הפקות`} className="shrink-0">
+        <Link href="/" aria-label={`קומי קומי הפקות אירועים – ${he.common.home}`} className="shrink-0">
           <Logo small />
         </Link>
 
