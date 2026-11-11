@@ -1,17 +1,12 @@
-import { Balloon } from "@/components/icons";
-
 /**
- * Logo typographique : « קומי קומי » en Rubik très gras, « הפקות אירועים » en petit, et un ballon au trait.
- * (Le logo de l'ancien site est trop pixellisé pour être repris tel quel.)
+ * Logo de Komi Komi, le même que sur le site d'origine : « קומי קומי » manuscrit, « הפקות » et quatre taches de couleur.
+ * Redessiné en vectoriel d'après le bandeau de 2komi.com (scripts/ancien-site/logo.mjs → public/logo.svg).
+ * Sur fond sombre (`onDark`), il est posé sur une pastille blanche, comme dans le bandeau d'origine.
  */
-export function Logo({ light = false, small = false }: { light?: boolean; small?: boolean }) {
-  return (
-    <span className="inline-flex items-center gap-2" translate="no">
-      <Balloon className={small ? "h-9 w-5" : "h-11 w-6"} color="var(--color-pink)" />
-      <span className="flex flex-col leading-none">
-        <span className={`font-[family-name:var(--font-display)] font-extrabold ${small ? "text-[1.375rem]" : "text-[1.625rem]"} ${light ? "text-white" : "text-violet"}`}>קומי קומי</span>
-        <span className={`mt-1 font-[family-name:var(--font-display)] text-[0.75rem] font-medium ${light ? "text-white/80" : "text-muted"}`}>הפקות אירועים</span>
-      </span>
-    </span>
+export function Logo({ onDark = false }: { onDark?: boolean }) {
+  const img = (
+    // eslint-disable-next-line @next/next/no-img-element -- SVG vectoriel servi tel quel, mis en cache par le navigateur
+    <img src="/logo.svg" alt="קומי קומי הפקות" width={184} height={56} decoding="async" className={onDark ? "h-14 w-auto" : "h-11 w-auto md:h-14"} />
   );
+  return onDark ? <span className="inline-flex items-center rounded-2xl bg-white px-4 py-2">{img}</span> : img;
 }

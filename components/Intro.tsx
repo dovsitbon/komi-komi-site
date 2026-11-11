@@ -29,7 +29,7 @@ const markSeen = () => {
 
 /**
  * Ouverture (1,2 s, une fois par session, aucun son) : fond blanc → quelques confettis et un ballon montent →
- * « קומי קומי » rebondit doucement, puis « הפקות אירועים » → fondu sur le hero.
+ * le logo « קומי קומי הפקות » rebondit doucement → fondu sur le hero.
  * Masquée d'office si le visiteur réduit les animations (script du layout + globals.css). Bouton « דלג ».
  */
 export function Intro() {
@@ -63,19 +63,10 @@ export function Intro() {
         </motion.div>
       </div>
 
-      <div className="relative text-center" translate="no">
-        <motion.p
-          className="font-[family-name:var(--font-display)] text-[3.5rem] leading-none font-extrabold text-violet md:text-[5rem]"
-          initial={{ y: 18, opacity: 0, scale: 0.96 }}
-          animate={{ y: [18, -8, 0], opacity: 1, scale: [0.96, 1.03, 1] }}
-          transition={{ delay: 0.1, duration: 0.5, ease: "easeOut", times: [0, 0.6, 1] }}
-        >
-          קומי קומי
-        </motion.p>
-        <motion.p className="mt-3 font-[family-name:var(--font-display)] text-[1.25rem] font-medium text-muted" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 0.25, ease: "easeOut" }}>
-          {he.intro.sub}
-        </motion.p>
-      </div>
+      <motion.div className="relative" initial={{ y: 18, opacity: 0, scale: 0.96 }} animate={{ y: [18, -8, 0], opacity: 1, scale: [0.96, 1.03, 1] }} transition={{ delay: 0.1, duration: 0.5, ease: "easeOut", times: [0, 0.6, 1] }}>
+        {/* eslint-disable-next-line @next/next/no-img-element -- logo vectoriel */}
+        <img src="/logo.svg" alt="קומי קומי הפקות" width={328} height={100} className="h-auto w-[min(76vw,420px)]" />
+      </motion.div>
 
       <button
         type="button"

@@ -45,7 +45,7 @@ Rien n'a été inventé sur le site. Tout ce qui manque est listé ici, avec l'e
 
 ## Logo
 
-- Le logo de l'ancien site est trop pixellisé. Un logo typographique a été dessiné (« קומי קומי » + ballon). Si un fichier d'origine existe (AI, SVG, PNG grand format), l'envoyer.
+- Le site reprend le logo d'origine (« קומי קומי » manuscrit, « הפקות », quatre taches de couleur). Il n'existait qu'en tout petit dans le bandeau de l'ancien site (environ 330 × 100 px) : il a été redessiné en vectoriel d'après cette image (`public/logo.svg`, script `scripts/ancien-site/logo.mjs`). Si le client a le fichier d'origine (AI, PDF, SVG ou PNG grand format), le remplacer par celui-ci.
 
 ## Avis
 

@@ -16,6 +16,7 @@ export function businessJsonLd() {
     description: he.meta.description,
     url: site.url,
     image: `${site.url}/og.jpg`,
+    logo: `${site.url}/logo.svg`,
     telephone: site.phones[0].intl,
     contactPoint: site.phones.map((p) => ({ "@type": "ContactPoint", telephone: p.intl, contactType: "customer service", availableLanguage: ["he"] })),
     address: { "@type": "PostalAddress", addressCountry: "IL" },

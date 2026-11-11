@@ -63,8 +63,8 @@ export function Header({ nav, phone, whatsapp }: Props) {
         {he.common.skip}
       </a>
       <div className="wrap flex h-16 items-center justify-between gap-4 md:h-20">
-        <Link href="/" aria-label={`קומי קומי הפקות אירועים – ${he.common.home}`} className="shrink-0">
-          <Logo small />
+        <Link href="/" aria-label={`קומי קומי הפקות – ${he.common.home}`} className="shrink-0">
+          <Logo />
         </Link>
 
         <div className="flex items-center gap-1 sm:gap-2">
@@ -145,7 +145,7 @@ export function Header({ nav, phone, whatsapp }: Props) {
       {drawer && (
         <div id="drawer" role="dialog" aria-modal="true" aria-label={he.common.menu} className="fixed inset-0 z-[60] flex flex-col overflow-y-auto overscroll-contain bg-white min-[1180px]:hidden">
           <div className="wrap flex h-16 shrink-0 items-center justify-between border-b border-line md:h-20">
-            <Logo small />
+            <Logo />
             <button type="button" aria-label={he.common.close} onClick={() => setDrawer(false)} autoFocus className="inline-flex h-11 w-11 items-center justify-center rounded-full hover:bg-violet-soft">
               <CloseIcon />
             </button>

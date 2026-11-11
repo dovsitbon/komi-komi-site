@@ -14,7 +14,7 @@ export function Footer() {
     <footer className="on-dark bg-violet-deep text-white">
       <div className="wrap grid gap-12 py-16 md:grid-cols-[1.2fr_1fr_1fr] md:py-20">
         <div>
-          <Logo light />
+          <Logo onDark />
           <p className="mt-5 max-w-sm text-white/80">{f.tagline}</p>
           <div className="mt-6 flex gap-2">
             <a href={site.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/25 transition-colors hover:bg-white hover:text-violet-deep">
