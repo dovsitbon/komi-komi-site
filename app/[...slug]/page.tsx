@@ -8,11 +8,12 @@ import { JsonLd } from "@/components/JsonLd";
 import { Photo } from "@/components/Photo";
 import { Reveal } from "@/components/Reveal";
 import { ThemeGrid, type ThemeItem } from "@/components/ThemeGrid";
+import { Slideshow } from "@/components/Slideshow";
 import { YouTubeLite } from "@/components/YouTubeLite";
 import { CheckIcon, StringLine, WhatsAppIcon } from "@/components/icons";
 import { pageJsonLd } from "@/lib/jsonld";
 import { quoteHref } from "@/lib/quote";
-import { breadcrumbs, childrenOf, cities, getAvis, getMedia, getPage, getPrestation, pages, quoteTypeFor, regions, shekels, site, themes, waLink, type Page } from "@/lib/site";
+import { backgroundSlides, breadcrumbs, childrenOf, cities, getAvis, getMedia, getPage, getPrestation, pages, quoteTypeFor, regions, shekels, site, themes, waLink, type Page } from "@/lib/site";
 import he from "@/locales/he.json";
 
 type Props = { params: Promise<{ slug: string[] }> };
@@ -169,13 +170,21 @@ export default async function ContentPage({ params }: Props) {
   const addons = page.prestations.filter((id) => id !== main?.id).map((id) => getPrestation(id)).filter((x): x is NonNullable<typeof x> => !!x);
   const reviews = getAvis(page.reviews);
   const faq = [...page.faq, ...(page.kind === "event" || page.kind === "theme" ? commonFaq.slice(0, 4) : commonFaq.slice(0, 2))];
-  const dark = page.dark;
+  // Défilé de photos de la catégorie en arrière-plan de l'en-tête ; le texte passe alors en clair sur un voile sombre
+  const bg = backgroundSlides(page);
+  const dark = page.dark || bg.length > 0;
 
   return (
     <>
       {/* En-tête de page */}
-      <section className={dark ? "on-dark bg-night text-white" : ""}>
-        <div className="wrap pt-6 pb-12 md:pb-16">
+      <section className={dark ? "on-dark relative overflow-hidden bg-night text-white" : ""}>
+        {bg.length > 0 && (
+          <>
+            <Slideshow fill slides={bg} alt="" sizes="100vw" priority />
+            <div className="absolute inset-0 bg-night/65" aria-hidden="true" />
+          </>
+        )}
+        <div className={`wrap relative pt-6 pb-12 md:pb-16 ${bg.length ? "flex min-h-[26rem] flex-col md:min-h-[32rem]" : ""}`}>
           <nav aria-label={he.common.breadcrumb} className={`text-[0.875rem] ${dark ? "text-white/70" : "text-muted"}`}>
             <ol className="flex flex-wrap items-center gap-x-2">
               <li>
@@ -200,11 +209,11 @@ export default async function ContentPage({ params }: Props) {
             </ol>
           </nav>
 
-          <div className={`mt-6 grid items-center gap-10 ${hero ? "lg:grid-cols-[1fr_1fr] lg:gap-14" : ""}`}>
+          <div className={`mt-6 grid items-center gap-10 ${bg.length ? "my-auto py-6" : hero ? "lg:grid-cols-[1fr_1fr] lg:gap-14" : ""}`}>
             <div className="max-w-2xl">
-              {page.eyebrow && <p className={`eyebrow ${dark ? "!text-neon-lime" : ""}`}>{page.eyebrow}</p>}
+              {page.eyebrow && <p className={`eyebrow ${page.dark ? "!text-neon-lime" : ""}`}>{page.eyebrow}</p>}
               <h1 className="h-display mt-2 text-[2.25rem] md:text-[3.25rem]">{page.h1}</h1>
-              <StringLine className={`string ${dark ? "text-neon-pink" : ""}`} />
+              <StringLine className={`string ${page.dark ? "text-neon-pink" : ""}`} />
               <div className="prose-he lead mt-6">
                 {page.intro.map((t) => (
                   <p key={t}>{t}</p>
@@ -230,7 +239,7 @@ export default async function ContentPage({ params }: Props) {
                 )}
               </div>
             </div>
-            {hero && <Photo id={hero} alt={page.h1} ratio="4 / 3" priority sizes="(min-width: 1024px) 600px, 92vw" />}
+            {hero && !bg.length && <Photo id={hero} alt={page.h1} ratio="4 / 3" priority sizes="(min-width: 1024px) 600px, 92vw" />}
           </div>
         </div>
       </section>

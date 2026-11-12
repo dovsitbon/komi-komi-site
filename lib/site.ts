@@ -85,3 +85,19 @@ export function quoteTypeFor(path: string): string {
   if (path.startsWith("/birthdays") || path.startsWith("/clowns")) return "birthday";
   return "";
 }
+
+/**
+ * Photos d'arrière-plan de l'en-tête d'une page : grandes photos horizontales de la page, complétées par celles
+ * de sa catégorie (pages parentes) pour qu'il y en ait toujours plusieurs, toutes du même sujet.
+ */
+export function backgroundSlides(page: Page, max = 6): Media[] {
+  const fits = (min: number) => (m: Media | undefined): m is Media => !!m && m.w >= min && m.w / m.h >= 1.25 && m.w / m.h <= 1.9;
+  const chain: Page[] = [];
+  for (let cur: Page | undefined = page; cur; cur = cur.parent ? byPath.get(cur.parent) : undefined) chain.push(cur);
+  const hub = byPath.get("/" + page.path.split("/")[1]);
+  if (hub && !chain.includes(hub)) chain.push(hub);
+  const ids = [...new Set(chain.flatMap((p) => (p.inheritedImages && p !== page ? [] : p.images)))];
+  const all = ids.map((id) => media[id]);
+  const big = all.filter(fits(1200));
+  return (big.length >= 2 ? big : [...big, ...all.filter(fits(900)).filter((m) => !big.includes(m))]).slice(0, max);
+}

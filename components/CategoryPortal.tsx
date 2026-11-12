@@ -41,17 +41,24 @@ const MORE = [
   ["/catalog", "כל הקטלוג"],
 ] as const;
 
+// Fond du bandeau de titre : une grande photo par catégorie
+const BACKDROP = CATS.flatMap((c) => c.img.filter((m) => m.w >= 1200).slice(0, 1));
+
 export function CategoryPortal() {
   return (
-    <section aria-labelledby="pick-title" className="wrap pt-8 pb-12 md:pt-12 md:pb-16">
-      <div className="text-center">
-        <h1 id="pick-title" className="h-display text-[2.5rem] md:text-[4rem]">
-          {p.title}
-        </h1>
-        <p className="mx-auto mt-3 max-w-2xl text-[1.125rem] font-medium md:text-[1.3125rem]">{p.text}</p>
-      </div>
-
-      <ul className="mt-8 grid grid-cols-2 gap-3 md:mt-10 md:gap-5 lg:grid-cols-3">
+    <>
+      <section aria-labelledby="pick-title" className="on-dark relative overflow-hidden bg-night text-white">
+        <Slideshow fill slides={BACKDROP} alt="" sizes="100vw" priority />
+        <div className="absolute inset-0 bg-night/65" aria-hidden="true" />
+        <div className="wrap relative flex min-h-[20rem] flex-col items-center justify-center py-12 text-center md:min-h-[26rem]">
+          <h1 id="pick-title" className="h-display text-[2.75rem] md:text-[4.5rem]">
+            {p.title}
+          </h1>
+          <p className="mx-auto mt-3 max-w-2xl text-[1.1875rem] font-medium md:text-[1.375rem]">{p.text}</p>
+        </div>
+      </section>
+      <section aria-label={p.title} className="wrap pb-12 md:pb-16">
+      <ul className="mt-6 grid grid-cols-2 gap-3 md:mt-8 md:gap-5 lg:grid-cols-3">
         {CATS.map((c, i) => (
           <li key={c.href}>
             <Link href={c.href} className={`group flex h-full flex-col rounded-[32px] p-3 md:p-4 ${c.tone}`}>
@@ -97,6 +104,7 @@ export function CategoryPortal() {
           </a>
         </div>
       </div>
-    </section>
+      </section>
+    </>
   );
 }
