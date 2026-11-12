@@ -334,5 +334,37 @@
     "title": "This page was not found",
     "text": "The address may have changed on the new site. You can start here:",
     "home": "Back to home"
+  },
+  "portal": {
+    "title": "What are you celebrating?",
+    "text": "Komi Komi Productions: bar and bat mitzvahs, birthdays and events for kids and teens. Pick a category and come in.",
+    "go": "Click here",
+    "more": "More events and services",
+    "cats": [
+      {
+        "title": "Bar mitzvah",
+        "text": "Production, entrances, DJ and photo walls"
+      },
+      {
+        "title": "Bat mitzvah",
+        "text": "Concept, styling, dance and slow dance"
+      },
+      {
+        "title": "Boys' birthdays",
+        "text": "Activities from age 4 to 11"
+      },
+      {
+        "title": "Girls' birthdays",
+        "text": "Activities from age 4 to 11"
+      },
+      {
+        "title": "Candy bar",
+        "text": "A styled, kosher sweet table"
+      },
+      {
+        "title": "Full Moon",
+        "text": "A glow party under UV light"
+      }
+    ]
   }
 }

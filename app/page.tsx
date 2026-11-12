@@ -4,17 +4,16 @@ import faq from "@/data/faq.json";
 import realisations from "@/data/realisations.json";
 import stats from "@/data/stats.json";
 import { CtaBand, Faq, MoreLink, PrestationCard, ReviewCard, SectionTitle } from "@/components/blocks";
-import { HeroStart } from "@/components/HeroStart";
+import { CategoryPortal } from "@/components/CategoryPortal";
 import { JsonLd } from "@/components/JsonLd";
 import { Photo } from "@/components/Photo";
 import { Reveal } from "@/components/Reveal";
-import { CheckIcon, Confetti, StringLine, WhatsAppIcon } from "@/components/icons";
+import { CheckIcon, StringLine } from "@/components/icons";
 import { faqJsonLd } from "@/lib/jsonld";
-import { avis, cities, featuredAvis, prestations, regions, themes, waLink } from "@/lib/site";
+import { avis, cities, featuredAvis, prestations, regions, themes } from "@/lib/site";
 import he from "@/locales/he.json";
 
 const FEATURED = ["dj", "clowns", "candy-bar", "food-stands", "photo-walls", "magnets", "game-tables", "graffiti-hats"];
-const TILES = ["bar-mitzvah", "bat-mitzvah", "birthdays/boys", "birthdays/girls", "full-moon", "purim", "corporate", "brit"] as const;
 
 export default function HomePage() {
   const h = he.home;
@@ -30,52 +29,7 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Hero : texte + champs de devis d'un côté, la vraie photo de l'autre */}
-      <section className="relative overflow-hidden">
-        <Confetti className="pointer-events-none absolute -start-4 top-6 hidden h-28 w-28 opacity-80 lg:block" />
-        <div className="wrap grid items-center gap-10 py-10 md:py-16 lg:grid-cols-[1fr_1.05fr] lg:gap-14">
-          <div>
-            <p className="eyebrow">{he.hero.eyebrow}</p>
-            <h1 className="h-display mt-3 text-[2.5rem] md:text-[3.5rem] lg:text-[4rem]">{he.hero.title}</h1>
-            <p className="lead mt-5 max-w-xl">{he.hero.text}</p>
-            <div className="mt-8 max-w-xl">
-              <HeroStart />
-              <a href={waLink()} target="_blank" rel="noopener noreferrer" className="link mt-4 inline-flex min-h-11 items-center gap-2">
-                <WhatsAppIcon className="text-[#128c7e]" />
-                {he.common.whatsappAsk}
-              </a>
-            </div>
-          </div>
-          <div className="relative">
-            <Photo id={home.hero} alt={he.meta.ogAlt} ratio="5 / 4" priority sizes="(min-width: 1024px) 640px, 92vw" />
-            {stats.sinceYear && (
-              <div className="absolute -bottom-5 start-4 flex h-28 w-28 -rotate-6 flex-col items-center justify-center rounded-full bg-sun text-center leading-tight md:-start-6 md:h-32 md:w-32" aria-hidden="true">
-                <span className="text-[0.8125rem] font-medium">{he.hero.sticker}</span>
-                <span className="font-[family-name:var(--font-display)] text-[1.75rem] font-extrabold tabular-nums">{stats.sinceYear}</span>
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
-
-      {/* Tuiles par type d'événement */}
-      <section aria-labelledby="tiles-title" className="wrap pt-8 pb-16 md:pb-20">
-        <h2 id="tiles-title" className="h-display text-[1.75rem] md:text-[2.125rem]">
-          {h.tilesTitle}
-        </h2>
-        <StringLine />
-        <ul className="mt-8 grid grid-cols-2 gap-x-3 gap-y-6 md:grid-cols-4 md:gap-x-5 md:gap-y-8">
-          {TILES.map((t, i) => (
-            <Reveal as="li" key={t} delay={(i % 4) * 0.05}>
-              <Link href={`/${t}`} className="group block">
-                <Photo id={tiles[t]} alt={h.tiles[t]} ratio="1 / 1" sizes="(min-width: 768px) 290px, 46vw" />
-                <span className="mt-3 block font-[family-name:var(--font-display)] text-[1.0625rem] leading-snug font-bold transition-colors group-hover:text-violet md:text-[1.1875rem]">{h.tiles[t]}</span>
-                <span className="mt-1 block text-[0.875rem] leading-snug text-muted">{h.tilesText[t]}</span>
-              </Link>
-            </Reveal>
-          ))}
-        </ul>
-      </section>
+      <CategoryPortal />
 
       {/* Présentation, reprise de l'accueil d'origine : qui nous sommes, pourquoi fêter avec nous */}
       <section aria-labelledby="about-title" className="bg-violet-soft">

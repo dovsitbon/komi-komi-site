@@ -34,7 +34,7 @@ for (const u of urls) {
   (titles.get(title) || titles.set(title, []).get(title)).push(u);
   (descs.get(desc) || descs.set(desc, []).get(desc)).push(u);
   ld += [...html.matchAll(/application\/ld\+json/g)].length;
-  for (const m of html.matchAll(/<img\b[^>]*>/g)) { imgs++; if (!/\balt="[^"]+"/.test(m[0]) && !/ytimg/.test(m[0])) issues.push(`image sans alt ${u}`); }
+  for (const m of html.matchAll(/<img\b[^>]*>/g)) { imgs++; if (!/\balt="[^"]+"/.test(m[0]) && !/ytimg|aria-hidden="true"/.test(m[0])) issues.push(`image sans alt ${u}`); }
   for (const m of html.matchAll(/<a\b[^>]*href="(\/[^"#?]*)/g)) {
     const to = decodeURI(m[1]).replace(/\/$/, "") || "/";
     linked.add(to);

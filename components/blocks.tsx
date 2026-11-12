@@ -11,7 +11,7 @@ export function SectionTitle({ eyebrow, title, text, id, center = false }: { eye
   return (
     <div className={center ? "mx-auto max-w-2xl text-center" : "max-w-2xl"}>
       {eyebrow && <p className="eyebrow mb-2">{eyebrow}</p>}
-      <h2 id={id} className="h-display text-[1.875rem] md:text-[2.5rem]">
+      <h2 id={id} className="h-display text-[2rem] md:text-[2.875rem]">
         {title}
       </h2>
       <StringLine className={`string ${center ? "mx-auto" : ""}`} />
