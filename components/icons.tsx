@@ -98,3 +98,16 @@ export const Confetti = ({ className }: { className?: string }) => (
     <path d="M12 108l3-9" stroke="var(--color-violet)" />
   </svg>
 );
+
+/** Icônes des entrées anniversaires : cœur (filles) et ballon de foot (garçons). */
+export const HeartIcon = (p: P) => (
+  <svg {...base} width={28} height={28} strokeWidth={2} {...p}>
+    <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.600-7 10-7 10Z" />
+  </svg>
+);
+export const BallIcon = (p: P) => (
+  <svg {...base} width={28} height={28} strokeWidth={2} {...p}>
+    <circle cx="12" cy="12" r="9" />
+    <path d="m12 8 3.500 2.500-1.300 4h-4.400l-1.300-4L12 8ZM12 3v5M20.500 9.500l-5 1M17.500 19l-3.300-4.500M6.500 19l3.300-4.500M3.500 9.500l5 1" />
+  </svg>
+);
