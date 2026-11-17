@@ -34,7 +34,7 @@ export const NAV: NavGroup[] = [
     ],
   },
   {
-    label: "בר מתוקים",
+    label: "בר מתוקים לאירועים",
     href: "/candy-bar",
     columns: [{ links: [l("/candy-bar", "בר מתוקים לאירועים"), ...candySubs.map((p) => l(p.path, p.nav))] }],
   },
