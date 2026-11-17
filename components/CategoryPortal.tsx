@@ -27,13 +27,13 @@ type Cat = { href: string; title: string; text: string; tone: string; img: Slide
 const CATS: Cat[] = [
   { href: "/bar-mitzvah", ...p.cats[0], tone: "bg-sun", img: from(home.hero, ["/bar-mitzvah", "/catalog/photo-walls"]) },
   { href: "/bat-mitzvah", ...p.cats[1], tone: "bg-pink", img: from(t["bat-mitzvah"], ["/bat-mitzvah"]) },
+  { href: "/bar-mitzvah/kids", ...p.cats[6], tone: "bg-[#ceff4c]", img: from(null, ["/bar-mitzvah/dj", "/bat-mitzvah/dj", "/bar-mitzvah/kids"]) },
   { href: "/birthdays/boys", ...p.cats[2], tone: "bg-[#4dfdf3]", Icon: BallIcon, img: from(t["birthdays/boys"], ["/birthdays/fortnite", "/birthdays/football", "/birthdays/pokemon", "/birthdays/superheroes"]) },
-  { href: "/birthdays/girls", ...p.cats[3], tone: "bg-[#ceff4c]", Icon: HeartIcon, img: from(t["birthdays/girls"], ["/birthdays/unicorn", "/birthdays/spa-stitch", "/birthdays/lol-spa", "/birthdays/barbie"]) },
-  { href: "/candy-bar", ...p.cats[4], tone: "bg-pink", img: from(getPrestation("candy-bar")?.image, ["/candy-bar", "/candy-bar/brit", "/candy-bar/bar-mitzvah"]) },
-  { href: "/full-moon", ...p.cats[5], tone: "bg-sun", img: from(t["full-moon"], ["/full-moon"]) },
+  { href: "/birthdays/girls", ...p.cats[3], tone: "bg-pink", Icon: HeartIcon, img: from(t["birthdays/girls"], ["/birthdays/unicorn", "/birthdays/spa-stitch", "/birthdays/lol-spa", "/birthdays/barbie"]) },
+  { href: "/candy-bar", ...p.cats[4], tone: "bg-sun", img: from(getPrestation("candy-bar")?.image, ["/candy-bar", "/candy-bar/brit", "/candy-bar/bar-mitzvah"]) },
+  { href: "/full-moon", ...p.cats[5], tone: "bg-[#4dfdf3]", img: from(t["full-moon"], ["/full-moon"]) },
 ];
 const MORE = [
-  ["/bar-mitzvah/kids", "הפקות בר/בת מצווה לילדים"],
   ["/aliyah-latorah", "הפקות עליה לתורה"],
   ["/catalog/photo-walls", "קירות צילום"],
   ["/photo-booths", "עמדות צילום"],

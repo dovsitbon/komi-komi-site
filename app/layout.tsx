@@ -6,7 +6,6 @@ import { AnnounceBar } from "@/components/AnnounceBar";
 import { CartProvider } from "@/components/Cart";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { Intro } from "@/components/Intro";
 import { JsonLd } from "@/components/JsonLd";
 import { MobileBar } from "@/components/MobileBar";
 import { businessJsonLd } from "@/lib/jsonld";
@@ -62,7 +61,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = { themeColor: "#ffffff", width: "device-width", initialScale: 1 };
 
-const introScript = `document.documentElement.classList.add("js");try{if(sessionStorage.getItem("komi-intro")==="1"||matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-seen")}catch(e){}`;
+const introScript = `document.documentElement.classList.add("js");`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -72,7 +71,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="notranslate">
         <CartProvider>
-          <Intro />
           <AnnounceBar annonce={annonce} />
           <Header nav={NAV} phone={{ label: site.phones[0].label, href: telHref(0) }} phone2={{ label: site.phones[1].label, href: telHref(1) }} whatsapp={waLink()} />
           <main id="main">{children}</main>

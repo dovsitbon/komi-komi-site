@@ -322,19 +322,6 @@ html.js .reveal:not(.in) {
     transform 0.6s var(--ease-out) var(--reveal-delay, 0s);
 }
 
-/* Ouverture (components/Intro.tsx) */
-.intro-curtain {
-  position: fixed;
-  inset: 0;
-  z-index: 100;
-  background: #fff;
-  overflow: hidden;
-}
-html.intro-seen .intro-curtain,
-html:not(.js) .intro-curtain {
-  display: none;
-}
-
 /* Catégories de l'accueil : entrée en cascade, survol qui soulève, bouton qui attire l'œil */
 @keyframes cat-in {
   from {
@@ -404,9 +391,6 @@ html:not(.js) .intro-curtain {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
-  }
-  .intro-curtain {
-    display: none;
   }
   html.js .reveal:not(.in) {
     opacity: 1;
