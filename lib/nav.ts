@@ -52,7 +52,7 @@ export const NAV: NavGroup[] = [
     columns: [{ links: [l("/full-moon", "הפקות מסיבות פולמון"), l("/bar-mitzvah", "הפקות מסיבות בר מצווה"), l("/full-moon/bat-mitzvah", "הפקות מסיבות בת מצווה"), l("/birthdays", "הפקות מסיבות יום הולדת"), l("/purim", "הפקות מסיבות פורים")] }],
   },
   {
-    label: "DJ לאירועים",
+    label: "תקליטן לאירועים",
     href: "/birthdays/dj",
     columns: [
       { title: "תקליטנים ומפעילים", links: [l("/birthdays/dj", "תקליטן ליום הולדת"), l("/bar-mitzvah/dj", "תקליטן לבר מצווה"), l("/bat-mitzvah/dj", "תקליטן לבת מצווה"), l("/catalog/hosts", "מנחים ומפעילים"), l("/catalog/magician", "מופע קסמים"), l("/catalog/karaoke", "קריוקי")] },

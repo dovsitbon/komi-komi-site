@@ -43,7 +43,7 @@ const CATS: Cat[] = [
 ];
 const MORE = [
   ["/clowns", "ליצנים"],
-  ["/birthdays/dj", "DJ לאירועים"],
+  ["/birthdays/dj", "תקליטן לאירועים"],
   ["/brit", "בריתות"],
   ["/about", "אודות"],
   ["/catalog", "כל הקטלוג"],
