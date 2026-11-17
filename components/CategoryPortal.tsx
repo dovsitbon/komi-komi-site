@@ -1,8 +1,8 @@
 import Link from "next/link";
 import home from "@/data/home.json";
 import { Slideshow, type Slide } from "@/components/Slideshow";
-import { ArrowIcon, BallIcon, HeartIcon, WhatsAppIcon } from "@/components/icons";
-import { getMedia, getPage, getPrestation, waLink } from "@/lib/site";
+import { ArrowIcon, BallIcon, HeartIcon, PhoneIcon, WhatsAppIcon } from "@/components/icons";
+import { getMedia, getPage, getPrestation, site, telHref, waLink } from "@/lib/site";
 import he from "@/locales/he.json";
 
 /**
@@ -60,8 +60,8 @@ export function CategoryPortal() {
       <section aria-label={p.title} className="wrap pb-12 md:pb-16">
       <ul className="mt-6 grid grid-cols-2 gap-3 md:mt-8 md:gap-5 lg:grid-cols-3">
         {CATS.map((c, i) => (
-          <li key={c.href}>
-            <Link href={c.href} className={`group flex h-full flex-col rounded-[32px] p-3 md:p-4 ${c.tone}`}>
+          <li key={c.href} className="cat-in" style={{ animationDelay: `${i * 90}ms` }}>
+            <Link href={c.href} className={`cat-tile group flex h-full flex-col rounded-[32px] p-3 md:p-4 ${c.tone}`}>
               <Slideshow slides={c.img} delay={i * 600} alt={c.title} ratio="4 / 3" priority={i < 3} sizes="(min-width: 1024px) 390px, 46vw" className="!rounded-[22px]" />
               <div className="flex flex-1 flex-col px-2 pt-4 pb-2 md:px-3">
                 <div className="flex items-center gap-3">
@@ -73,7 +73,7 @@ export function CategoryPortal() {
                   <h2 className="h-display text-[1.3125rem] md:text-[1.875rem]">{c.title}</h2>
                 </div>
                 <p className="mt-1.5 flex-1 text-[0.9375rem] font-medium text-ink/85 md:text-[1.0625rem]">{c.text}</p>
-                <span className="mt-4 inline-flex min-h-11 items-center justify-center gap-2 self-start rounded-full bg-ink px-4 font-[family-name:var(--font-display)] font-bold whitespace-nowrap text-white transition-colors group-hover:bg-white group-hover:text-ink md:px-5">
+                <span className="cat-go mt-4 inline-flex min-h-11 items-center justify-center gap-2 self-start rounded-full bg-ink px-4 font-[family-name:var(--font-display)] font-bold whitespace-nowrap text-white transition-colors group-hover:bg-white group-hover:text-ink md:px-5">
                   {p.go}
                   <ArrowIcon />
                 </span>
@@ -102,6 +102,12 @@ export function CategoryPortal() {
             <WhatsAppIcon className="text-[#128c7e]" />
             {he.common.whatsapp}
           </a>
+          {site.phones.map((ph, n) => (
+            <a key={ph.intl} href={telHref(n)} dir="ltr" className="btn btn-ghost !min-h-14 !px-6 !text-[1.125rem] tabular-nums">
+              <PhoneIcon width={20} height={20} />
+              {ph.label}
+            </a>
+          ))}
         </div>
       </div>
       </section>

@@ -7,7 +7,7 @@ import { site, waLink } from "@/lib/site";
 import he from "@/locales/he.json";
 
 const title = "צרו קשר | קומי קומי הפקות – 052-319-0259";
-const description = "מדברים עם קומי קומי הפקות: טלפון, וואטסאפ וטופס הצעת מחיר. ימי הולדת, בר ובת מצווה, פול מון ופורים, בצפון ובמרכז.";
+const description = "מדברים עם קומי קומי הפקות: טלפון, וואטסאפ וטופס הצעת מחיר. ימי הולדת, בר ובת מצווה, פולמון ופורים, בצפון ובמרכז.";
 export const metadata: Metadata = { title, description, alternates: { canonical: "/contact" }, openGraph: { title, description, url: "/contact" } };
 
 export default function ContactPage() {

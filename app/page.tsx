@@ -216,10 +216,10 @@ export default function HomePage() {
             </h2>
             <p className="lead mt-5 max-w-lg">תפאורה באולטרה סגול, אוהל איפור, עמדת DJ מתנפחת בצורת פרפר ובר מתוקים זוהר. לבר ובת מצווה, ליום הולדת ולמסיבות נוער.</p>
             <Link href="/full-moon" className="btn btn-ghost mt-7">
-              למסיבות פול מון
+              למסיבות פולמון
             </Link>
           </div>
-          <Photo id={tiles["full-moon"]} alt="תפאורה זוהרת של מסיבת פול מון" ratio="4 / 3" sizes="(min-width: 768px) 580px, 92vw" />
+          <Photo id={tiles["full-moon"]} alt="תפאורה זוהרת של מסיבת פולמון" ratio="4 / 3" sizes="(min-width: 768px) 580px, 92vw" />
         </div>
       </section>
 

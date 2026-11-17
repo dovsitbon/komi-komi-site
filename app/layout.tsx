@@ -74,7 +74,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CartProvider>
           <Intro />
           <AnnounceBar annonce={annonce} />
-          <Header nav={NAV} phone={{ label: site.phones[0].label, href: telHref(0) }} whatsapp={waLink()} />
+          <Header nav={NAV} phone={{ label: site.phones[0].label, href: telHref(0) }} phone2={{ label: site.phones[1].label, href: telHref(1) }} whatsapp={waLink()} />
           <main id="main">{children}</main>
           <Footer />
           <MobileBar />

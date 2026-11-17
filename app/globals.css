@@ -335,6 +335,67 @@ html:not(.js) .intro-curtain {
   display: none;
 }
 
+/* Catégories de l'accueil : entrée en cascade, survol qui soulève, bouton qui attire l'œil */
+@keyframes cat-in {
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.96);
+  }
+}
+@keyframes cat-go {
+  0%,
+  70%,
+  100% {
+    transform: none;
+    box-shadow: 0 0 0 0 rgb(240 85 154 / 0);
+  }
+  78% {
+    transform: scale(1.07) rotate(-2deg);
+    box-shadow: 0 0 0 0 rgb(240 85 154 / 0.55);
+  }
+  86% {
+    transform: scale(1.07) rotate(2deg);
+  }
+  95% {
+    transform: none;
+    box-shadow: 0 0 0 14px rgb(240 85 154 / 0);
+  }
+}
+.cat-in {
+  animation: cat-in 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.cat-tile {
+  transition:
+    transform 0.25s ease-out,
+    box-shadow 0.25s ease-out;
+}
+.cat-tile:hover,
+.cat-tile:focus-visible {
+  transform: translateY(-6px) rotate(-0.6deg);
+  box-shadow: 0 0 0 4px var(--color-violet), 0 18px 0 -6px var(--color-violet);
+}
+.cat-go {
+  animation: cat-go 4s ease-in-out infinite;
+}
+.cat-in:nth-child(2n) .cat-go {
+  animation-delay: 1.3s;
+}
+.cat-in:nth-child(3n) .cat-go {
+  animation-delay: 2.6s;
+}
+/* Menu : trait de couleur qui se déroule sous la catégorie survolée */
+.nav-cat {
+  background-image: linear-gradient(var(--color-pink), var(--color-pink));
+  background-repeat: no-repeat;
+  background-position: 50% calc(100% - 6px);
+  background-size: 0 3px;
+  transition: background-size 0.25s ease-out, color 0.2s;
+}
+.nav-cat:hover,
+.nav-cat[aria-expanded="true"] {
+  background-size: calc(100% - 1.5rem) 3px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

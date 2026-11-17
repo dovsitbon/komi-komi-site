@@ -9,7 +9,7 @@ import { avis, waLink } from "@/lib/site";
 import he from "@/locales/he.json";
 
 const title = "לקוחות ממליצים | המלצות על קומי קומי הפקות";
-const description = "המלצות של הורים על ימי הולדת, בר ובת מצווה, מסיבות פול מון ופורים עם קומי קומי הפקות, כפי שנכתבו בספר ההמלצות, והמלצות בווידאו.";
+const description = "המלצות של הורים על ימי הולדת, בר ובת מצווה, מסיבות פולמון ופורים עם קומי קומי הפקות, כפי שנכתבו בספר ההמלצות, והמלצות בווידאו.";
 export const metadata: Metadata = { title, description, alternates: { canonical: "/reviews" }, openGraph: { title, description, url: "/reviews" } };
 
 export default function ReviewsPage() {

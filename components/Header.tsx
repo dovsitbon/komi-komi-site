@@ -9,10 +9,10 @@ import { ChevronIcon, CloseIcon, MenuIcon, PhoneIcon, WhatsAppIcon } from "@/com
 import type { NavGroup } from "@/lib/nav";
 import he from "@/locales/he.json";
 
-type Props = { nav: NavGroup[]; phone: { label: string; href: string }; whatsapp: string };
+type Props = { nav: NavGroup[]; phone: { label: string; href: string }; phone2?: { label: string; href: string }; whatsapp: string };
 
 /** En-tête fixe : logo, méga-menu (ordinateur) ou tiroir (mobile), téléphone, WhatsApp et bouton de devis toujours visibles. */
-export function Header({ nav, phone, whatsapp }: Props) {
+export function Header({ nav, phone, phone2, whatsapp }: Props) {
   const pathname = usePathname();
   const [open, setOpen] = useState<number | null>(null);
   const [drawer, setDrawer] = useState(false);
@@ -72,6 +72,12 @@ export function Header({ nav, phone, whatsapp }: Props) {
             <PhoneIcon width={18} height={18} />
             {phone.label}
           </a>
+          {phone2 && (
+            <a href={phone2.href} className="nav-link hidden min-h-11 items-center gap-2 px-2 whitespace-nowrap tabular-nums transition-colors hover:text-violet lg:inline-flex" dir="ltr">
+              <PhoneIcon width={18} height={18} />
+              {phone2.label}
+            </a>
+          )}
           <a href={phone.href} aria-label={`${he.common.call} ${phone.label}`} className="inline-flex h-11 w-11 items-center justify-center rounded-full transition-colors hover:bg-violet-soft sm:hidden">
             <PhoneIcon />
           </a>
@@ -100,13 +106,13 @@ export function Header({ nav, phone, whatsapp }: Props) {
                     aria-expanded={open === i}
                     aria-controls={`mega-${i}`}
                     onClick={() => setOpen(open === i ? null : i)}
-                    className={`nav-link inline-flex min-h-11 items-center gap-1 rounded-full px-3 whitespace-nowrap transition-colors hover:bg-violet-soft ${open === i || isActive(g) ? "text-violet" : ""}`}
+                    className={`nav-link nav-cat inline-flex min-h-11 items-center gap-1 rounded-full px-3 whitespace-nowrap transition-colors hover:bg-violet-soft ${open === i || isActive(g) ? "text-violet" : ""}`}
                   >
                     {g.label}
                     <ChevronIcon className={`transition-transform duration-200 ${open === i ? "rotate-180" : ""}`} />
                   </button>
                 ) : (
-                  <Link href={g.href} aria-current={pathname === g.href ? "page" : undefined} className={`nav-link inline-flex min-h-11 items-center rounded-full px-3 whitespace-nowrap transition-colors hover:bg-violet-soft ${isActive(g) ? "text-violet" : ""}`}>
+                  <Link href={g.href} aria-current={pathname === g.href ? "page" : undefined} className={`nav-link nav-cat inline-flex min-h-11 items-center rounded-full px-3 whitespace-nowrap transition-colors hover:bg-violet-soft ${isActive(g) ? "text-violet" : ""}`}>
                     {g.label}
                   </Link>
                 )}

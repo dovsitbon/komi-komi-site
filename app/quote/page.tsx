@@ -8,7 +8,7 @@ import { prestationCats, prestations, site, themes } from "@/lib/site";
 import he from "@/locales/he.json";
 
 const title = "הצעת מחיר לאירוע | קומי קומי הפקות";
-const description = "ממלאים סוג אירוע, תאריך, עיר ומה שמעניין אתכם, ומקבלים הצעת מחיר מסודרת בוואטסאפ ליום הולדת, בר או בת מצווה, פול מון ופורים.";
+const description = "ממלאים סוג אירוע, תאריך, עיר ומה שמעניין אתכם, ומקבלים הצעת מחיר מסודרת בוואטסאפ ליום הולדת, בר או בת מצווה, פולמון ופורים.";
 export const metadata: Metadata = { title, description, alternates: { canonical: "/quote" }, openGraph: { title, description, url: "/quote" } };
 
 export default function QuotePage() {

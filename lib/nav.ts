@@ -14,11 +14,11 @@ const girls = themes.filter((t) => t.gender !== "boys");
 /** Menu principal (méga-menu sur ordinateur, accordéon sur mobile). */
 export const NAV: NavGroup[] = [
   {
-    label: "בר / בת מצווה",
+    label: "הפקות בר / בת מצווה",
     href: "/bar-mitzvah",
     columns: [
       { title: "בר מצווה", links: [l("/bar-mitzvah", "הפקת בר מצווה"), l("/bar-mitzvah/dj", "תקליטן לבר מצווה"), l("/candy-bar/bar-mitzvah", "בר מתוקים לבר מצווה")] },
-      { title: "בת מצווה", links: [l("/bat-mitzvah", "הפקת בת מצווה"), l("/bat-mitzvah/dj", "תקליטן והפעלות"), l("/full-moon/bat-mitzvah", "בת מצווה פול מון")] },
+      { title: "בת מצווה", links: [l("/bat-mitzvah", "הפקת בת מצווה"), l("/bat-mitzvah/dj", "תקליטן והפעלות"), l("/full-moon/bat-mitzvah", "בת מצווה פולמון")] },
       { title: "אטרקציות", links: [l("/catalog/photo-walls", "קירות צילום"), l("/catalog/magnets", "צלם ומגנטים"), l("/catalog/game-tables", "שולחנות משחק"), l("/catalog/graffiti-hats", "גרפיטי על כובעים"), l("/catalog/caricature-shirts", "קריקטורה על חולצות")] },
     ],
   },
@@ -33,25 +33,29 @@ export const NAV: NavGroup[] = [
     ],
   },
   {
-    label: "בר מתוקים ודוכנים",
+    label: "בר מתוקים",
     href: "/candy-bar",
+    columns: [{ links: [l("/candy-bar", "בר מתוקים לאירועים"), ...candySubs.map((p) => l(p.path, p.nav))] }],
+  },
+  {
+    label: "דוכנים",
+    href: "/catalog/food-stands",
     columns: [
-      { title: "בר מתוקים", links: [l("/candy-bar", "בר מתוקים לאירועים"), ...candySubs.map((p) => l(p.path, p.nav))] },
-      { title: "דוכנים ומשחקים", links: [l("/catalog/food-stands", "דוכני מזון"), l("/catalog/fair-stands", "דוכני יריד"), l("/catalog/fruit-kayak", "קיאק פירות"), l("/catalog/active-bar", "בר אקטיבי לילדים"), l("/catalog", "כל הקטלוג")] },
+      { links: [l("/catalog/food-stands", "דוכני מזון"), l("/catalog/fair-stands", "דוכני יריד"), l("/catalog/fruit-kayak", "קיאק פירות"), l("/catalog/active-bar", "בר אקטיבי לילדים"), l("/catalog", "כל הקטלוג")] },
     ],
   },
   {
-    label: "פול מון",
+    label: "הפקות פולמון",
     href: "/full-moon",
-    columns: [{ links: [l("/full-moon", "מסיבות פול מון"), l("/full-moon/bat-mitzvah", "בת מצווה פול מון"), l("/birthdays/glow-party", "יום הולדת זוהר")] }],
+    columns: [{ links: [l("/full-moon", "הפקות מסיבות פולמון"), l("/bar-mitzvah", "הפקות מסיבות בר מצווה"), l("/full-moon/bat-mitzvah", "הפקות מסיבות בת מצווה"), l("/birthdays", "הפקות מסיבות יום הולדת"), l("/purim", "הפקות מסיבות פורים")] }],
   },
   {
-    label: "ליצנים ו-DJ",
-    href: "/clowns",
+    label: "DJ לאירועים",
+    href: "/birthdays/dj",
     columns: [
+      { title: "תקליטנים ומפעילים", links: [l("/birthdays/dj", "תקליטן ליום הולדת"), l("/bar-mitzvah/dj", "תקליטן לבר מצווה"), l("/bat-mitzvah/dj", "תקליטן לבת מצווה"), l("/catalog/hosts", "מנחים ומפעילים"), l("/catalog/magician", "מופע קסמים"), l("/catalog/karaoke", "קריוקי")] },
       { title: "ליצנים", links: [l("/clowns", "ליצנים ליום הולדת"), l("/clowns/ages", "לפי גילאים"), l("/clowns/events", "ליצנים לאירועים"), l("/clowns/purim", "ליצנים לפורים")] },
       { title: "לפי אזור", links: regions.map((r) => l(`/clowns/${r.slug}`, r.h1)) },
-      { title: "תקליטנים ומפעילים", links: [l("/birthdays/dj", "תקליטן ליום הולדת"), l("/bar-mitzvah/dj", "תקליטן לבר מצווה"), l("/bat-mitzvah/dj", "תקליטן לבת מצווה"), l("/catalog/hosts", "מנחים ומפעילים"), l("/catalog/magician", "מופע קסמים"), l("/catalog/karaoke", "קריוקי")] },
     ],
   },
   {
