@@ -38,14 +38,20 @@ export const NAV: NavGroup[] = [
     href: "/candy-bar",
     columns: [{ links: [l("/candy-bar", "בר מתוקים לאירועים"), ...candySubs.map((p) => l(p.path, p.nav))] }],
   },
+  { label: "הפקות עליה לתורה", href: "/aliyah-latorah" },
+  { label: "קירות צילום", href: "/catalog/photo-walls" },
+  { label: "דוכני יריד", href: "/catalog/fair-stands" },
   {
-    label: "דוכנים וצילום",
+    label: "דוכני מזון",
     href: "/catalog/food-stands",
-    columns: [
-      { title: "דוכנים ומזון", links: [l("/catalog/food-stands", "דוכני מזון"), l("/catalog/fair-stands", "דוכני יריד"), l("/catering"), l("/catalog/fruit-kayak", "קיאק פירות"), l("/catalog/active-bar", "בר אקטיבי לילדים")] },
-      { title: "צילום", links: [l("/catalog/photo-walls", "קירות צילום"), l("/photo-booths"), l("/catalog/magnets", "צלם ומגנטים"), l("/catalog", "כל הקטלוג")] },
-    ],
+    columns: [{ links: [l("/catalog/food-stands", "דוכני מזון"), l("/catalog/fruit-kayak", "קיאק פירות"), l("/catalog/active-bar", "בר אקטיבי לילדים"), l("/catalog", "כל הקטלוג")] }],
   },
+  {
+    label: "עמדות צילום",
+    href: "/photo-booths",
+    columns: [{ links: [l("/photo-booths"), l("/catalog/magnets", "צלם ומגנטים")] }],
+  },
+  { label: "קייטרינג לאירועים", href: "/catering" },
   {
     label: "הפקות פולמון",
     href: "/full-moon",

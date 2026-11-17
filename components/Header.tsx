@@ -89,15 +89,15 @@ export function Header({ nav, phone, phone2, whatsapp }: Props) {
             <span className="hidden sm:inline">{he.common.quote}</span>
             <CartCount />
           </Link>
-          <button type="button" aria-label={he.common.menu} aria-expanded={drawer} aria-controls="drawer" onClick={() => setDrawer(true)} className="inline-flex h-11 w-11 items-center justify-center rounded-full transition-colors hover:bg-violet-soft min-[1400px]:hidden">
+          <button type="button" aria-label={he.common.menu} aria-expanded={drawer} aria-controls="drawer" onClick={() => setDrawer(true)} className="inline-flex h-11 w-11 items-center justify-center rounded-full transition-colors hover:bg-violet-soft min-[1180px]:hidden">
             <MenuIcon />
           </button>
         </div>
       </div>
 
-        <nav aria-label={he.common.menu} className="hidden border-t border-line min-[1400px]:block">
+        <nav aria-label={he.common.menu} className="hidden border-t border-line min-[1180px]:block">
         <div className="wrap">
-          <ul className="-mx-3 flex h-12 items-center justify-between">
+          <ul className="flex flex-wrap items-center justify-center gap-x-2 py-1">
             {nav.map((g, i) => (
               <li key={g.href}>
                 {g.columns ? (
@@ -126,7 +126,7 @@ export function Header({ nav, phone, phone2, whatsapp }: Props) {
       {/* Méga-menu */}
       {nav.map((g, i) =>
         g.columns ? (
-          <div key={g.href} id={`mega-${i}`} hidden={open !== i} className="absolute inset-x-0 top-full hidden border-b border-line bg-white shadow-[0_12px_24px_-16px_rgb(36_33_43/0.25)] min-[1400px]:block">
+          <div key={g.href} id={`mega-${i}`} hidden={open !== i} className="absolute inset-x-0 top-full hidden border-b border-line bg-white shadow-[0_12px_24px_-16px_rgb(36_33_43/0.25)] min-[1180px]:block">
             <div className="wrap flex gap-12 py-8">
               {g.columns.map((c, j) => (
                 <div key={j} className="min-w-44">
@@ -149,7 +149,7 @@ export function Header({ nav, phone, phone2, whatsapp }: Props) {
 
       {/* Tiroir mobile */}
       {drawer && (
-        <div id="drawer" role="dialog" aria-modal="true" aria-label={he.common.menu} className="fixed inset-0 z-[60] flex flex-col overflow-y-auto overscroll-contain bg-white min-[1400px]:hidden">
+        <div id="drawer" role="dialog" aria-modal="true" aria-label={he.common.menu} className="fixed inset-0 z-[60] flex flex-col overflow-y-auto overscroll-contain bg-white min-[1180px]:hidden">
           <div className="wrap flex h-16 shrink-0 items-center justify-between border-b border-line md:h-20">
             <Logo />
             <button type="button" aria-label={he.common.close} onClick={() => setDrawer(false)} autoFocus className="inline-flex h-11 w-11 items-center justify-center rounded-full hover:bg-violet-soft">
