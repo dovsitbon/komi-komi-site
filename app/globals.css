@@ -380,7 +380,7 @@ html.js .reveal:not(.in) {
 }
 .nav-cat:hover,
 .nav-cat[aria-expanded="true"] {
-  background-size: calc(100% - 1.5rem) 3px;
+  background-size: calc(100% - 1rem) 3px;
 }
 
 @media (prefers-reduced-motion: reduce) {

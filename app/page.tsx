@@ -41,9 +41,14 @@ export default function HomePage() {
                 <p key={t}>{t}</p>
               ))}
             </div>
-            <Link href="/quote" className="btn btn-primary mt-8">
-              {he.common.quote}
-            </Link>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link href="/quote" className="btn btn-primary">
+                {he.common.quote}
+              </Link>
+              <Link href="/about" className="btn btn-ghost">
+                {h.about.eyebrow}
+              </Link>
+            </div>
           </div>
           <div>
             <h3 className="font-[family-name:var(--font-display)] text-[1.375rem] font-bold">{h.about.whyTitle}</h3>

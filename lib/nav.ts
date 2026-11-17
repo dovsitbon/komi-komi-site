@@ -66,6 +66,7 @@ export const NAV: NavGroup[] = [
     columns: [{ links: [l("/purim", "תחנות הפעלה לפורים"), ...purimSubs.map((p) => l(p.path, p.nav))] }],
   },
   { label: "אירועים עסקיים", href: "/corporate", columns: [{ links: [l("/corporate", "אירועים עסקיים וימי כיף"), ...pages.filter((p) => p.parent === "/corporate").map((p) => l(p.path, p.nav))] }] },
+  { label: "אודות", href: "/about" },
   { label: "המלצות", href: "/reviews" },
   { label: "צור קשר", href: "/contact" },
 ];

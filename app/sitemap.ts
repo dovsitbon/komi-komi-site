@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/catalog", priority: 0.8 },
     { path: "/reviews", priority: 0.7 },
     { path: "/quote", priority: 0.7 },
+    { path: "/about", priority: 0.7 },
     { path: "/contact", priority: 0.6 },
   ];
   const prio: Record<string, number> = { event: 0.9, theme: 0.7, sub: 0.7, area: 0.6, "catalog-item": 0.6, "clown-region": 0.6, "clown-city": 0.5, "clown-age": 0.5, "clown-topic": 0.5 };

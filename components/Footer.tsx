@@ -4,8 +4,8 @@ import { FacebookIcon, InstagramIcon, PhoneIcon, WhatsAppIcon } from "@/componen
 import { cities, pages, prestations, regions, site, themes, waLink } from "@/lib/site";
 import he from "@/locales/he.json";
 
-const events = ["/bar-mitzvah", "/bat-mitzvah", "/full-moon", "/purim", "/corporate", "/brit", "/candy-bar", "/reviews", "/contact", "/quote"];
-const label = (path: string) => pages.find((p) => p.path === path)?.nav || { "/reviews": he.reviews.title, "/contact": he.contact.title, "/quote": he.quote.title }[path] || path;
+const events = ["/bar-mitzvah", "/bat-mitzvah", "/full-moon", "/purim", "/corporate", "/brit", "/candy-bar", "/about", "/reviews", "/contact", "/quote"];
+const label = (path: string) => pages.find((p) => p.path === path)?.nav || { "/about": he.home.about.eyebrow, "/reviews": he.reviews.title, "/contact": he.contact.title, "/quote": he.quote.title }[path] || path;
 
 /** Pied de page : coordonnées, régions, et plan du site complet (utile aux visiteurs comme à Google). */
 export function Footer() {
