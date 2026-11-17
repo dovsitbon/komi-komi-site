@@ -33,6 +33,12 @@ const CATS: Cat[] = [
   { href: "/full-moon", ...p.cats[5], tone: "bg-sun", img: from(t["full-moon"], ["/full-moon"]) },
 ];
 const MORE = [
+  ["/bar-mitzvah/kids", "הפקות בר/בת מצווה לילדים"],
+  ["/aliyah-latorah", "הפקות עליה לתורה"],
+  ["/catalog/photo-walls", "קירות צילום"],
+  ["/photo-booths", "עמדות צילום"],
+  ["/catalog/fair-stands", "דוכני יריד"],
+  ["/catering", "קייטרינג לאירועים"],
   ["/purim", "פורים"],
   ["/clowns", "ליצנים"],
   ["/birthdays/dj", "תקליטנים"],

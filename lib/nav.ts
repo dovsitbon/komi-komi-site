@@ -17,9 +17,10 @@ export const NAV: NavGroup[] = [
     label: "הפקות בר / בת מצווה",
     href: "/bar-mitzvah",
     columns: [
-      { title: "בר מצווה", links: [l("/bar-mitzvah", "הפקת בר מצווה"), l("/bar-mitzvah/dj", "תקליטן לבר מצווה"), l("/candy-bar/bar-mitzvah", "בר מתוקים לבר מצווה")] },
+      { title: "בר מצווה", links: [l("/bar-mitzvah", "הפקת בר מצווה"), l("/bar-mitzvah/dj", "תקליטן לבר מצווה"), l("/aliyah-latorah"), l("/candy-bar/bar-mitzvah", "בר מתוקים לבר מצווה")] },
       { title: "בת מצווה", links: [l("/bat-mitzvah", "הפקת בת מצווה"), l("/bat-mitzvah/dj", "תקליטן והפעלות"), l("/full-moon/bat-mitzvah", "בת מצווה פולמון")] },
-      { title: "אטרקציות", links: [l("/catalog/photo-walls", "קירות צילום"), l("/catalog/magnets", "צלם ומגנטים"), l("/catalog/game-tables", "שולחנות משחק"), l("/catalog/graffiti-hats", "גרפיטי על כובעים"), l("/catalog/caricature-shirts", "קריקטורה על חולצות")] },
+      { title: "לילדים", links: [l("/bar-mitzvah/kids")] },
+      { title: "אטרקציות", links: [l("/catalog/photo-walls", "קירות צילום"), l("/photo-booths"), l("/catalog/magnets", "צלם ומגנטים"), l("/catalog/game-tables", "שולחנות משחק"), l("/catalog/graffiti-hats", "גרפיטי על כובעים"), l("/catalog/caricature-shirts", "קריקטורה על חולצות")] },
     ],
   },
   {
@@ -38,10 +39,11 @@ export const NAV: NavGroup[] = [
     columns: [{ links: [l("/candy-bar", "בר מתוקים לאירועים"), ...candySubs.map((p) => l(p.path, p.nav))] }],
   },
   {
-    label: "דוכנים",
+    label: "דוכנים וצילום",
     href: "/catalog/food-stands",
     columns: [
-      { links: [l("/catalog/food-stands", "דוכני מזון"), l("/catalog/fair-stands", "דוכני יריד"), l("/catalog/fruit-kayak", "קיאק פירות"), l("/catalog/active-bar", "בר אקטיבי לילדים"), l("/catalog", "כל הקטלוג")] },
+      { title: "דוכנים ומזון", links: [l("/catalog/food-stands", "דוכני מזון"), l("/catalog/fair-stands", "דוכני יריד"), l("/catering"), l("/catalog/fruit-kayak", "קיאק פירות"), l("/catalog/active-bar", "בר אקטיבי לילדים")] },
+      { title: "צילום", links: [l("/catalog/photo-walls", "קירות צילום"), l("/photo-booths"), l("/catalog/magnets", "צלם ומגנטים"), l("/catalog", "כל הקטלוג")] },
     ],
   },
   {
@@ -63,7 +65,7 @@ export const NAV: NavGroup[] = [
     href: "/purim",
     columns: [{ links: [l("/purim", "תחנות הפעלה לפורים"), ...purimSubs.map((p) => l(p.path, p.nav))] }],
   },
-  { label: "אירועים עסקיים", href: "/corporate" },
+  { label: "אירועים עסקיים", href: "/corporate", columns: [{ links: [l("/corporate", "אירועים עסקיים וימי כיף"), ...pages.filter((p) => p.parent === "/corporate").map((p) => l(p.path, p.nav))] }] },
   { label: "המלצות", href: "/reviews" },
   { label: "צור קשר", href: "/contact" },
 ];

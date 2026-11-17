@@ -1,5 +1,46 @@
 [
  {
+  "path": "/aliyah-latorah",
+  "kind": "event",
+  "parent": "/bar-mitzvah",
+  "nav": "הפקות עליה לתורה",
+  "title": "הפקות עליה לתורה | קומי קומי הפקות",
+  "description": "קומי קומי הפקות מפיקה גם אירועי עליה לתורה, לצד הפקות בר מצווה. מקבלים הצעת מחיר מסודרת בוואטסאפ מקומי קומי הפקות.",
+  "h1": "הפקות עליה לתורה",
+  "eyebrow": "בר מצווה",
+  "intro": [
+   "קומי קומי הפקות מפיקה גם אירועי עליה לתורה, לצד הפקות בר מצווה.",
+   "ספרו לנו על התאריך, המקום ומספר המשתתפים, ונחזור אליכם עם הצעת מחיר מסודרת בוואטסאפ."
+  ],
+  "highlights": [],
+  "program": null,
+  "tags": [],
+  "oldText": [],
+  "reviews": [],
+  "images": [
+   "3b95b766cf",
+   "f6e79a9cd3",
+   "a1907b7f45",
+   "cbfcaa4997"
+  ],
+  "videos": [],
+  "prestations": [
+   "candy-bar",
+   "photo-walls",
+   "magnets",
+   "dj"
+  ],
+  "related": [
+   "/bar-mitzvah",
+   "/candy-bar/bar-mitzvah",
+   "/catalog/photo-walls"
+  ],
+  "faq": [],
+  "dark": false,
+  "meta": {},
+  "inheritedImages": true
+ },
+ {
   "path": "/bar-mitzvah",
   "kind": "event",
   "parent": null,
@@ -230,6 +271,48 @@
   "faq": [],
   "dark": false,
   "meta": {}
+ },
+ {
+  "path": "/bar-mitzvah/kids",
+  "kind": "sub",
+  "parent": "/bar-mitzvah",
+  "nav": "הפקות בר/בת מצווה לילדים",
+  "title": "הפקות בר/בת מצווה לילדים | קומי קומי הפקות",
+  "description": "הפקות בר ובת מצווה לילדים הן קטגוריה נפרדת מהפקות בר/בת מצווה: ההפקה מותאמת לילדים עצמם. מקבלים הצעת מחיר מסודרת בוואטסאפ מקומי קומי הפקות.",
+  "h1": "הפקות בר/בת מצווה לילדים",
+  "eyebrow": "בר / בת מצווה",
+  "intro": [
+   "הפקות בר ובת מצווה לילדים הן קטגוריה נפרדת מהפקות בר/בת מצווה: ההפקה מותאמת לילדים עצמם.",
+   "ספרו לנו על התאריך, המקום ומספר המשתתפים, ונחזור אליכם עם הצעת מחיר מסודרת בוואטסאפ."
+  ],
+  "highlights": [],
+  "program": null,
+  "tags": [],
+  "oldText": [],
+  "reviews": [],
+  "images": [
+   "3b95b766cf",
+   "f6e79a9cd3",
+   "a1907b7f45",
+   "cbfcaa4997"
+  ],
+  "videos": [],
+  "prestations": [
+   "dj",
+   "hosts",
+   "game-tables",
+   "candy-bar"
+  ],
+  "related": [
+   "/bar-mitzvah",
+   "/bat-mitzvah",
+   "/bar-mitzvah/dj",
+   "/bat-mitzvah/dj"
+  ],
+  "faq": [],
+  "dark": false,
+  "meta": {},
+  "inheritedImages": true
  },
  {
   "path": "/bat-mitzvah",
@@ -5681,6 +5764,44 @@
   }
  },
  {
+  "path": "/catering",
+  "kind": "event",
+  "parent": null,
+  "nav": "קייטרינג לאירועים",
+  "title": "קייטרינג לאירועים | קומי קומי הפקות",
+  "description": "קייטרינג לאירועים מבית קומי קומי הפקות, לצד דוכני המזון ובר המתוקים. מקבלים הצעת מחיר מסודרת בוואטסאפ מקומי קומי הפקות.",
+  "h1": "קייטרינג לאירועים",
+  "eyebrow": "מזון",
+  "intro": [
+   "קייטרינג לאירועים מבית קומי קומי הפקות, לצד דוכני המזון ובר המתוקים.",
+   "ספרו לנו על התאריך, המקום ומספר המשתתפים, ונחזור אליכם עם הצעת מחיר מסודרת בוואטסאפ."
+  ],
+  "highlights": [],
+  "program": null,
+  "tags": [],
+  "oldText": [],
+  "reviews": [],
+  "images": [
+   "6048a4412e",
+   "de8bcbb577",
+   "48cb2c86fc"
+  ],
+  "videos": [],
+  "prestations": [
+   "food-stands",
+   "candy-bar",
+   "fruit-kayak"
+  ],
+  "related": [
+   "/catalog/food-stands",
+   "/candy-bar",
+   "/catalog/fruit-kayak"
+  ],
+  "faq": [],
+  "dark": false,
+  "meta": {}
+ },
+ {
   "path": "/clowns",
   "kind": "event",
   "parent": null,
@@ -10823,6 +10944,210 @@
   "meta": {}
  },
  {
+  "path": "/corporate/company-events",
+  "kind": "sub",
+  "parent": "/corporate",
+  "nav": "הפקות חברה",
+  "title": "הפקות חברה | קומי קומי הפקות",
+  "description": "הפקות לחברות ולארגונים: ערבי חברה, ימי גיבוש ואירועי עובדים. מקבלים הצעת מחיר מסודרת בוואטסאפ מקומי קומי הפקות.",
+  "h1": "הפקות חברה",
+  "eyebrow": "אירועים עסקיים",
+  "intro": [
+   "הפקות לחברות ולארגונים: ערבי חברה, ימי גיבוש ואירועי עובדים.",
+   "ספרו לנו על התאריך, המקום ומספר המשתתפים, ונחזור אליכם עם הצעת מחיר מסודרת בוואטסאפ."
+  ],
+  "highlights": [],
+  "program": null,
+  "tags": [],
+  "oldText": [],
+  "reviews": [],
+  "images": [
+   "84ca163447",
+   "3b7b47346c",
+   "015f1bcff6",
+   "b97e437e23"
+  ],
+  "videos": [],
+  "prestations": [
+   "dj",
+   "food-stands",
+   "game-tables",
+   "candy-bar"
+  ],
+  "related": [
+   "/corporate",
+   "/catalog/food-stands",
+   "/catalog/game-tables"
+  ],
+  "faq": [],
+  "dark": false,
+  "meta": {},
+  "inheritedImages": true
+ },
+ {
+  "path": "/corporate/jewish-holidays",
+  "kind": "sub",
+  "parent": "/corporate",
+  "nav": "הפקות חגי ישראל",
+  "title": "הפקות חגי ישראל | קומי קומי הפקות",
+  "description": "הפקות לחגי ישראל לחברות, לארגונים ולישובים. מקבלים הצעת מחיר מסודרת בוואטסאפ מקומי קומי הפקות.",
+  "h1": "הפקות חגי ישראל",
+  "eyebrow": "אירועים עסקיים",
+  "intro": [
+   "הפקות לחגי ישראל לחברות, לארגונים ולישובים.",
+   "ספרו לנו על התאריך, המקום ומספר המשתתפים, ונחזור אליכם עם הצעת מחיר מסודרת בוואטסאפ."
+  ],
+  "highlights": [],
+  "program": null,
+  "tags": [],
+  "oldText": [],
+  "reviews": [],
+  "images": [
+   "84ca163447",
+   "3b7b47346c",
+   "015f1bcff6",
+   "b97e437e23"
+  ],
+  "videos": [],
+  "prestations": [
+   "dj",
+   "food-stands",
+   "game-tables",
+   "candy-bar"
+  ],
+  "related": [
+   "/corporate",
+   "/purim/productions",
+   "/catalog/food-stands"
+  ],
+  "faq": [],
+  "dark": false,
+  "meta": {},
+  "inheritedImages": true
+ },
+ {
+  "path": "/corporate/las-vegas-casino",
+  "kind": "sub",
+  "parent": "/corporate",
+  "nav": "לאס וגאס קזינו",
+  "title": "לאס וגאס קזינו | קומי קומי הפקות",
+  "description": "ערב בסגנון לאס וגאס קזינו לאירועי חברה. מקבלים הצעת מחיר מסודרת בוואטסאפ מקומי קומי הפקות.",
+  "h1": "לאס וגאס קזינו",
+  "eyebrow": "אירועים עסקיים",
+  "intro": [
+   "ערב בסגנון לאס וגאס קזינו לאירועי חברה.",
+   "ספרו לנו על התאריך, המקום ומספר המשתתפים, ונחזור אליכם עם הצעת מחיר מסודרת בוואטסאפ."
+  ],
+  "highlights": [],
+  "program": null,
+  "tags": [],
+  "oldText": [],
+  "reviews": [],
+  "images": [
+   "84ca163447",
+   "3b7b47346c",
+   "015f1bcff6",
+   "b97e437e23"
+  ],
+  "videos": [],
+  "prestations": [
+   "dj",
+   "food-stands",
+   "game-tables",
+   "candy-bar"
+  ],
+  "related": [
+   "/corporate",
+   "/catalog/food-stands",
+   "/catalog/game-tables"
+  ],
+  "faq": [],
+  "dark": false,
+  "meta": {},
+  "inheritedImages": true
+ },
+ {
+  "path": "/corporate/sales-promotion",
+  "kind": "sub",
+  "parent": "/corporate",
+  "nav": "קידום מכירות (קד״מ)",
+  "title": "קידום מכירות (קד״מ) | קומי קומי הפקות",
+  "description": "אירועי קידום מכירות (קד״מ) לעסקים ולמותגים. מקבלים הצעת מחיר מסודרת בוואטסאפ מקומי קומי הפקות.",
+  "h1": "קידום מכירות (קד״מ)",
+  "eyebrow": "אירועים עסקיים",
+  "intro": [
+   "אירועי קידום מכירות (קד״מ) לעסקים ולמותגים.",
+   "ספרו לנו על התאריך, המקום ומספר המשתתפים, ונחזור אליכם עם הצעת מחיר מסודרת בוואטסאפ."
+  ],
+  "highlights": [],
+  "program": null,
+  "tags": [],
+  "oldText": [],
+  "reviews": [],
+  "images": [
+   "84ca163447",
+   "3b7b47346c",
+   "015f1bcff6",
+   "b97e437e23"
+  ],
+  "videos": [],
+  "prestations": [
+   "dj",
+   "food-stands",
+   "game-tables",
+   "candy-bar"
+  ],
+  "related": [
+   "/corporate",
+   "/catalog/food-stands",
+   "/catalog/game-tables"
+  ],
+  "faq": [],
+  "dark": false,
+  "meta": {},
+  "inheritedImages": true
+ },
+ {
+  "path": "/corporate/sing-along",
+  "kind": "sub",
+  "parent": "/corporate",
+  "nav": "שירה בציבור",
+  "title": "שירה בציבור | קומי קומי הפקות",
+  "description": "ערבי שירה בציבור לאירועי חברה ולאירועים קהילתיים. מקבלים הצעת מחיר מסודרת בוואטסאפ מקומי קומי הפקות.",
+  "h1": "שירה בציבור",
+  "eyebrow": "אירועים עסקיים",
+  "intro": [
+   "ערבי שירה בציבור לאירועי חברה ולאירועים קהילתיים.",
+   "ספרו לנו על התאריך, המקום ומספר המשתתפים, ונחזור אליכם עם הצעת מחיר מסודרת בוואטסאפ."
+  ],
+  "highlights": [],
+  "program": null,
+  "tags": [],
+  "oldText": [],
+  "reviews": [],
+  "images": [
+   "84ca163447",
+   "3b7b47346c",
+   "015f1bcff6",
+   "b97e437e23"
+  ],
+  "videos": [],
+  "prestations": [
+   "dj",
+   "karaoke",
+   "hosts"
+  ],
+  "related": [
+   "/corporate",
+   "/catalog/karaoke",
+   "/catalog/hosts"
+  ],
+  "faq": [],
+  "dark": false,
+  "meta": {},
+  "inheritedImages": true
+ },
+ {
   "path": "/full-moon",
   "kind": "event",
   "parent": null,
@@ -11078,6 +11403,41 @@
   ],
   "faq": [],
   "dark": true,
+  "meta": {}
+ },
+ {
+  "path": "/photo-booths",
+  "kind": "event",
+  "parent": null,
+  "nav": "עמדות צילום",
+  "title": "עמדות צילום לאירועים | קומי קומי הפקות",
+  "description": "עמדות צילום לאירועים: לבר ובת מצווה, לימי הולדת ולאירועי חברה. מקבלים הצעת מחיר מסודרת בוואטסאפ מקומי קומי הפקות.",
+  "h1": "עמדות צילום לאירועים",
+  "eyebrow": "צילום",
+  "intro": [
+   "עמדות צילום לאירועים: לבר ובת מצווה, לימי הולדת ולאירועי חברה.",
+   "ספרו לנו על התאריך, המקום ומספר המשתתפים, ונחזור אליכם עם הצעת מחיר מסודרת בוואטסאפ."
+  ],
+  "highlights": [],
+  "program": null,
+  "tags": [],
+  "oldText": [],
+  "reviews": [],
+  "images": [
+   "fb205a68fc",
+   "a1907b7f45"
+  ],
+  "videos": [],
+  "prestations": [
+   "magnets",
+   "photo-walls"
+  ],
+  "related": [
+   "/catalog/magnets",
+   "/catalog/photo-walls"
+  ],
+  "faq": [],
+  "dark": false,
   "meta": {}
  },
  {

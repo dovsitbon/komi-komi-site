@@ -207,6 +207,235 @@ export const EVENTS = [
     prestations: ["candy-bar", "clowns", "photo-walls", "magnets"],
     related: ["/candy-bar/brit", "/clowns", "/catalog/photo-walls"],
   },
+  // Ajouts demandés par le client le 17/11/2026 : textes volontairement courts, à compléter avec ses informations
+  {
+    "kind": "event",
+    "path": "/aliyah-latorah",
+    "parent": "/bar-mitzvah",
+    "nav": "הפקות עליה לתורה",
+    "h1": "הפקות עליה לתורה",
+    "eyebrow": "בר מצווה",
+    "intro": [
+      "קומי קומי הפקות מפיקה גם אירועי עליה לתורה, לצד הפקות בר מצווה.",
+      "ספרו לנו על התאריך, המקום ומספר המשתתפים, ונחזור אליכם עם הצעת מחיר מסודרת בוואטסאפ."
+    ],
+    "prestations": [
+      "candy-bar",
+      "photo-walls",
+      "magnets",
+      "dj"
+    ],
+    "related": [
+      "/bar-mitzvah",
+      "/candy-bar/bar-mitzvah",
+      "/catalog/photo-walls"
+    ],
+    "title": "הפקות עליה לתורה | קומי קומי הפקות",
+    "description": "קומי קומי הפקות מפיקה גם אירועי עליה לתורה, לצד הפקות בר מצווה."
+  },
+  {
+    "kind": "sub",
+    "path": "/bar-mitzvah/kids",
+    "parent": "/bar-mitzvah",
+    "nav": "הפקות בר/בת מצווה לילדים",
+    "h1": "הפקות בר/בת מצווה לילדים",
+    "eyebrow": "בר / בת מצווה",
+    "intro": [
+      "הפקות בר ובת מצווה לילדים הן קטגוריה נפרדת מהפקות בר/בת מצווה: ההפקה מותאמת לילדים עצמם.",
+      "ספרו לנו על התאריך, המקום ומספר המשתתפים, ונחזור אליכם עם הצעת מחיר מסודרת בוואטסאפ."
+    ],
+    "prestations": [
+      "dj",
+      "hosts",
+      "game-tables",
+      "candy-bar"
+    ],
+    "related": [
+      "/bar-mitzvah",
+      "/bat-mitzvah",
+      "/bar-mitzvah/dj",
+      "/bat-mitzvah/dj"
+    ],
+    "title": "הפקות בר/בת מצווה לילדים | קומי קומי הפקות",
+    "description": "הפקות בר ובת מצווה לילדים הן קטגוריה נפרדת מהפקות בר/בת מצווה: ההפקה מותאמת לילדים עצמם."
+  },
+  {
+    "kind": "event",
+    "path": "/photo-booths",
+    "nav": "עמדות צילום",
+    "h1": "עמדות צילום לאירועים",
+    "eyebrow": "צילום",
+    "intro": [
+      "עמדות צילום לאירועים: לבר ובת מצווה, לימי הולדת ולאירועי חברה.",
+      "ספרו לנו על התאריך, המקום ומספר המשתתפים, ונחזור אליכם עם הצעת מחיר מסודרת בוואטסאפ."
+    ],
+    "pick": [
+      "accueil:9",
+      "accueil:37"
+    ],
+    "prestations": [
+      "magnets",
+      "photo-walls"
+    ],
+    "related": [
+      "/catalog/magnets",
+      "/catalog/photo-walls"
+    ],
+    "title": "עמדות צילום לאירועים | קומי קומי הפקות",
+    "description": "עמדות צילום לאירועים: לבר ובת מצווה, לימי הולדת ולאירועי חברה."
+  },
+  {
+    "kind": "event",
+    "path": "/catering",
+    "nav": "קייטרינג לאירועים",
+    "h1": "קייטרינג לאירועים",
+    "eyebrow": "מזון",
+    "intro": [
+      "קייטרינג לאירועים מבית קומי קומי הפקות, לצד דוכני המזון ובר המתוקים.",
+      "ספרו לנו על התאריך, המקום ומספר המשתתפים, ונחזור אליכם עם הצעת מחיר מסודרת בוואטסאפ."
+    ],
+    "pick": [
+      "accueil:63",
+      "accueil:55",
+      "accueil:61"
+    ],
+    "prestations": [
+      "food-stands",
+      "candy-bar",
+      "fruit-kayak"
+    ],
+    "related": [
+      "/catalog/food-stands",
+      "/candy-bar",
+      "/catalog/fruit-kayak"
+    ],
+    "title": "קייטרינג לאירועים | קומי קומי הפקות",
+    "description": "קייטרינג לאירועים מבית קומי קומי הפקות, לצד דוכני המזון ובר המתוקים."
+  },
+  {
+    "kind": "sub",
+    "path": "/corporate/company-events",
+    "parent": "/corporate",
+    "nav": "הפקות חברה",
+    "h1": "הפקות חברה",
+    "eyebrow": "אירועים עסקיים",
+    "intro": [
+      "הפקות לחברות ולארגונים: ערבי חברה, ימי גיבוש ואירועי עובדים.",
+      "ספרו לנו על התאריך, המקום ומספר המשתתפים, ונחזור אליכם עם הצעת מחיר מסודרת בוואטסאפ."
+    ],
+    "prestations": [
+      "dj",
+      "food-stands",
+      "game-tables",
+      "candy-bar"
+    ],
+    "related": [
+      "/corporate",
+      "/catalog/food-stands",
+      "/catalog/game-tables"
+    ],
+    "title": "הפקות חברה | קומי קומי הפקות",
+    "description": "הפקות לחברות ולארגונים: ערבי חברה, ימי גיבוש ואירועי עובדים."
+  },
+  {
+    "kind": "sub",
+    "path": "/corporate/las-vegas-casino",
+    "parent": "/corporate",
+    "nav": "לאס וגאס קזינו",
+    "h1": "לאס וגאס קזינו",
+    "eyebrow": "אירועים עסקיים",
+    "intro": [
+      "ערב בסגנון לאס וגאס קזינו לאירועי חברה.",
+      "ספרו לנו על התאריך, המקום ומספר המשתתפים, ונחזור אליכם עם הצעת מחיר מסודרת בוואטסאפ."
+    ],
+    "prestations": [
+      "dj",
+      "food-stands",
+      "game-tables",
+      "candy-bar"
+    ],
+    "related": [
+      "/corporate",
+      "/catalog/food-stands",
+      "/catalog/game-tables"
+    ],
+    "title": "לאס וגאס קזינו | קומי קומי הפקות",
+    "description": "ערב בסגנון לאס וגאס קזינו לאירועי חברה."
+  },
+  {
+    "kind": "sub",
+    "path": "/corporate/jewish-holidays",
+    "parent": "/corporate",
+    "nav": "הפקות חגי ישראל",
+    "h1": "הפקות חגי ישראל",
+    "eyebrow": "אירועים עסקיים",
+    "intro": [
+      "הפקות לחגי ישראל לחברות, לארגונים ולישובים.",
+      "ספרו לנו על התאריך, המקום ומספר המשתתפים, ונחזור אליכם עם הצעת מחיר מסודרת בוואטסאפ."
+    ],
+    "prestations": [
+      "dj",
+      "food-stands",
+      "game-tables",
+      "candy-bar"
+    ],
+    "related": [
+      "/corporate",
+      "/purim/productions",
+      "/catalog/food-stands"
+    ],
+    "title": "הפקות חגי ישראל | קומי קומי הפקות",
+    "description": "הפקות לחגי ישראל לחברות, לארגונים ולישובים."
+  },
+  {
+    "kind": "sub",
+    "path": "/corporate/sales-promotion",
+    "parent": "/corporate",
+    "nav": "קידום מכירות (קד״מ)",
+    "h1": "קידום מכירות (קד״מ)",
+    "eyebrow": "אירועים עסקיים",
+    "intro": [
+      "אירועי קידום מכירות (קד״מ) לעסקים ולמותגים.",
+      "ספרו לנו על התאריך, המקום ומספר המשתתפים, ונחזור אליכם עם הצעת מחיר מסודרת בוואטסאפ."
+    ],
+    "prestations": [
+      "dj",
+      "food-stands",
+      "game-tables",
+      "candy-bar"
+    ],
+    "related": [
+      "/corporate",
+      "/catalog/food-stands",
+      "/catalog/game-tables"
+    ],
+    "title": "קידום מכירות (קד״מ) | קומי קומי הפקות",
+    "description": "אירועי קידום מכירות (קד״מ) לעסקים ולמותגים."
+  },
+  {
+    "kind": "sub",
+    "path": "/corporate/sing-along",
+    "parent": "/corporate",
+    "nav": "שירה בציבור",
+    "h1": "שירה בציבור",
+    "eyebrow": "אירועים עסקיים",
+    "intro": [
+      "ערבי שירה בציבור לאירועי חברה ולאירועים קהילתיים.",
+      "ספרו לנו על התאריך, המקום ומספר המשתתפים, ונחזור אליכם עם הצעת מחיר מסודרת בוואטסאפ."
+    ],
+    "prestations": [
+      "dj",
+      "karaoke",
+      "hosts"
+    ],
+    "related": [
+      "/corporate",
+      "/catalog/karaoke",
+      "/catalog/hosts"
+    ],
+    "title": "שירה בציבור | קומי קומי הפקות",
+    "description": "ערבי שירה בציבור לאירועי חברה ולאירועים קהילתיים."
+  },
 ];
 
 // Sous-pages Pourim
